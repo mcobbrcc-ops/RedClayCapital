@@ -1,6 +1,6 @@
 {
   "framework": "nextjs",
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "redirects": [
     {
