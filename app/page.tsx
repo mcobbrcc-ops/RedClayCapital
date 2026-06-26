@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { FAQ, CTASection, FounderProfile, HowItWorks, ResourceCenter, SituationCards, TrustSection } from "@/components/Sections";
 import { Hero } from "@/components/Hero";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { faqs, servicePages, site } from "@/content/site";
 
 function JsonLd() {
@@ -94,25 +95,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="site-footer">
-        <div className="container footer-grid">
-          <div>
-            <div className="brand">
-              <span className="brand-mark" aria-hidden="true">RC</span>
-              <span>Red Clay Capital, LLC</span>
-            </div>
-            <p>
-              Private, as-is cash offer options for homeowners facing difficult
-              property situations.
-            </p>
-            <p>Founder: {site.founder}</p>
-          </div>
-          <div>
-            <p><a href="tel:+19195550148">{site.phone}</a></p>
-            <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
       <a className="button sticky-mobile-cta" href="#get-my-cash-offer">
         Request My Offer
       </a>

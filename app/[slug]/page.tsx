@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, CheckCircle2, Mail, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
 
 type PageProps = {
@@ -157,6 +158,7 @@ export default async function ServicePage({ params }: PageProps) {
           )}
         </div>
       </section>
+      <SiteFooter />
     </main>
   );
 }

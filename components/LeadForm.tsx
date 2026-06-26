@@ -12,7 +12,15 @@ export function LeadForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
+    const params = new URLSearchParams(window.location.search);
+    const utmParams = Object.fromEntries(
+      Array.from(params.entries()).filter(([key]) => key.startsWith("utm_"))
+    );
+    const payload = {
+      ...Object.fromEntries(formData.entries()),
+      sourcePage: window.location.pathname,
+      utmParams
+    };
 
     try {
       const response = await fetch("/api/leads", {
@@ -77,6 +85,30 @@ export function LeadForm() {
             autoComplete="email"
             placeholder="you@example.com"
           />
+        </div>
+        <div className="field">
+          <label htmlFor="propertyCondition">Property condition</label>
+          <select id="propertyCondition" name="propertyCondition">
+            <option value="">Select one</option>
+            <option>Move-in ready</option>
+            <option>Needs cosmetic updates</option>
+            <option>Needs major repairs</option>
+            <option>Fire, water, or storm damage</option>
+            <option>Vacant or neglected</option>
+            <option>Tenant occupied</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+        <div className="field">
+          <label htmlFor="timeline">Timeline to sell</label>
+          <select id="timeline" name="timeline">
+            <option value="">Select one</option>
+            <option>As soon as possible</option>
+            <option>Within 30 days</option>
+            <option>1-3 months</option>
+            <option>Flexible timeline</option>
+            <option>Just exploring options</option>
+          </select>
         </div>
         <div className="field field-full">
           <label htmlFor="details">Situation or property details</label>

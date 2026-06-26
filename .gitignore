@@ -6,5 +6,6 @@ out
 .env.production
 .vercel
 .tmp
+.data
 .pnpm-store
 *.log

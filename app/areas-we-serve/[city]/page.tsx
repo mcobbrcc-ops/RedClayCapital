@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { cityPages, site } from "@/content/site";
 
 type PageProps = {
@@ -128,6 +129,7 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+      <SiteFooter />
     </main>
   );
 }

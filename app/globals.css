@@ -39,6 +39,7 @@ a {
 
 button,
 input,
+select,
 textarea {
   font: inherit;
 }
@@ -409,11 +410,11 @@ h1 {
 }
 
 .field:nth-of-type(4) {
-  grid-column: span 1;
+  grid-column: span 2;
 }
 
-.field:nth-of-type(5) {
-  grid-column: span 2;
+.field:nth-of-type(7) {
+  grid-column: span 3;
 }
 
 .lead-form .button {
@@ -436,6 +437,7 @@ h1 {
 }
 
 .field input,
+.field select,
 .field textarea {
   width: 100%;
   border: 1px solid rgba(28, 33, 31, 0.24);
@@ -448,6 +450,7 @@ h1 {
 }
 
 .field input:focus,
+.field select:focus,
 .field textarea:focus {
   border-color: rgba(166, 65, 45, 0.5);
   background: #fff;
@@ -457,6 +460,11 @@ h1 {
 .field input::placeholder,
 .field textarea::placeholder {
   color: rgba(34, 37, 34, 0.62);
+}
+
+.field select {
+  min-height: 55px;
+  appearance: none;
 }
 
 .field textarea {
@@ -880,6 +888,20 @@ h2 {
   margin-bottom: 8px;
 }
 
+.admin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: rgba(255, 250, 243, 0.5);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.admin-link:hover {
+  color: rgba(255, 250, 243, 0.86);
+}
+
 .sticky-mobile-cta {
   position: fixed;
   right: 16px;
@@ -998,7 +1020,7 @@ h2 {
 
   .field-full,
   .field:nth-of-type(4),
-  .field:nth-of-type(5),
+  .field:nth-of-type(7),
   .lead-form .button {
     grid-column: 1 / -1;
   }
@@ -1123,6 +1145,7 @@ h2 {
   }
 
   .field input,
+  .field select,
   .field textarea,
   .button {
     min-height: 52px;
@@ -1134,5 +1157,179 @@ h2 {
 
   .sticky-mobile-cta {
     display: inline-flex;
+  }
+}
+
+.admin-page {
+  min-height: 100vh;
+  background: var(--linen);
+  padding: 32px 0;
+}
+
+.admin-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.admin-header a {
+  color: var(--clay);
+  font-weight: 850;
+}
+
+.admin-card {
+  border: 1px solid rgba(28, 33, 31, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 250, 243, 0.94);
+  box-shadow: var(--shadow-soft);
+}
+
+.admin-login {
+  display: grid;
+  gap: 12px;
+  max-width: 430px;
+  padding: 28px;
+}
+
+.admin-login h2 {
+  font-size: 1.55rem;
+}
+
+.admin-login input,
+.admin-toolbar input,
+.admin-table select {
+  min-height: 44px;
+  border: 1px solid rgba(28, 33, 31, 0.22);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.admin-message {
+  color: var(--clay);
+  font-weight: 800;
+}
+
+.admin-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.admin-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(28, 33, 31, 0.16);
+  border-radius: 8px;
+  padding: 0 10px;
+  background: #fff;
+}
+
+.admin-toolbar label input {
+  border: 0;
+  padding-left: 0;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.36fr);
+  gap: 18px;
+}
+
+.admin-table-wrap {
+  overflow: auto;
+}
+
+.admin-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.admin-table th,
+.admin-table td {
+  border-bottom: 1px solid rgba(28, 33, 31, 0.1);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.admin-table th {
+  color: var(--charcoal);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-table tbody tr {
+  cursor: pointer;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(166, 65, 45, 0.06);
+}
+
+.lead-detail {
+  padding: 22px;
+}
+
+.lead-detail h2 {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+}
+
+.lead-detail dl {
+  display: grid;
+  gap: 8px;
+}
+
+.lead-detail dt {
+  color: var(--clay);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead-detail dd {
+  margin: 0 0 8px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .admin-header,
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-header {
+    display: grid;
+  }
+
+  .admin-toolbar {
+    display: grid;
+  }
+
+  .admin-toolbar label,
+  .admin-toolbar input,
+  .admin-toolbar button {
+    width: 100%;
   }
 }

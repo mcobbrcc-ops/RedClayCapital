@@ -1,11 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
+import { saveLead } from "@/lib/leadStore";
 
 type LeadPayload = {
   address?: string;
   name?: string;
   phone?: string;
   email?: string;
+  propertyCondition?: string;
+  timeline?: string;
   details?: string;
+  sourcePage?: string;
+  utmParams?: Record<string, string>;
 };
 
 function clean(value: unknown) {
@@ -26,7 +31,11 @@ export async function POST(request: NextRequest) {
     name: clean(body.name),
     phone: clean(body.phone),
     email: clean(body.email),
+    propertyCondition: clean(body.propertyCondition),
+    timeline: clean(body.timeline),
     details: clean(body.details),
+    sourcePage: clean(body.sourcePage) || request.headers.get("referer") || "/",
+    utmParams: body.utmParams && typeof body.utmParams === "object" ? body.utmParams : {},
     source: "redclaycap.com",
     submittedAt: new Date().toISOString()
   };
@@ -39,36 +48,32 @@ export async function POST(request: NextRequest) {
   }
 
   const webhookUrl = process.env.LEAD_CAPTURE_WEBHOOK_URL;
+  const savedLead = await saveLead(lead);
 
   if (!webhookUrl) {
-    if (process.env.NODE_ENV !== "production") {
-      console.info("Lead captured locally:", lead);
-      return NextResponse.json({ ok: true, mode: "development" });
+    return NextResponse.json({ ok: true, leadId: savedLead.id, webhook: "not_configured" });
+  }
+
+  try {
+    const response = await fetch(webhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        ...(process.env.LEAD_CAPTURE_WEBHOOK_SECRET
+          ? { Authorization: `Bearer ${process.env.LEAD_CAPTURE_WEBHOOK_SECRET}` }
+          : {})
+      },
+      body: JSON.stringify(savedLead)
+    });
+
+    if (!response.ok) {
+      console.error("Lead webhook failed", response.status);
+      return NextResponse.json({ ok: true, leadId: savedLead.id, webhook: "failed" });
     }
-
-    return NextResponse.json(
-      { error: "Lead capture is not configured" },
-      { status: 503 }
-    );
+  } catch (error) {
+    console.error("Lead webhook error", error);
+    return NextResponse.json({ ok: true, leadId: savedLead.id, webhook: "failed" });
   }
 
-  const response = await fetch(webhookUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      ...(process.env.LEAD_CAPTURE_WEBHOOK_SECRET
-        ? { Authorization: `Bearer ${process.env.LEAD_CAPTURE_WEBHOOK_SECRET}` }
-        : {})
-    },
-    body: JSON.stringify(lead)
-  });
-
-  if (!response.ok) {
-    return NextResponse.json(
-      { error: "Lead capture service failed" },
-      { status: 502 }
-    );
-  }
-
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, leadId: savedLead.id, webhook: "sent" });
 }
