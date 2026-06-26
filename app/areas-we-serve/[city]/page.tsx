@@ -3,7 +3,9 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SellerFeedbackBand } from "@/components/TestimonialSections";
 import { cityPages, site } from "@/content/site";
+import { getPublicTestimonials } from "@/lib/testimonialStore";
 
 type PageProps = {
   params: Promise<{ city: string }>;
@@ -46,6 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CityPage({ params }: PageProps) {
   const { city } = await params;
   const page = cityPages.find((item) => item.slug === city);
+  const testimonials = await getPublicTestimonials();
 
   if (!page) {
     notFound();
@@ -64,6 +67,10 @@ export default async function CityPage({ params }: PageProps) {
       name: site.founder
     }
   };
+  const localReview =
+    testimonials.find((testimonial) => testimonial.city.includes(page.city)) ||
+    testimonials.find((testimonial) => testimonial.tags?.includes("Stress-Free Process")) ||
+    testimonials[0];
 
   return (
     <main className="page">
@@ -129,6 +136,7 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+      {localReview && <SellerFeedbackBand testimonial={localReview} />}
       <SiteFooter />
     </main>
   );

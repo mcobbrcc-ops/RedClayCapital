@@ -18,7 +18,8 @@ export async function GET(request: Request) {
   const testimonials = filterTestimonials(await getTestimonials(), {
     search: searchParams.get("search") || "",
     situation: searchParams.get("situation") || "",
-    city: searchParams.get("city") || ""
+    city: searchParams.get("city") || "",
+    tag: searchParams.get("tag") || ""
   });
 
   return NextResponse.json({ testimonials });

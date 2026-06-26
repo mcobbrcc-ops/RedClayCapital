@@ -375,6 +375,27 @@ h1 {
   margin-top: -70px;
 }
 
+.offer-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(28, 33, 31, 0.1);
+  border-radius: 12px;
+  padding: 13px 15px;
+  background: rgba(255, 250, 243, 0.94);
+  box-shadow: var(--shadow-soft);
+  color: var(--charcoal);
+  font-size: 0.92rem;
+  font-weight: 850;
+}
+
+.offer-trust-strip span + span::before {
+  margin-right: 8px;
+  color: rgba(166, 65, 45, 0.55);
+  content: "•";
+}
+
 .lead-form {
   border: 1px solid rgba(28, 33, 31, 0.1);
   border-radius: 12px;
@@ -690,24 +711,21 @@ h2 {
     var(--paper);
 }
 
-.placeholder-note {
-  width: fit-content;
-  max-width: 820px;
-  border: 1px solid rgba(166, 65, 45, 0.22);
-  border-radius: 8px;
-  margin: -18px 0 28px;
-  padding: 10px 13px;
-  background: rgba(166, 65, 45, 0.07);
-  color: var(--clay-dark);
-  font-size: 0.88rem;
-  font-weight: 800;
-}
-
 .testimonial-carousel {
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr) 52px;
   gap: 18px;
   align-items: center;
+}
+
+.homepage-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.homepage-review-mobile {
+  display: none;
 }
 
 .carousel-control {
@@ -741,7 +759,7 @@ h2 {
 }
 
 .testimonial-card.featured {
-  min-height: 360px;
+  min-height: 100%;
   padding: clamp(28px, 4vw, 46px);
   background:
     linear-gradient(135deg, rgba(255, 250, 243, 0.98), rgba(255, 255, 255, 0.92)),
@@ -785,7 +803,7 @@ h2 {
   color: #31483b;
 }
 
-.review-badge.placeholder {
+.review-badge.seller {
   background: rgba(195, 154, 91, 0.16);
   color: #735424;
 }
@@ -841,6 +859,30 @@ h2 {
   margin: 0;
 }
 
+.seller-feedback-band {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 243, 0.98), rgba(244, 238, 228, 0.8)),
+    var(--paper);
+}
+
+.seller-feedback-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(340px, 0.82fr);
+  gap: 28px;
+  align-items: center;
+  border: 1px solid rgba(28, 33, 31, 0.12);
+  border-radius: 14px;
+  padding: clamp(22px, 4vw, 38px);
+  background: rgba(255, 250, 243, 0.96);
+  box-shadow: var(--shadow-soft);
+}
+
+.seller-feedback-card h2 {
+  font-size: clamp(2rem, 3.4vw, 3.1rem);
+}
+
 .trust-reputation {
   border-top: 1px solid rgba(28, 33, 31, 0.08);
 }
@@ -849,8 +891,7 @@ h2 {
 .credibility-grid,
 .testimonial-grid,
 .highlight-grid,
-.review-metrics,
-.video-placeholder-grid {
+.review-metrics {
   display: grid;
   gap: 18px;
 }
@@ -954,10 +995,6 @@ h2 {
   line-height: 1.24;
 }
 
-.reviews-hero .placeholder-note {
-  margin: 24px 0 0;
-}
-
 .review-promise-card {
   align-self: stretch;
 }
@@ -1034,39 +1071,6 @@ h2 {
 
 .testimonial-grid {
   grid-template-columns: repeat(3, 1fr);
-}
-
-.video-placeholder-grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.video-placeholder {
-  display: grid;
-  min-height: 260px;
-  place-items: center;
-  border: 1px solid rgba(28, 33, 31, 0.12);
-  border-radius: 12px;
-  padding: 28px;
-  background:
-    linear-gradient(135deg, rgba(28, 33, 31, 0.86), rgba(52, 45, 38, 0.82)),
-    var(--charcoal);
-  color: white;
-  text-align: center;
-  box-shadow: var(--shadow-soft);
-}
-
-.video-placeholder svg {
-  color: #e2ba7d;
-}
-
-.video-placeholder h3 {
-  margin: 8px 0 0;
-  color: white;
-}
-
-.video-placeholder p {
-  margin: 0;
-  color: rgba(255, 250, 243, 0.72);
 }
 
 .highlight-grid {
@@ -1295,6 +1299,17 @@ h2 {
   margin-bottom: 8px;
 }
 
+.footer-trust-line {
+  width: fit-content;
+  border: 1px solid rgba(255, 250, 243, 0.12);
+  border-radius: 999px;
+  margin: 14px 0 12px;
+  padding: 8px 12px;
+  color: rgba(255, 250, 243, 0.86);
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
 .admin-link {
   display: inline-flex;
   align-items: center;
@@ -1417,7 +1432,8 @@ h2 {
   .cta-band,
   .footer-grid,
   .subpage-grid,
-  .content-page {
+  .content-page,
+  .seller-feedback-card {
     grid-template-columns: 1fr;
   }
 
@@ -1438,7 +1454,8 @@ h2 {
   .trust-feature-grid,
   .credibility-grid,
   .testimonial-grid,
-  .highlight-grid {
+  .highlight-grid,
+  .homepage-review-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1545,7 +1562,6 @@ h2 {
   .testimonial-grid,
   .highlight-grid,
   .review-metrics,
-  .video-placeholder-grid,
   .experience-timeline {
     grid-template-columns: 1fr;
   }
@@ -1554,8 +1570,45 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .carousel-control {
+  .homepage-review-grid {
     display: none;
+  }
+
+  .homepage-review-mobile {
+    display: block;
+  }
+
+  .carousel-control {
+    display: grid;
+    position: absolute;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+  }
+
+  .testimonial-carousel {
+    position: relative;
+  }
+
+  .carousel-control:first-child {
+    left: 8px;
+    top: calc(50% - 21px);
+  }
+
+  .carousel-control:last-child {
+    right: 8px;
+    top: calc(50% - 21px);
+  }
+
+  .offer-trust-strip {
+    display: grid;
+    justify-content: stretch;
+    text-align: center;
+  }
+
+  .offer-trust-strip span + span::before {
+    content: "";
+    margin: 0;
   }
 
   .hero-proof-item + .hero-proof-item {

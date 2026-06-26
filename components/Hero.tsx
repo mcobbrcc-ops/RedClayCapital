@@ -52,6 +52,13 @@ export function Hero() {
         </div>
       </div>
       <div className="container hero-panel">
+        <div className="offer-trust-strip" aria-label="Seller trust standards">
+          <span>Patient Communication</span>
+          <span>Transparent Offers</span>
+          <span>No Pressure</span>
+          <span>Fast Closings</span>
+          <span>Remote Closings Available</span>
+        </div>
         <LeadForm />
         <div className="hero-proof" aria-label="Red Clay Capital trust signals">
           <div className="hero-proof-item">

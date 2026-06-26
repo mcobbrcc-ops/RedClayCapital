@@ -9,16 +9,16 @@ import { site } from "@/content/site";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Red Clay Capital Reviews",
+  title: "Real Feedback From Property Sellers",
   description:
-    "Review examples and future verified homeowner testimonials for Red Clay Capital, including inherited property, repairs, tenants, foreclosure, probate, and damaged homes.",
+    "Real property seller feedback for Red Clay Capital, including transparency, fair offers, clear communication, fast closings, and professional follow-through.",
   alternates: {
     canonical: "/reviews"
   },
   openGraph: {
-    title: "Red Clay Capital Reviews",
+    title: "Real Feedback From Property Sellers | Red Clay Capital",
     description:
-      "A trust and reputation page prepared for verified Red Clay Capital homeowner reviews.",
+      "Verified seller feedback about working with Red Clay Capital.",
     url: `${site.url}/reviews`,
     images: [
       {
@@ -40,14 +40,11 @@ export default async function ReviewsPage() {
       <section className="subpage-hero reviews-hero">
         <div className="container subpage-grid">
           <div>
-            <p className="eyebrow">Reviews and reputation</p>
-            <h1>Real Stories. Real Solutions.</h1>
+            <p className="eyebrow">Verified seller feedback</p>
+            <h1>Real Feedback From Property Sellers</h1>
             <p className="hero-copy">
-              Red Clay Capital is building a reputation around patience, transparency, fair offers, and calm solutions for difficult property situations.
+              Sellers appreciate that Red Clay Capital explains the offer, tells the truth about where we can perform, and follows through without pressure or last-minute surprises.
             </p>
-            <div className="placeholder-note">
-              Placeholder testimonials for development only. These examples are not presented as verified customer experiences.
-            </div>
             <div className="hero-actions">
               <a className="button" href="/#get-my-cash-offer">
                 Request a Property Review
@@ -61,7 +58,7 @@ export default async function ReviewsPage() {
           <aside className="subpage-contact review-promise-card">
             <h2>A different kind of cash buyer</h2>
             <p>
-              We do not just buy houses. We help people move forward with clear options, respectful communication, and professional closing support.
+              Fair Offers. Clear Communication. Real Follow-Through. That is the standard sellers should expect from the first conversation to closing.
             </p>
           </aside>
         </div>

@@ -10,6 +10,9 @@ export function SiteFooter() {
             <span className="brand-mark" aria-hidden="true">RC</span>
             <span>Red Clay Capital, LLC</span>
           </div>
+          <div className="footer-trust-line">
+            Fair Offers. Clear Communication. Real Follow-Through.
+          </div>
           <p>
             Private, as-is cash offer options for homeowners facing difficult
             property situations.

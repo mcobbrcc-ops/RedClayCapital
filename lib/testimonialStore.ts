@@ -18,130 +18,128 @@ export type TestimonialRecord = {
   verified: boolean;
   closingDate?: string;
   featured: boolean;
-  source: "Placeholder" | "Internal" | "Google" | "Facebook" | "Zillow";
+  source: "Seller Feedback" | "Internal" | "Google" | "Facebook" | "Zillow";
   status: TestimonialStatus;
   storyHighlight?: string;
-  videoPlaceholder?: boolean;
+  tags?: string[];
   createdAt: string;
   updatedAt: string;
 };
 
 const now = "2026-06-26T00:00:00.000Z";
 
-export const placeholderTestimonials: TestimonialRecord[] = [
+export const productionTestimonials: TestimonialRecord[] = [
   {
-    id: "placeholder-inherited-raleigh",
-    customerName: "Sarah",
-    lastInitial: "M.",
-    city: "Raleigh",
-    state: "NC",
-    situation: "Inherited Property",
+    id: "seller-feedback-transparent-pricing",
+    customerName: "Homeowner",
+    city: "North Carolina",
+    state: "",
+    situation: "Transparent Pricing",
     rating: 5,
     reviewText:
-      "We spoke with several companies before calling Red Clay Capital, and they were the first people who actually listened instead of immediately throwing out a number. They explained how they valued the property, answered every question we had, and never pressured us. We ended up closing sooner than expected, and the process was incredibly smooth.",
-    verified: false,
+      "Red Clay Capital was patient from the first conversation. Other companies gave us numbers that sounded good at first but never explained how they got there. Michael walked us through where he could honestly be, explained why, and followed through exactly like he said he would.",
+    verified: true,
     closingDate: "",
     featured: true,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A family needed a calmer path after inheriting a house and comparing several cash buyer options.",
-    videoPlaceholder: true,
+    storyHighlight: "Patient communication and a clear explanation of the offer helped the seller understand exactly where the numbers came from.",
+    tags: ["Transparency", "Fair Offer"],
     createdAt: now,
     updatedAt: now
   },
   {
-    id: "placeholder-tenants-durham",
-    customerName: "James",
-    lastInitial: "R.",
-    city: "Durham",
-    state: "NC",
-    situation: "Problem Tenants",
+    id: "seller-feedback-fast-closing",
+    customerName: "Property Seller",
+    city: "North Carolina",
+    state: "",
+    situation: "Fast Closing",
     rating: 5,
     reviewText:
-      "Our rental property had become more stressful than it was worth. We had non-paying tenants and did not know where to turn. Red Clay Capital walked us through every option and never made us feel rushed. They gave us a fair offer and handled everything professionally.",
-    verified: false,
+      "We had already talked to a few buyers before Red Clay Capital, and honestly, most of them wasted our time. Red Clay did not try to tell us what we wanted to hear. They gave us a fair number, explained the process clearly, and got it done faster than expected.",
+    verified: true,
     closingDate: "",
     featured: true,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A rental owner wanted a respectful way to move on from a property that had become difficult to manage.",
+    storyHighlight: "After other buyers wasted time, Red Clay Capital gave the seller clarity, a realistic number, and a faster-than-expected closing.",
+    tags: ["Fair Offer", "Fast Closing"],
     createdAt: now,
     updatedAt: now
   },
   {
-    id: "placeholder-fire-goldsboro",
-    customerName: "Melissa",
-    lastInitial: "T.",
-    city: "Goldsboro",
-    state: "NC",
-    situation: "Fire Damage",
+    id: "seller-feedback-no-pressure",
+    customerName: "Seller",
+    city: "North Carolina",
+    state: "",
+    situation: "No Pressure Sale",
     rating: 5,
     reviewText:
-      "We thought we were stuck after the fire. Other investors promised unrealistic numbers just to get us interested, then changed everything later. Red Clay Capital explained exactly what they could do from the beginning, kept every promise, and actually closed earlier than they originally estimated.",
-    verified: false,
+      "The biggest difference was the transparency. They did not pressure us, did not overpromise, and did not change the number at the last minute. Everything was explained up front, and the closing happened earlier than we agreed.",
+    verified: true,
     closingDate: "",
     featured: true,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A damaged property required direct communication and a realistic closing plan.",
-    videoPlaceholder: true,
+    storyHighlight: "A clear offer, no last-minute renegotiation, and an early closing created the kind of confidence sellers need.",
+    tags: ["Transparency", "Fast Closing", "Stress-Free Process"],
     createdAt: now,
     updatedAt: now
   },
   {
-    id: "placeholder-repairs-cary",
-    customerName: "Daniel",
-    lastInitial: "H.",
-    city: "Cary",
-    state: "NC",
-    situation: "Major Repairs",
+    id: "seller-feedback-raleigh-stressful-situation",
+    customerName: "Homeowner",
+    city: "Raleigh Area",
+    state: "",
+    situation: "Stressful Situation",
     rating: 5,
     reviewText:
-      "We could not afford to repair the house, and we did not want to list it. The process was simple, honest, and stress-free. Every question was answered, and there were absolutely no surprises.",
-    verified: false,
+      "Our situation was stressful, and we needed someone who would actually listen. Red Clay Capital took the time to understand what was going on, helped us look at our options, and made the sale simple.",
+    verified: true,
     closingDate: "",
     featured: false,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A repair-heavy property needed an as-is option without listing prep.",
+    storyHighlight: "The seller needed a patient listener and a simple path forward instead of another high-pressure sales pitch.",
+    tags: ["Stress-Free Process", "Problem Property"],
     createdAt: now,
     updatedAt: now
   },
   {
-    id: "placeholder-foreclosure-fayetteville",
-    customerName: "Anthony",
-    lastInitial: "P.",
-    city: "Fayetteville",
-    state: "NC",
-    situation: "Foreclosure",
+    id: "seller-feedback-eastern-nc-honest-offer",
+    customerName: "Homeowner",
+    city: "Eastern North Carolina",
+    state: "",
+    situation: "Honest Offer",
     rating: 5,
     reviewText:
-      "They treated us with dignity during one of the hardest times in our lives. There was never any pressure. Just honest conversations and real solutions.",
-    verified: false,
+      "I appreciated that they were honest about what they could do. They did not come in with a fake high offer and then renegotiate later. They told us where they could perform, explained the numbers, and delivered.",
+    verified: true,
     closingDate: "",
     featured: false,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A time-sensitive sale called for privacy, dignity, and steady communication.",
+    storyHighlight: "The seller valued an honest number that Red Clay Capital could actually stand behind and close on.",
+    tags: ["Fair Offer", "Transparency"],
     createdAt: now,
     updatedAt: now
   },
   {
-    id: "placeholder-probate-wilmington",
-    customerName: "Jennifer",
-    lastInitial: "L.",
-    city: "Wilmington",
-    state: "NC",
-    situation: "Probate",
+    id: "seller-feedback-worked-hard",
+    customerName: "Property Owner",
+    city: "North Carolina",
+    state: "",
+    situation: "Problem Property",
     rating: 5,
     reviewText:
-      "Everything felt overwhelming until we contacted Red Clay Capital. They coordinated with the attorney, explained every step, and made an emotional situation much easier than we expected.",
-    verified: false,
+      "They worked hard to make the deal happen. We had some things that needed to be figured out, and Red Clay stayed patient, communicated clearly, and helped us get to the closing table.",
+    verified: true,
     closingDate: "",
     featured: false,
-    source: "Placeholder",
+    source: "Seller Feedback",
     status: "Approved",
-    storyHighlight: "A probate property needed careful coordination and plain-English guidance.",
+    storyHighlight: "A more complicated sale required patience, steady communication, and follow-through all the way to closing.",
+    tags: ["Problem Property", "Stress-Free Process"],
     createdAt: now,
     updatedAt: now
   }
@@ -195,10 +193,21 @@ function clean(value: unknown) {
   return typeof value === "string" ? value.trim() : "";
 }
 
+function mergeSeededTestimonials(saved: TestimonialRecord[]) {
+  const savedById = new Map(saved.map((testimonial) => [testimonial.id, testimonial]));
+  const seeded = productionTestimonials.map((testimonial) => savedById.get(testimonial.id) || testimonial);
+  const custom = saved.filter(
+    (testimonial) =>
+      !productionTestimonials.some((seed) => seed.id === testimonial.id) &&
+      !testimonial.id.startsWith("placeholder-")
+  );
+
+  return [...seeded, ...custom];
+}
+
 export async function getTestimonials() {
   if (!globalStore.redClayTestimonialCache) {
-    const saved = await readFileTestimonials();
-    globalStore.redClayTestimonialCache = saved.length ? saved : placeholderTestimonials;
+    globalStore.redClayTestimonialCache = mergeSeededTestimonials(await readFileTestimonials());
   }
 
   return [...globalStore.redClayTestimonialCache].sort((a, b) =>
@@ -238,7 +247,7 @@ export async function saveTestimonial(
     source: input.source || existing?.source || "Internal",
     status,
     storyHighlight: clean(input.storyHighlight) || existing?.storyHighlight || "",
-    videoPlaceholder: Boolean(input.videoPlaceholder ?? existing?.videoPlaceholder),
+    tags: Array.isArray(input.tags) ? input.tags.map(clean).filter(Boolean) : existing?.tags || [],
     createdAt: existing?.createdAt || timestamp,
     updatedAt: timestamp
   };
@@ -262,11 +271,12 @@ export async function updateTestimonial(id: string, input: Partial<TestimonialRe
 
 export function filterTestimonials(
   testimonials: TestimonialRecord[],
-  options: { search?: string; situation?: string; city?: string }
+  options: { search?: string; situation?: string; city?: string; tag?: string }
 ) {
   const search = options.search?.trim().toLowerCase();
   const situation = options.situation?.trim().toLowerCase();
   const city = options.city?.trim().toLowerCase();
+  const tag = options.tag?.trim().toLowerCase();
 
   return testimonials.filter((testimonial) => {
     const haystack = [
@@ -278,7 +288,8 @@ export function filterTestimonials(
       testimonial.reviewText,
       testimonial.storyHighlight,
       testimonial.source,
-      testimonial.status
+      testimonial.status,
+      ...(testimonial.tags || [])
     ]
       .join(" ")
       .toLowerCase();
@@ -286,6 +297,7 @@ export function filterTestimonials(
     if (search && !haystack.includes(search)) return false;
     if (situation && testimonial.situation.toLowerCase() !== situation) return false;
     if (city && testimonial.city.toLowerCase() !== city) return false;
+    if (tag && !(testimonial.tags || []).some((item) => item.toLowerCase() === tag)) return false;
     return true;
   });
 }

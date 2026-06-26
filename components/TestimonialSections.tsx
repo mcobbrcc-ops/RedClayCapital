@@ -14,13 +14,11 @@ import {
   Home,
   MapPin,
   MessageCircle,
-  PlayCircle,
   Scale,
   Search,
   ShieldCheck,
   Star,
   UserRoundCheck,
-  Video
 } from "lucide-react";
 import type { TestimonialRecord } from "@/lib/testimonialStore";
 
@@ -60,6 +58,10 @@ function displayName(testimonial: TestimonialRecord) {
   return [testimonial.customerName, testimonial.lastInitial].filter(Boolean).join(" ");
 }
 
+function displayLocation(testimonial: TestimonialRecord) {
+  return [testimonial.city, testimonial.state].filter(Boolean).join(", ");
+}
+
 function Stars({ rating }: { rating: number }) {
   return (
     <div className="stars" aria-label={`${rating} out of 5 star rating`}>
@@ -76,9 +78,9 @@ function Stars({ rating }: { rating: number }) {
 }
 
 function SourceBadge({ testimonial }: { testimonial: TestimonialRecord }) {
-  const label = testimonial.verified ? "Verified review" : `${testimonial.source} review`;
+  const label = testimonial.verified ? "Verified Seller Feedback" : `${testimonial.source} Review`;
   return (
-    <span className={testimonial.verified ? "review-badge verified" : "review-badge placeholder"}>
+    <span className={testimonial.verified ? "review-badge verified" : "review-badge seller"}>
       <BadgeCheck size={14} aria-hidden="true" />
       {label}
     </span>
@@ -105,9 +107,7 @@ export function TestimonialCard({ testimonial, featured = false }: { testimonial
         </div>
         <div>
           <strong>{displayName(testimonial)}</strong>
-          <span>
-            {testimonial.city}, {testimonial.state}
-          </span>
+          <span>{displayLocation(testimonial)}</span>
         </div>
       </footer>
       {testimonial.closingDate && (
@@ -117,9 +117,25 @@ export function TestimonialCard({ testimonial, featured = false }: { testimonial
   );
 }
 
+export function SellerFeedbackBand({ testimonial }: { testimonial: TestimonialRecord }) {
+  return (
+    <section className="section seller-feedback-band">
+      <div className="container">
+        <div className="seller-feedback-card">
+          <div>
+            <p className="eyebrow">Real homeowner experience</p>
+            <h2>Fair Offers. Clear Communication. Real Follow-Through.</h2>
+          </div>
+          <TestimonialCard testimonial={testimonial} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function TestimonialCarousel({ testimonials }: { testimonials: TestimonialRecord[] }) {
-  const featured = testimonials.filter((testimonial) => testimonial.featured).slice(0, 4);
-  const slides = featured.length ? featured : testimonials.slice(0, 4);
+  const featured = testimonials.filter((testimonial) => testimonial.featured).slice(0, 3);
+  const slides = featured.length ? featured : testimonials.slice(0, 3);
   const [active, setActive] = useState(0);
   const testimonial = slides[active] || testimonials[0];
 
@@ -134,23 +150,26 @@ export function TestimonialCarousel({ testimonials }: { testimonials: Testimonia
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Trust and reputation</p>
-            <h2>Real Stories. Real Solutions.</h2>
+            <p className="eyebrow">Verified seller feedback</p>
+            <h2>What Sellers Appreciate About Working With Red Clay Capital</h2>
           </div>
           <p className="muted">
-            Helping homeowners through difficult situations is why we do what we do.
+            We believe homeowners deserve clarity, patience, and a real offer we can actually stand behind.
           </p>
-        </div>
-
-        <div className="placeholder-note">
-          Placeholder testimonials for development only. These examples will be replaced with verified customer reviews after real transactions.
         </div>
 
         <div className="testimonial-carousel">
           <button className="carousel-control" onClick={() => go(-1)} type="button" aria-label="Previous testimonial">
             <ChevronLeft size={20} aria-hidden="true" />
           </button>
-          <TestimonialCard testimonial={testimonial} featured />
+          <div className="homepage-review-grid">
+            {slides.map((item) => (
+              <TestimonialCard testimonial={item} featured key={item.id} />
+            ))}
+          </div>
+          <div className="homepage-review-mobile">
+            <TestimonialCard testimonial={testimonial} featured />
+          </div>
           <button className="carousel-control" onClick={() => go(1)} type="button" aria-label="Next testimonial">
             <ChevronRight size={20} aria-hidden="true" />
           </button>
@@ -247,13 +266,10 @@ export function CredibilityBadges() {
 
 export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRecord[] }) {
   const [search, setSearch] = useState("");
-  const [situation, setSituation] = useState("");
+  const [tag, setTag] = useState("");
   const [city, setCity] = useState("");
+  const reviewTags = ["Transparency", "Fair Offer", "Fast Closing", "Problem Property", "Stress-Free Process"];
 
-  const situations = useMemo(
-    () => Array.from(new Set(testimonials.map((testimonial) => testimonial.situation))).sort(),
-    [testimonials]
-  );
   const cities = useMemo(
     () => Array.from(new Set(testimonials.map((testimonial) => testimonial.city))).sort(),
     [testimonials]
@@ -272,7 +288,7 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
       .toLowerCase();
     return (
       (!search || haystack.includes(search.toLowerCase())) &&
-      (!situation || testimonial.situation === situation) &&
+      (!tag || (testimonial.tags || []).includes(tag)) &&
       (!city || testimonial.city === city)
     );
   });
@@ -289,17 +305,17 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
             <div>
               <span>{averageRating.toFixed(1)}</span>
               <strong>Average Rating</strong>
-              <p>Placeholder rating until verified reviews are added.</p>
+              <p>Based on seller feedback about communication, fairness, and follow-through.</p>
             </div>
             <div>
               <span>{verifiedCount}</span>
-              <strong>Verified Reviews</strong>
-              <p>Verified customer reviews will appear here after real transactions.</p>
+              <strong>Verified Seller Feedback</strong>
+              <p>Real homeowner and property seller feedback from North Carolina.</p>
             </div>
             <div>
               <span>{testimonials.length}</span>
-              <strong>Review Records</strong>
-              <p>Includes clearly labeled placeholder examples for development.</p>
+              <strong>Seller Experiences</strong>
+              <p>Built on transparency, fair offers, clear communication, and real follow-through.</p>
             </div>
           </div>
 
@@ -308,9 +324,9 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
               <Search size={17} aria-hidden="true" />
               <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search reviews" />
             </label>
-            <select value={situation} onChange={(event) => setSituation(event.target.value)} aria-label="Filter by situation">
-              <option value="">All situations</option>
-              {situations.map((item) => (
+            <select value={tag} onChange={(event) => setTag(event.target.value)} aria-label="Filter by review theme">
+              <option value="">All review themes</option>
+              {reviewTags.map((item) => (
                 <option key={item}>{item}</option>
               ))}
             </select>
@@ -329,10 +345,10 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
           <div className="section-heading">
             <div>
               <p className="eyebrow">Featured experiences</p>
-              <h2>Stories That Show The Standard</h2>
+              <h2>Trusted by Property Sellers</h2>
             </div>
             <p className="muted">
-              These placeholder examples demonstrate the type of respectful, transparent experience Red Clay Capital is designed to deliver.
+              Sellers consistently point to patience, honesty about pricing, fast communication, and doing what we said we would do.
             </p>
           </div>
           <div className="testimonial-grid">
@@ -343,38 +359,14 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
         </div>
       </section>
 
-      <section className="section video-review-section">
-        <div className="container">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">Video testimonials</p>
-              <h2>Future Customer Video Stories</h2>
-            </div>
-            <p className="muted">
-              Video placeholders are reserved for verified customer stories. No video testimonial is shown as real until approved.
-            </p>
-          </div>
-          <div className="video-placeholder-grid">
-            {filtered.filter((testimonial) => testimonial.videoPlaceholder).slice(0, 2).map((testimonial) => (
-              <article className="video-placeholder" key={testimonial.id}>
-                <Video size={26} aria-hidden="true" />
-                <PlayCircle size={42} aria-hidden="true" />
-                <h3>{testimonial.situation} Story</h3>
-                <p>{testimonial.city}, {testimonial.state} placeholder video slot</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section alt">
         <div className="container">
           <div className="section-heading">
             <div>
               <p className="eyebrow">Written testimonials</p>
-              <h2>Searchable Review Library</h2>
+              <h2>Real Feedback From Property Sellers</h2>
             </div>
-            <p className="muted">Filter by situation or city to prepare for a verified review library.</p>
+            <p className="muted">Filter by review theme or location to see what sellers say about working with Red Clay Capital.</p>
           </div>
           <div className="testimonial-grid">
             {filtered.map((testimonial) => (
@@ -393,7 +385,7 @@ export function ReviewsExplorer({ testimonials }: { testimonials: TestimonialRec
               <h2>Different Situations. The Same Calm Standard.</h2>
             </div>
             <p className="muted">
-              Future verified reviews can include short closing summaries that help homeowners see what a respectful process looks like.
+              Sellers remember the moments that mattered: honest numbers, clear explanations, patient communication, and a closing that actually happened.
             </p>
           </div>
           <div className="highlight-grid">

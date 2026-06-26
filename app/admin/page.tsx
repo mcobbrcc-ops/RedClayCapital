@@ -31,15 +31,15 @@ type Testimonial = {
   verified: boolean;
   closingDate?: string;
   featured: boolean;
-  source: "Placeholder" | "Internal" | "Google" | "Facebook" | "Zillow";
+  source: "Seller Feedback" | "Internal" | "Google" | "Facebook" | "Zillow";
   status: "Pending" | "Approved" | "Hidden";
   storyHighlight?: string;
-  videoPlaceholder?: boolean;
+  tags?: string[];
 };
 
 const leadStatuses = ["New", "Contacted", "Offer Made", "Follow Up", "Closed", "Archived"];
 const testimonialStatuses = ["Pending", "Approved", "Hidden"];
-const reviewSources = ["Internal", "Placeholder", "Google", "Facebook", "Zillow"];
+const reviewSources = ["Seller Feedback", "Internal", "Google", "Facebook", "Zillow"];
 
 const emptyTestimonial: Partial<Testimonial> = {
   customerName: "",
@@ -56,7 +56,7 @@ const emptyTestimonial: Partial<Testimonial> = {
   source: "Internal",
   status: "Pending",
   storyHighlight: "",
-  videoPlaceholder: false
+  tags: []
 };
 
 export default function AdminPage() {
@@ -71,6 +71,7 @@ export default function AdminPage() {
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [testimonialSearch, setTestimonialSearch] = useState("");
+  const [testimonialTags, setTestimonialTags] = useState("");
   const [message, setMessage] = useState("");
 
   const leadQuery = useMemo(() => {
@@ -154,6 +155,7 @@ export default function AdminPage() {
 
     setMessage("Testimonial saved.");
     setSelectedTestimonial(emptyTestimonial);
+    setTestimonialTags("");
     await loadTestimonials();
   }
 
@@ -420,6 +422,20 @@ export default function AdminPage() {
                       />
                     </label>
                     <label>
+                      Tags
+                      <input
+                        value={testimonialTags || (selectedTestimonial.tags || []).join(", ")}
+                        onChange={(event) => {
+                          setTestimonialTags(event.target.value);
+                          setSelectedTestimonial((item) => ({
+                            ...item,
+                            tags: event.target.value.split(",").map((tag) => tag.trim()).filter(Boolean)
+                          }));
+                        }}
+                        placeholder="Transparency, Fair Offer, Fast Closing"
+                      />
+                    </label>
+                    <label>
                       Closing story highlight
                       <textarea
                         value={selectedTestimonial.storyHighlight || ""}
@@ -443,18 +459,13 @@ export default function AdminPage() {
                         />
                         Featured
                       </label>
-                      <label>
-                        <input
-                          type="checkbox"
-                          checked={Boolean(selectedTestimonial.videoPlaceholder)}
-                          onChange={(event) => setSelectedTestimonial((item) => ({ ...item, videoPlaceholder: event.target.checked }))}
-                        />
-                        Video placeholder
-                      </label>
                     </div>
                     <div className="admin-form-actions">
                       <button className="button" type="submit">Save Review</button>
-                      <button className="button secondary" onClick={() => setSelectedTestimonial(emptyTestimonial)} type="button">
+                      <button className="button secondary" onClick={() => {
+                        setSelectedTestimonial(emptyTestimonial);
+                        setTestimonialTags("");
+                      }} type="button">
                         New Blank Review
                       </button>
                     </div>
@@ -474,7 +485,10 @@ export default function AdminPage() {
                       </thead>
                       <tbody>
                         {testimonials.map((testimonial) => (
-                          <tr key={testimonial.id} onClick={() => setSelectedTestimonial(testimonial)}>
+                          <tr key={testimonial.id} onClick={() => {
+                            setSelectedTestimonial(testimonial);
+                            setTestimonialTags((testimonial.tags || []).join(", "));
+                          }}>
                             <td>{testimonial.customerName} {testimonial.lastInitial}</td>
                             <td>{testimonial.city}, {testimonial.state}</td>
                             <td>{testimonial.situation}</td>

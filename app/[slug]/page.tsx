@@ -3,7 +3,9 @@ import { ArrowRight, CheckCircle2, Mail, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SellerFeedbackBand } from "@/components/TestimonialSections";
 import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
+import { getPublicTestimonials } from "@/lib/testimonialStore";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -46,6 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
   const page = [...servicePages, ...localSeoPages].find((item) => item.slug === slug);
+  const testimonials = await getPublicTestimonials();
 
   if (!page) {
     notFound();
@@ -69,6 +72,15 @@ export default async function ServicePage({ params }: PageProps) {
       }
     ]
   };
+  const topicReview =
+    testimonials.find((testimonial) =>
+      page.title.toLowerCase().includes("fast") && testimonial.tags?.includes("Fast Closing")
+    ) ||
+    testimonials.find((testimonial) =>
+      page.title.toLowerCase().includes("choose") && testimonial.tags?.includes("Transparency")
+    ) ||
+    testimonials.find((testimonial) => testimonial.featured) ||
+    testimonials[0];
 
   return (
     <main className="page">
@@ -158,6 +170,7 @@ export default async function ServicePage({ params }: PageProps) {
           )}
         </div>
       </section>
+      {topicReview && <SellerFeedbackBand testimonial={topicReview} />}
       <SiteFooter />
     </main>
   );
