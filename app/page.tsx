@@ -108,8 +108,8 @@ export default function Home() {
             <p>Founder: {site.founder}</p>
           </div>
           <div>
-            <p>{site.phone}</p>
-            <p>{site.email}</p>
+            <p><a href="tel:+19195550148">{site.phone}</a></p>
+            <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
           </div>
         </div>
       </footer>

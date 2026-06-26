@@ -24,12 +24,13 @@ export function SiteHeader({ ctaHref = "/#get-my-cash-offer" }: SiteHeaderProps)
         <nav className="nav" aria-label="Main navigation">
           {navItems.slice(0, 5).map((item) => (
             <a href={item.href} key={item.href}>
-              {item.label}
-            </a>
-          ))}
-          <a className="button nav-button" href={ctaHref}>
-            Get My Offer
+            {item.label}
           </a>
+        ))}
+        <a href="tel:+19195550148">Call</a>
+        <a className="button nav-button" href={ctaHref}>
+          Get My Offer
+        </a>
         </nav>
         <details className="mobile-menu">
           <summary aria-label="Open navigation menu">
@@ -38,9 +39,10 @@ export function SiteHeader({ ctaHref = "/#get-my-cash-offer" }: SiteHeaderProps)
           <div className="mobile-menu-panel">
             {navItems.map((item) => (
               <a href={item.href} key={item.href}>
-                {item.label}
-              </a>
-            ))}
+            {item.label}
+          </a>
+        ))}
+            <a href="tel:+19195550148">Call (919) 555-0148</a>
             <a className="button" href={ctaHref}>
               Get My Offer
             </a>

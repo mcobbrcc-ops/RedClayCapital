@@ -9,7 +9,7 @@ type PageProps = {
 };
 
 export function generateStaticParams() {
-  return cityPages.map((page) => ({ city: page.slug }));
+  return cityPages.filter((page) => !page.href).map((page) => ({ city: page.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

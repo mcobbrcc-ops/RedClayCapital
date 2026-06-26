@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, CircleDollarSign, ClipboardList, MessageSquareText } from "lucide-react";
-import { faqs, process, resources, seoPages, site, situations, trustPoints } from "@/content/site";
+import { faqs, localSeoPages, process, resources, site, situations, trustPoints } from "@/content/site";
 
 export function SituationCards() {
   return (
@@ -166,27 +166,33 @@ export function ResourceCenter() {
     <section className="section alt" id="resources">
       <div className="container">
         <div className="section-heading">
-          <h2>Built To Become A Helpful Local Resource</h2>
+          <h2>Helpful Real Estate Guidance For Homeowners</h2>
           <p className="muted">
-            The site is structured to grow into a local resource library for
-            homeowners comparing their options before selling.
+            Learn how as-is sales, cash offers, repairs, inherited property,
+            tenants, and closing timelines work before you decide what to do next.
           </p>
         </div>
         <div className="resource-grid">
           {resources.map((resource) => (
-            <article className="resource" key={resource.title}>
+            <a className="resource" href="/blog" key={resource.title}>
               <span>{resource.type}</span>
               <h3>{resource.title}</h3>
               <p className="muted">{resource.copy}</p>
-            </article>
+            </a>
           ))}
         </div>
         <div className="card" style={{ marginTop: 18 }}>
-          <h3>Search strategy ready for local growth</h3>
+          <h3>Local areas we help</h3>
           <p className="muted">
-            Future pages can target focused homeowner intent such as {seoPages.join(", ")}.
-            Each page should use unique local copy, FAQs, schema, and internal links.
+            Red Clay Capital serves homeowners across central North Carolina,
+            including Burlington, Graham, Greensboro, Haw River, Roxboro,
+            Raleigh, Durham, Cary, Chapel Hill, Fayetteville, and Wilmington.
           </p>
+          <div className="local-link-row">
+            {localSeoPages.map((page) => (
+              <a href={`/${page.slug}`} key={page.slug}>{page.title}</a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

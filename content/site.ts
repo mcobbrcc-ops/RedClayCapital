@@ -143,12 +143,12 @@ export const servicePages = [
     title: "Areas We Serve",
     eyebrow: "North Carolina property solutions",
     description:
-      "Red Clay Capital helps homeowners throughout Raleigh, Durham, Cary, Chapel Hill, Fayetteville, Wilmington, and surrounding North Carolina communities.",
+      "Red Clay Capital helps homeowners throughout Raleigh, Durham, Cary, Chapel Hill, Burlington, Graham, Greensboro, Haw River, Roxboro, Fayetteville, Wilmington, and central North Carolina.",
     sections: [
       "Local market knowledge helps us evaluate timing, property condition, repairs, occupancy, and neighborhood demand with more context.",
-      "Each city page should include original local guidance, FAQs, and internal links so homeowners get useful information instead of a generic landing page."
+      "Homeowners across central North Carolina can request a private review for inherited homes, distressed property, tenant issues, major repairs, vacancy, and other situations where a traditional listing may not be the right fit."
     ],
-    keywords: ["cash home buyers Raleigh", "sell my house fast North Carolina", "cash buyers near me"]
+    keywords: ["cash home buyers Raleigh", "sell my house fast North Carolina", "cash buyers near me", "cash home buyers central North Carolina"]
   },
   {
     slug: "sell-your-house-fast",
@@ -217,8 +217,8 @@ export const servicePages = [
     description:
       "Guides for homeowners comparing as-is sales, cash offers, inherited property options, repairs, tenants, and foreclosure concerns.",
     sections: [
-      "Resource content should answer real homeowner questions with practical, plain-English guidance.",
-      "Future articles can support long-term organic growth by covering each situation in depth and linking to relevant service and local pages."
+      "Our resource center gives homeowners practical, plain-English guidance before they decide how to sell.",
+      "Read about as-is sales, cash offers, inherited properties, repairs, tenants, foreclosure concerns, and remote closings so you can compare your options with confidence."
     ],
     keywords: ["how cash home buyers work", "sell house as-is", "probate property guide"]
   },
@@ -227,10 +227,10 @@ export const servicePages = [
     title: "Testimonials",
     eyebrow: "Homeowner experiences",
     description:
-      "Placeholder space for future homeowner reviews, Google reviews, and transaction feedback.",
+      "Homeowner feedback reflects the kind of experience Red Clay Capital works to provide: clear communication, privacy, and a respectful process.",
     sections: [
-      "Testimonials should emphasize respectful communication, clear timelines, privacy, and low-pressure decision-making.",
-      "Verified reviews can be added here as the company collects them."
+      "Every conversation starts with the property, the situation, and the homeowner's goals.",
+      "Our focus is a simple, low-pressure experience where homeowners understand their options before making a decision."
     ],
     keywords: ["Red Clay Capital reviews", "cash home buyer testimonials"]
   },
@@ -239,10 +239,10 @@ export const servicePages = [
     title: "Recently Purchased Properties",
     eyebrow: "Real examples",
     description:
-      "Future case studies can show how Red Clay Capital helps with inherited homes, repairs, tenants, vacancy, and title complexity.",
+      "Red Clay Capital works with a range of property situations, including inherited homes, repair-heavy houses, vacant properties, and tenant-occupied rentals.",
     sections: [
-      "Case studies should protect homeowner privacy while explaining the challenge, the solution, and the closing outcome.",
-      "This content helps build trust and demonstrates real-world experience."
+      "Privacy matters, so property examples are shared in a general way without exposing sensitive homeowner details.",
+      "Common situations include homes needing major repairs, properties with occupancy challenges, and owners who need a simpler as-is sale."
     ],
     keywords: ["recently purchased homes", "as-is property buyer", "cash home buyer case studies"]
   },
@@ -269,6 +269,69 @@ export const servicePages = [
       "That means clear communication, flexible closing options, and no repairs or public showings."
     ],
     keywords: ["why choose Red Clay Capital", "fair cash offer", "no pressure home buyer"]
+  }
+];
+
+export const localSeoPages = [
+  {
+    slug: "sell-your-house-fast-burlington-nc",
+    title: "Sell My House Fast in Burlington NC",
+    eyebrow: "Burlington cash home buyers",
+    description:
+      "Red Clay Capital helps Burlington homeowners compare private cash offer options for inherited, distressed, repair-heavy, vacant, or unwanted properties.",
+    sections: [
+      "If you need to sell a house fast in Burlington, NC, an as-is cash offer can help you avoid repairs, showings, and a long listing timeline.",
+      "We review the property, the local market, and the situation behind the sale so you can understand whether a cash offer is the right path."
+    ],
+    keywords: ["sell my house fast Burlington NC", "cash home buyers Burlington NC", "sell distressed property Alamance County"]
+  },
+  {
+    slug: "sell-your-house-fast-graham-nc",
+    title: "Sell My House Fast in Graham NC",
+    eyebrow: "Graham property solutions",
+    description:
+      "Graham homeowners can request a private property review for an as-is sale without repairs, cleanouts, public showings, or pressure.",
+    sections: [
+      "Selling a house fast in Graham may make sense when repairs, tenants, inheritance, or timing make a traditional sale difficult.",
+      "Red Clay Capital keeps the process private and explains your options clearly before any decision is needed."
+    ],
+    keywords: ["sell house fast Graham NC", "cash home buyers central North Carolina", "sell house as-is Graham NC"]
+  },
+  {
+    slug: "sell-your-house-fast-greensboro-nc",
+    title: "Sell My House Fast in Greensboro NC",
+    eyebrow: "Greensboro cash offers",
+    description:
+      "Red Clay Capital helps Greensboro homeowners explore fair cash offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+    sections: [
+      "If you are searching for companies that buy houses in Greensboro, our process is built around privacy, clear communication, and no pressure.",
+      "We can review inherited property, homes needing major repairs, vacant houses, and rental properties that no longer fit your plans."
+    ],
+    keywords: ["we buy houses Greensboro NC", "sell inherited house Greensboro NC", "cash home buyers Greensboro NC"]
+  },
+  {
+    slug: "sell-your-house-fast-haw-river-nc",
+    title: "Sell My House Fast in Haw River NC",
+    eyebrow: "Haw River as-is sales",
+    description:
+      "Haw River homeowners can compare a private as-is cash sale for houses with repairs, vacancy, inherited ownership, or stressful timelines.",
+    sections: [
+      "Selling a house as-is in Haw River can help homeowners avoid repairs, cleaning, repeated showings, and uncertainty.",
+      "Red Clay Capital reviews the full situation and provides a clear next step if a cash offer is a practical fit."
+    ],
+    keywords: ["sell house as-is Haw River NC", "cash home buyers central North Carolina", "sell distressed property Alamance County"]
+  },
+  {
+    slug: "sell-your-house-fast-roxboro-nc",
+    title: "Sell My House Fast in Roxboro NC",
+    eyebrow: "Roxboro cash home buyers",
+    description:
+      "Red Clay Capital helps Roxboro homeowners evaluate as-is cash offer options for unwanted, inherited, damaged, vacant, or tenant-occupied houses.",
+    sections: [
+      "A private cash offer can be useful when you need a simpler sale without repairs, showings, or agent commissions.",
+      "We help Roxboro homeowners understand their options and choose a timeline that fits the situation."
+    ],
+    keywords: ["cash home buyers Roxboro NC", "sell my house fast Roxboro NC", "sell house as-is Roxboro NC"]
   }
 ];
 
@@ -344,6 +407,71 @@ export const cityPages = [
       "Storm damage, repairs, vacancy, and distance from the property can make ownership stressful.",
       "A private property review can help you understand whether a fast, as-is sale is a realistic path forward."
     ]
+  },
+  {
+    slug: "burlington-nc",
+    city: "Burlington",
+    state: "NC",
+    title: "Sell My House Fast in Burlington NC",
+    description:
+      "Red Clay Capital helps Burlington homeowners compare private cash offer options for inherited, distressed, vacant, or repair-heavy houses.",
+    localNotes: [
+      "Burlington and Alamance County homeowners often reach out when repairs, inheritance, vacancy, or timing make a traditional sale difficult.",
+      "We review the property as-is and help you understand whether a private cash offer is a practical fit."
+    ],
+    href: "/sell-your-house-fast-burlington-nc"
+  },
+  {
+    slug: "graham-nc",
+    city: "Graham",
+    state: "NC",
+    title: "Sell My House Fast in Graham NC",
+    description:
+      "Graham homeowners can request a private property review for an as-is sale without repairs, cleanouts, or public showings.",
+    localNotes: [
+      "A fast sale may help when a property needs repairs, has ownership questions, or is simply no longer wanted.",
+      "Red Clay Capital keeps the process calm, private, and clear from first conversation to closing."
+    ],
+    href: "/sell-your-house-fast-graham-nc"
+  },
+  {
+    slug: "greensboro-nc",
+    city: "Greensboro",
+    state: "NC",
+    title: "Sell My House Fast in Greensboro NC",
+    description:
+      "Red Clay Capital helps Greensboro homeowners explore fair cash offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+    localNotes: [
+      "Greensboro homeowners may need a simpler sale when repairs, tenants, inheritance, or timing make listing stressful.",
+      "We evaluate the full situation and provide a clear, no-pressure option."
+    ],
+    href: "/sell-your-house-fast-greensboro-nc"
+  },
+  {
+    slug: "haw-river-nc",
+    city: "Haw River",
+    state: "NC",
+    title: "Sell My House Fast in Haw River NC",
+    description:
+      "Haw River homeowners can compare a private as-is cash sale for houses with repairs, vacancy, inherited ownership, or stressful timelines.",
+    localNotes: [
+      "Selling as-is can help homeowners avoid repairs, cleaning, and repeated showings.",
+      "Our process is built to make the next step clear without pressure."
+    ],
+    href: "/sell-your-house-fast-haw-river-nc"
+  },
+  {
+    slug: "roxboro-nc",
+    city: "Roxboro",
+    state: "NC",
+    title: "Sell My House Fast in Roxboro NC",
+    description:
+      "Red Clay Capital helps Roxboro homeowners evaluate cash offer options for unwanted, inherited, damaged, vacant, or tenant-occupied houses.",
+    localNotes: [
+      "A private property review can help you understand whether a fast, as-is sale fits your situation.",
+      "We focus on clear communication, privacy, and flexible closing options."
+    ],
+    href: "/sell-your-house-fast-roxboro-nc"
   }
 ];
 

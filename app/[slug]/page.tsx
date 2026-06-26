@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import { ArrowRight, CheckCircle2, Mail, MapPin } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
-import { cityPages, servicePages, site } from "@/content/site";
+import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
-  return servicePages.map((page) => ({ slug: page.slug }));
+  return [...servicePages, ...localSeoPages].map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = servicePages.find((item) => item.slug === slug);
+  const page = [...servicePages, ...localSeoPages].find((item) => item.slug === slug);
 
   if (!page) {
     return {};
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
-  const page = servicePages.find((item) => item.slug === slug);
+  const page = [...servicePages, ...localSeoPages].find((item) => item.slug === slug);
 
   if (!page) {
     notFound();
@@ -104,6 +104,9 @@ export default async function ServicePage({ params }: PageProps) {
               <Mail size={18} aria-hidden="true" />
               {site.email}
             </a>
+            <a href="tel:+19195550148">
+              Call {site.phone}
+            </a>
           </aside>
         </div>
       </section>
@@ -128,14 +131,14 @@ export default async function ServicePage({ params }: PageProps) {
             <h2>{page.slug === "areas-we-serve" ? "North Carolina Areas We Serve" : "Related Search Topics"}</h2>
             <p className="muted">
               {page.slug === "areas-we-serve"
-                ? "Each city page is crawlable and built to grow with original local guidance."
+                ? "Choose your city to learn how Red Clay Capital helps homeowners compare private, as-is sale options."
                 : "These are the types of homeowner questions this page is designed to answer clearly and naturally."}
             </p>
           </div>
           {page.slug === "areas-we-serve" ? (
             <div className="resource-grid">
               {cityPages.map((city) => (
-                <a className="resource city-link" href={`/areas-we-serve/${city.slug}`} key={city.slug}>
+                <a className="resource city-link" href={city.href ?? `/areas-we-serve/${city.slug}`} key={city.slug}>
                   <span>{city.city}, {city.state}</span>
                   <h3>{city.title}</h3>
                   <p className="muted">{city.description}</p>

@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
-import { cityPages, servicePages, site } from "@/content/site";
+import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
 
 const routes = [
   "",
   ...servicePages.map((page) => `/${page.slug}`),
-  ...cityPages.map((page) => `/areas-we-serve/${page.slug}`)
+  ...localSeoPages.map((page) => `/${page.slug}`),
+  ...cityPages.filter((page) => !page.href).map((page) => `/areas-we-serve/${page.slug}`)
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

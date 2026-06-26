@@ -289,7 +289,7 @@ h1 {
 .hero-trust-line span + span::before {
   margin-right: 12px;
   color: rgba(28, 33, 31, 0.34);
-  content: "•";
+  content: "/";
 }
 
 .privacy-note {
@@ -429,20 +429,20 @@ h1 {
 
 .field label {
   display: block;
-  margin-bottom: 6px;
-  color: #454842;
-  font-size: 0.8rem;
+  margin-bottom: 7px;
+  color: #30362f;
+  font-size: 0.84rem;
   font-weight: 850;
 }
 
 .field input,
 .field textarea {
   width: 100%;
-  border: 1px solid rgba(28, 33, 31, 0.13);
+  border: 1px solid rgba(28, 33, 31, 0.24);
   border-radius: 8px;
-  padding: 13px 14px;
-  background: rgba(255, 255, 255, 0.78);
-  color: var(--ink);
+  padding: 14px 15px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #171a18;
   outline: none;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
@@ -450,12 +450,13 @@ h1 {
 .field input:focus,
 .field textarea:focus {
   border-color: rgba(166, 65, 45, 0.5);
-  box-shadow: 0 0 0 4px rgba(166, 65, 45, 0.11);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(166, 65, 45, 0.14);
 }
 
 .field input::placeholder,
 .field textarea::placeholder {
-  color: rgba(34, 37, 34, 0.42);
+  color: rgba(34, 37, 34, 0.62);
 }
 
 .field textarea {
@@ -578,10 +579,10 @@ h2 {
 .resource,
 .trust-item,
 .faq details {
-  border: 1px solid rgba(28, 33, 31, 0.1);
+  border: 1px solid rgba(28, 33, 31, 0.16);
   border-radius: 10px;
-  background: rgba(255, 250, 243, 0.82);
-  box-shadow: 0 12px 32px rgba(52, 36, 25, 0.07);
+  background: rgba(255, 250, 243, 0.94);
+  box-shadow: 0 12px 32px rgba(52, 36, 25, 0.1);
 }
 
 .card,
@@ -595,6 +596,7 @@ h2 {
 .trust-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-soft);
+  border-color: rgba(166, 65, 45, 0.28);
 }
 
 .card h3,
@@ -603,7 +605,7 @@ h2 {
 .resource h3 {
   margin: 15px 0 8px;
   color: var(--charcoal);
-  font-size: 1.06rem;
+  font-size: 1.08rem;
   line-height: 1.25;
 }
 
@@ -611,8 +613,8 @@ h2 {
 .step p,
 .resource p {
   margin-bottom: 0;
-  color: #62675f;
-  font-size: 0.95rem;
+  color: #4e544d;
+  font-size: 0.97rem;
 }
 
 .steps {
@@ -822,6 +824,26 @@ h2 {
   display: block;
 }
 
+.local-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.local-link-row a {
+  border: 1px solid rgba(166, 65, 45, 0.22);
+  border-radius: 999px;
+  padding: 9px 13px;
+  color: var(--clay-dark);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.local-link-row a:hover {
+  background: rgba(166, 65, 45, 0.08);
+}
+
 .internal-links {
   display: flex;
   flex-wrap: wrap;
@@ -999,6 +1021,7 @@ h2 {
 
   .header-inner {
     min-height: 74px;
+    gap: 12px;
   }
 
   .nav {
@@ -1010,7 +1033,15 @@ h2 {
   }
 
   .brand {
-    font-size: 0.95rem;
+    min-width: 0;
+    font-size: 0.9rem;
+  }
+
+  .brand span:last-child {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .hero {
@@ -1019,11 +1050,15 @@ h2 {
 
   .hero-grid {
     gap: 28px;
-    padding: 52px 0 64px;
+    padding: 44px 0 58px;
   }
 
   h1 {
-    font-size: clamp(3rem, 15vw, 4.4rem);
+    font-size: clamp(2.72rem, 13vw, 4.1rem);
+  }
+
+  .subpage-hero h1 {
+    font-size: clamp(2.35rem, 11vw, 3.7rem);
   }
 
   .hero-actions {
@@ -1039,7 +1074,7 @@ h2 {
   }
 
   .hero-founder-frame {
-    height: 468px;
+    height: 442px;
   }
 
   .founder-badge {
@@ -1084,7 +1119,17 @@ h2 {
   .lead-form,
   .cta-band,
   .subpage-contact {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .field input,
+  .field textarea,
+  .button {
+    min-height: 52px;
+  }
+
+  .footer-grid {
+    gap: 18px;
   }
 
   .sticky-mobile-cta {

@@ -50,11 +50,12 @@ export function LeadForm() {
             name="address"
             autoComplete="street-address"
             placeholder="123 Main St, Raleigh NC"
+            required
           />
         </div>
         <div className="field">
           <label htmlFor="name">Name</label>
-          <input id="name" name="name" autoComplete="name" placeholder="Your name" />
+          <input id="name" name="name" autoComplete="name" placeholder="Your name" required />
         </div>
         <div className="field">
           <label htmlFor="phone">Phone number</label>
@@ -64,6 +65,7 @@ export function LeadForm() {
             autoComplete="tel"
             inputMode="tel"
             placeholder="Best number"
+            required
           />
         </div>
         <div className="field field-full">
@@ -91,8 +93,8 @@ export function LeadForm() {
       </div>
       <div className="form-status" aria-live="polite">
         {status === "success" && "Thanks. Your property review request was received."}
-        {status === "error" &&
-          "Something went wrong. Please email MCobb@RedClayCap.com directly."}
+          {status === "error" &&
+          "We could not send the form. Please call (919) 555-0148 or email MCobb@RedClayCap.com."}
       </div>
     </form>
   );
