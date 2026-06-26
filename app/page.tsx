@@ -3,7 +3,16 @@ import { FAQ, CTASection, FounderProfile, HowItWorks, ResourceCenter, SituationC
 import { Hero } from "@/components/Hero";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import {
+  CredibilityBadges,
+  CustomerExperienceTimeline,
+  HomeownerTrustSection,
+  TestimonialCarousel
+} from "@/components/TestimonialSections";
 import { faqs, servicePages, site } from "@/content/site";
+import { getPublicTestimonials } from "@/lib/testimonialStore";
+
+export const dynamic = "force-dynamic";
 
 function JsonLd() {
   const organization = {
@@ -60,15 +69,21 @@ function JsonLd() {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const testimonials = await getPublicTestimonials();
+
   return (
     <main className="page">
       <JsonLd />
       <SiteHeader ctaHref="#get-my-cash-offer" />
       <Hero />
       <SituationCards />
+      <TestimonialCarousel testimonials={testimonials} />
+      <HomeownerTrustSection />
       <HowItWorks />
       <TrustSection />
+      <CustomerExperienceTimeline />
+      <CredibilityBadges />
       <FounderProfile />
       <CTASection />
       <ResourceCenter />

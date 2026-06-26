@@ -3,6 +3,7 @@ import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
 
 const routes = [
   "",
+  "/reviews",
   ...servicePages.map((page) => `/${page.slug}`),
   ...localSeoPages.map((page) => `/${page.slug}`),
   ...cityPages.filter((page) => !page.href).map((page) => `/areas-we-serve/${page.slug}`)

@@ -9,6 +9,7 @@ const navItems = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/about-red-clay-capital", label: "About Us" },
   { href: "/areas-we-serve", label: "Areas We Serve" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" }
 ];
