@@ -105,7 +105,7 @@ export default async function ServicePage({ params }: PageProps) {
               <Mail size={18} aria-hidden="true" />
               {site.email}
             </a>
-            <a href="tel:+19195550148">
+            <a href="tel:+18886263213">
               Call {site.phone}
             </a>
           </aside>

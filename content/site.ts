@@ -15,7 +15,7 @@ import {
 export const site = {
   name: "Red Clay Capital, LLC",
   url: "https://redclaycap.com",
-  phone: "(919) 555-0148",
+  phone: "(888) 626-3213",
   email: "MCobb@RedClayCap.com",
   founder: "Michael Cobb",
   founderImage: "/images/red-clay-capital-founder.png"

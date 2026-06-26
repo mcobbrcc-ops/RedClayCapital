@@ -21,7 +21,7 @@ export function SiteFooter() {
           </a>
         </div>
         <div>
-          <p><a href="tel:+19195550148">{site.phone}</a></p>
+          <p><a href="tel:+18886263213">{site.phone}</a></p>
           <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
         </div>
       </div>

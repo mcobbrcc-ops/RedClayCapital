@@ -27,7 +27,7 @@ export function SiteHeader({ ctaHref = "/#get-my-cash-offer" }: SiteHeaderProps)
             {item.label}
           </a>
         ))}
-        <a href="tel:+19195550148">Call</a>
+        <a href="tel:+18886263213">Call</a>
         <a className="button nav-button" href={ctaHref}>
           Get My Offer
         </a>
@@ -42,7 +42,7 @@ export function SiteHeader({ ctaHref = "/#get-my-cash-offer" }: SiteHeaderProps)
             {item.label}
           </a>
         ))}
-            <a href="tel:+19195550148">Call (919) 555-0148</a>
+            <a href="tel:+18886263213">Call (888) 626-3213</a>
             <a className="button" href={ctaHref}>
               Get My Offer
             </a>

@@ -126,7 +126,7 @@ export function LeadForm() {
       <div className="form-status" aria-live="polite">
         {status === "success" && "Thanks. Your property review request was received."}
           {status === "error" &&
-          "We could not send the form. Please call (919) 555-0148 or email MCobb@RedClayCap.com."}
+          "We could not send the form. Please call (888) 626-3213 or email MCobb@RedClayCap.com."}
       </div>
     </form>
   );
