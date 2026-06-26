@@ -34,14 +34,32 @@ const trustFeatures = [
 ];
 
 const experienceSteps = [
-  "Reach Out",
-  "Conversation",
-  "Property Review",
-  "Transparent Offer",
-  "Questions Answered",
-  "Choose Your Timeline",
-  "Closing",
-  "Move Forward"
+  {
+    title: "Submit Your Property",
+    copy: "Tell us about your property online or give us a quick call.",
+    icon: Home
+  },
+  {
+    title: "Receive Your Offer",
+    copy: "We will review the property and provide a transparent, no-obligation cash offer.",
+    icon: FileCheck2
+  },
+  {
+    title: "Accept Your Offer",
+    copy: "If the offer works for you, we will move forward on your timeline.",
+    icon: Handshake
+  },
+  {
+    title: "Title & Closing Preparation",
+    copy: "Our closing attorney handles the title work while we keep you informed every step of the way.",
+    icon: Scale
+  },
+  {
+    title: "Close & Get Paid",
+    copy: "Sign the paperwork, receive your funds, and move forward with confidence.",
+    icon: CheckCircle2,
+    final: true
+  }
 ];
 
 const credibilityBadges = [
@@ -215,19 +233,24 @@ export function CustomerExperienceTimeline() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Homeowner control</p>
-            <h2>A Process That Keeps You In Charge</h2>
+            <h2>A Simple Process. On Your Timeline.</h2>
           </div>
           <p className="muted">
-            Each step is designed to answer questions before decisions are needed. You choose whether the offer and timeline fit.
+            Our process is designed to be transparent, straightforward, and built around your schedule, not ours.
           </p>
         </div>
-        <div className="experience-timeline">
+        <div className="process-timeline" aria-label="Red Clay Capital selling process">
+          <div className="process-rail" aria-hidden="true" />
           {experienceSteps.map((step, index) => (
-            <div className="experience-step" key={step}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{step}</strong>
-              {index < experienceSteps.length - 1 && <i aria-hidden="true" />}
-            </div>
+            <article className={step.final ? "process-step process-step-final" : "process-step"} key={step.title}>
+              <div className="process-icon">
+                <step.icon size={26} aria-hidden="true" />
+              </div>
+              <span className="process-number">{String(index + 1).padStart(2, "0")}</span>
+              <h3>{step.title}</h3>
+              <p>{step.copy}</p>
+              {step.final && <strong className="funds-delivered">Closing Complete</strong>}
+            </article>
           ))}
         </div>
       </div>
