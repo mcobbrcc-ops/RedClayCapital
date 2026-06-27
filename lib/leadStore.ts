@@ -4,8 +4,12 @@ import { randomUUID } from "crypto";
 export const leadStatuses = [
   "New",
   "Contacted",
-  "Offer Made",
-  "Follow Up",
+  "Property Review",
+  "Offer Sent",
+  "Negotiating",
+  "Under Contract",
+  "Title Work",
+  "Closing Scheduled",
   "Closed",
   "Archived"
 ] as const;
@@ -48,7 +52,10 @@ function storagePath() {
 async function readFileLeads() {
   try {
     const raw = await fs.readFile(storagePath(), "utf8");
-    return JSON.parse(raw) as LeadRecord[];
+    return (JSON.parse(raw) as LeadRecord[]).map((lead) => ({
+      ...lead,
+      status: normalizeLeadStatus(lead.status)
+    }));
   } catch {
     return [];
   }
@@ -67,6 +74,13 @@ async function writeFileLeads(leads: LeadRecord[]) {
 
 export function verifyAdminPassword(password: string | null | undefined) {
   return password === ADMIN_PASSWORD;
+}
+
+export function normalizeLeadStatus(status: string | null | undefined): LeadStatus {
+  if (status === "Offer Made") return "Offer Sent";
+  if (status === "Follow Up") return "Negotiating";
+  if (leadStatuses.includes(status as LeadStatus)) return status as LeadStatus;
+  return "New";
 }
 
 export async function getLeads() {
@@ -93,12 +107,13 @@ export async function saveLead(lead: Omit<LeadRecord, "id" | "status">) {
 }
 
 export async function updateLeadStatus(id: string, status: LeadStatus) {
-  if (!leadStatuses.includes(status)) {
+  const normalizedStatus = normalizeLeadStatus(status);
+  if (!leadStatuses.includes(normalizedStatus)) {
     throw new Error("Invalid lead status");
   }
 
   const leads = await getLeads();
-  const next = leads.map((lead) => (lead.id === id ? { ...lead, status } : lead));
+  const next = leads.map((lead) => (lead.id === id ? { ...lead, status: normalizedStatus } : lead));
   globalStore.redClayLeadCache = next;
   await writeFileLeads(next);
   return next.find((lead) => lead.id === id) || null;
