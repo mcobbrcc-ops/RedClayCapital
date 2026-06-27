@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  deleteTestimonial,
   filterTestimonials,
   getTestimonials,
   saveTestimonial,
@@ -67,4 +68,20 @@ export async function PATCH(request: Request) {
       { status: 400 }
     );
   }
+}
+
+export async function DELETE(request: Request) {
+  const { searchParams } = new URL(request.url);
+
+  if (!verifyAdminPassword(searchParams.get("password"))) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const id = searchParams.get("id");
+  if (!id) {
+    return NextResponse.json({ error: "Testimonial id is required" }, { status: 400 });
+  }
+
+  await deleteTestimonial(id);
+  return NextResponse.json({ ok: true });
 }

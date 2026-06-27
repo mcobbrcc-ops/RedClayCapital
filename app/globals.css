@@ -2284,6 +2284,158 @@ h2 {
   gap: 16px;
 }
 
+.admin-toast {
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  z-index: 80;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #1f1a17;
+  color: #fffaf2;
+  box-shadow: 0 18px 50px rgba(21, 16, 13, 0.22);
+  font-weight: 800;
+}
+
+.spin {
+  animation: adminSpin 0.8s linear infinite;
+}
+
+@keyframes adminSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.panel-heading h2 {
+  margin: 0;
+}
+
+.panel-heading button,
+.settings-editor button,
+.form-list button,
+.admin-mini-form button,
+.calendar-list button,
+.notification-list button {
+  border: 1px solid rgba(87, 62, 47, 0.16);
+  border-radius: 8px;
+  background: #fffaf4;
+  color: #2a211b;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 9px 11px;
+}
+
+.panel-heading .button,
+.admin-mini-form .button {
+  background: var(--clay);
+  color: #fff;
+}
+
+.settings-card {
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid rgba(159, 50, 31, 0.12);
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 48px rgba(50, 34, 25, 0.12);
+}
+
+.settings-card span {
+  color: var(--clay);
+  font-size: 0.83rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.settings-editor {
+  max-width: 1100px;
+}
+
+.admin-mini-form,
+.form-list,
+.form-list article,
+.settings-editor label {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-mini-form {
+  align-content: start;
+}
+
+.admin-mini-form input,
+.admin-mini-form select,
+.admin-mini-form textarea,
+.settings-editor input,
+.settings-editor select,
+.settings-editor textarea {
+  width: 100%;
+  border: 1px solid rgba(87, 62, 47, 0.18);
+  border-radius: 8px;
+  background: #fff;
+  color: #221a15;
+  font: inherit;
+  padding: 10px 12px;
+}
+
+.admin-mini-form textarea,
+.settings-editor textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.admin-form-grid.wide {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.form-list {
+  gap: 16px;
+}
+
+.form-list > button {
+  justify-self: start;
+}
+
+.form-list article {
+  align-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  padding: 16px;
+  border: 1px solid rgba(87, 62, 47, 0.14);
+  border-radius: 8px;
+  background: #fffdf9;
+}
+
+.form-list article details,
+.form-list article small {
+  grid-column: 1 / -1;
+}
+
+.notification-list article.is-read {
+  opacity: 0.62;
+}
+
+.notification-list article div {
+  display: grid;
+  gap: 3px;
+}
+
+.notification-list article time {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .admin-shell {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;

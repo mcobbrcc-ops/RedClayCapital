@@ -269,6 +269,13 @@ export async function updateTestimonial(id: string, input: Partial<TestimonialRe
   return saveTestimonial(input, { id });
 }
 
+export async function deleteTestimonial(id: string) {
+  const testimonials = await getTestimonials();
+  const next = testimonials.filter((testimonial) => testimonial.id !== id);
+  globalStore.redClayTestimonialCache = next;
+  await writeFileTestimonials(next);
+}
+
 export function filterTestimonials(
   testimonials: TestimonialRecord[],
   options: { search?: string; situation?: string; city?: string; tag?: string }

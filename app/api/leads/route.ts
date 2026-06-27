@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { addAdminNotification } from "@/lib/adminStore";
 import { saveLead } from "@/lib/leadStore";
 
 type LeadPayload = {
@@ -49,6 +50,12 @@ export async function POST(request: NextRequest) {
 
   const webhookUrl = process.env.LEAD_CAPTURE_WEBHOOK_URL;
   const savedLead = await saveLead(lead);
+  await addAdminNotification({
+    type: "Lead",
+    title: `New lead: ${savedLead.name}`,
+    message: `${savedLead.address} - ${savedLead.phone || savedLead.email}`,
+    leadId: savedLead.id
+  });
 
   if (!webhookUrl) {
     return NextResponse.json({ ok: true, leadId: savedLead.id, webhook: "not_configured" });

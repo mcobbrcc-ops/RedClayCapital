@@ -4,6 +4,7 @@ import {
   getLeads,
   leadsToCsv,
   LeadStatus,
+  updateLead,
   updateLeadStatus,
   verifyAdminPassword
 } from "@/lib/leadStore";
@@ -44,17 +45,29 @@ export async function PATCH(request: NextRequest) {
     password?: string;
     id?: string;
     status?: LeadStatus;
+    adminNotes?: string;
+    tasks?: string[];
+    assignedTo?: string;
+    lastContactedAt?: string;
   };
 
   if (!verifyAdminPassword(body.password)) {
     return unauthorized();
   }
 
-  if (!body.id || !body.status) {
-    return NextResponse.json({ error: "Missing id or status" }, { status: 400 });
+  if (!body.id) {
+    return NextResponse.json({ error: "Missing id" }, { status: 400 });
   }
 
-  const lead = await updateLeadStatus(body.id, body.status);
+  const lead = body.status && !body.adminNotes && !body.tasks && !body.assignedTo && !body.lastContactedAt
+    ? await updateLeadStatus(body.id, body.status)
+    : await updateLead(body.id, {
+        status: body.status,
+        adminNotes: body.adminNotes,
+        tasks: body.tasks,
+        assignedTo: body.assignedTo,
+        lastContactedAt: body.lastContactedAt
+      });
 
   if (!lead) {
     return NextResponse.json({ error: "Lead not found" }, { status: 404 });

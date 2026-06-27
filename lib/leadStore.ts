@@ -30,6 +30,10 @@ export type LeadRecord = {
   utmParams: Record<string, string>;
   source: string;
   status: LeadStatus;
+  adminNotes?: string;
+  tasks?: string[];
+  assignedTo?: string;
+  lastContactedAt?: string;
 };
 
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "RedClay111";
@@ -54,7 +58,8 @@ async function readFileLeads() {
     const raw = await fs.readFile(storagePath(), "utf8");
     return (JSON.parse(raw) as LeadRecord[]).map((lead) => ({
       ...lead,
-      status: normalizeLeadStatus(lead.status)
+      status: normalizeLeadStatus(lead.status),
+      tasks: Array.isArray(lead.tasks) ? lead.tasks : []
     }));
   } catch {
     return [];
@@ -98,7 +103,11 @@ export async function saveLead(lead: Omit<LeadRecord, "id" | "status">) {
   const record: LeadRecord = {
     ...lead,
     id: randomUUID(),
-    status: "New"
+    status: "New",
+    adminNotes: "",
+    tasks: [],
+    assignedTo: "Michael Cobb",
+    lastContactedAt: ""
   };
 
   globalStore.redClayLeadCache = [record, ...leads];
@@ -107,13 +116,31 @@ export async function saveLead(lead: Omit<LeadRecord, "id" | "status">) {
 }
 
 export async function updateLeadStatus(id: string, status: LeadStatus) {
-  const normalizedStatus = normalizeLeadStatus(status);
+  return updateLead(id, { status });
+}
+
+export async function updateLead(id: string, changes: Partial<LeadRecord>) {
+  const leads = await getLeads();
+  const existing = leads.find((lead) => lead.id === id);
+  if (!existing) return null;
+
+  const normalizedStatus = normalizeLeadStatus(changes.status || existing.status);
   if (!leadStatuses.includes(normalizedStatus)) {
     throw new Error("Invalid lead status");
   }
 
-  const leads = await getLeads();
-  const next = leads.map((lead) => (lead.id === id ? { ...lead, status: normalizedStatus } : lead));
+  const next = leads.map((lead) => {
+    if (lead.id !== id) return lead;
+    return {
+      ...lead,
+      status: normalizedStatus,
+      adminNotes: typeof changes.adminNotes === "string" ? changes.adminNotes : lead.adminNotes || "",
+      tasks: Array.isArray(changes.tasks) ? changes.tasks.map(String).filter(Boolean) : lead.tasks || [],
+      assignedTo: typeof changes.assignedTo === "string" ? changes.assignedTo : lead.assignedTo || "Michael Cobb",
+      lastContactedAt: typeof changes.lastContactedAt === "string" ? changes.lastContactedAt : lead.lastContactedAt || ""
+    };
+  });
+
   globalStore.redClayLeadCache = next;
   await writeFileLeads(next);
   return next.find((lead) => lead.id === id) || null;
@@ -136,7 +163,13 @@ export function filterLeads(
       lead.details,
       lead.propertyCondition,
       lead.timeline,
-      lead.status
+      lead.status,
+      lead.source,
+      lead.sourcePage,
+      lead.adminNotes,
+      lead.assignedTo,
+      ...(lead.tasks || []),
+      ...Object.values(lead.utmParams || {})
     ]
       .join(" ")
       .toLowerCase();
@@ -168,6 +201,10 @@ export function leadsToCsv(leads: LeadRecord[]) {
     "Property Condition",
     "Timeline",
     "Message",
+    "Admin Notes",
+    "Tasks",
+    "Assigned To",
+    "Last Contacted At",
     "Source Page",
     "UTM Parameters"
   ];
@@ -188,6 +225,10 @@ export function leadsToCsv(leads: LeadRecord[]) {
     lead.propertyCondition,
     lead.timeline,
     lead.details,
+    lead.adminNotes || "",
+    (lead.tasks || []).join("; "),
+    lead.assignedTo || "",
+    lead.lastContactedAt || "",
     lead.sourcePage,
     lead.utmParams
   ]);
