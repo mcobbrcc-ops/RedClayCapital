@@ -35,10 +35,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `${site.url}/${page.slug}`,
       images: [
         {
-          url: site.founderImage,
-          width: 1262,
-          height: 1262,
-          alt: "Michael Cobb, founder of Red Clay Capital"
+          url: site.ogImage,
+          width: 512,
+          height: 512,
+          alt: "Red Clay Capital logo"
         }
       ]
     }
@@ -108,10 +108,11 @@ export default async function ServicePage({ params }: PageProps) {
           </div>
           <aside className="subpage-contact">
             <MapPin size={26} aria-hidden="true" />
-            <h2>Talk With {site.founder}</h2>
+            <h2>Contact the Acquisitions Desk</h2>
             <p>
-              Send the property address and a short summary of the situation.
-              Your review is private and there is no obligation.
+              Send the property address, occupancy status, known repairs,
+              financing details, and a short summary of the situation. Your
+              review is private and there is no obligation.
             </p>
             <a href={`mailto:${site.email}`}>
               <Mail size={18} aria-hidden="true" />

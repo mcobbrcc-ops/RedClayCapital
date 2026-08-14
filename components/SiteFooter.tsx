@@ -11,13 +11,13 @@ export function SiteFooter() {
             <span>Red Clay Capital, LLC</span>
           </div>
           <div className="footer-trust-line">
-            Fair Offers. Clear Communication. Real Follow-Through.
+            Private Acquisitions. Clear Terms. Professional Closings.
           </div>
           <p>
-            Private, as-is cash offer options for homeowners facing difficult
-            property situations.
+            As-is acquisition options for North Carolina owners facing repairs,
+            tenants, financing, title issues, fire damage, vacancy, inheritance,
+            or other property distress.
           </p>
-          <p>Founder: {site.founder}</p>
           <a className="admin-link" href="/admin" aria-label="Admin dashboard">
             <LockKeyhole size={13} aria-hidden="true" />
             Admin

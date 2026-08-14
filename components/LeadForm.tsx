@@ -45,10 +45,10 @@ export function LeadForm() {
   return (
     <form className="lead-form" id="get-my-cash-offer" onSubmit={handleSubmit}>
       <p className="form-kicker">Private property review</p>
-      <h2>See What Your Options Could Look Like</h2>
+      <h2>Request an Acquisition Review</h2>
       <p>
-        Share the basics. Michael will review the situation privately and
-        follow up with a clear next step.
+        Share the basics. Our acquisitions desk will review the file privately
+        and follow up with a clear next step.
       </p>
       <div className="field-grid">
         <div className="field field-full">
@@ -96,6 +96,9 @@ export function LeadForm() {
             <option>Fire, water, or storm damage</option>
             <option>Vacant or neglected</option>
             <option>Tenant occupied</option>
+            <option>Difficult tenants or unauthorized occupants</option>
+            <option>Existing mortgage or creative finance question</option>
+            <option>Code violations or liens</option>
             <option>Not sure</option>
           </select>
         </div>
@@ -115,12 +118,12 @@ export function LeadForm() {
           <textarea
             id="details"
             name="details"
-            placeholder="Tell us about repairs, tenants, inheritance, timing, or anything important."
+            placeholder="Tell us about repairs, tenants, financing, inheritance, fire damage, code issues, timing, or anything important."
           />
         </div>
         <button className="button field-full" type="submit" disabled={status === "submitting"}>
           <Send size={18} aria-hidden="true" />
-          {status === "submitting" ? "Sending..." : "Request My Offer"}
+          {status === "submitting" ? "Sending..." : "Request Review"}
         </button>
       </div>
       <div className="form-status" aria-live="polite">

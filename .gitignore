@@ -9,3 +9,4 @@ out
 .data
 .pnpm-store
 *.log
+*.tsbuildinfo

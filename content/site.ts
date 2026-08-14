@@ -3,11 +3,14 @@ import {
   BadgeCheck,
   Building2,
   ClipboardCheck,
+  FileCheck2,
   FileWarning,
   Flame,
   Home,
   KeyRound,
+  Landmark,
   ShieldCheck,
+  Signature,
   UserRoundX,
   Wrench
 } from "lucide-react";
@@ -17,75 +20,85 @@ export const site = {
   url: "https://redclaycap.com",
   phone: "(888) 626-3213",
   email: "MCobb@RedClayCap.com",
-  founder: "Michael Cobb",
-  founderImage: "/images/red-clay-capital-founder.png"
+  contactLabel: "Acquisitions Desk",
+  ogImage: "/icon.svg"
 };
 
 export const situations = [
   {
-    title: "Inherited Properties",
+    title: "Inherited & Estate Properties",
     icon: Home,
-    copy: "We help families understand their options when an inherited home feels costly, unclear, or difficult to maintain."
+    copy: "We help families evaluate inherited homes, estate properties, deferred maintenance, cleanouts, and sale timelines without forcing a public listing."
   },
   {
-    title: "Problem Tenants",
+    title: "Difficult Tenants",
     icon: UserRoundX,
-    copy: "If a rental property has become stressful, we can review the situation privately and make an as-is offer."
+    copy: "Rental properties with non-payment, lease complications, access issues, or costly turnover can be reviewed privately and purchased as-is."
   },
   {
-    title: "Squatters",
+    title: "Subject-To & Existing Finance",
+    icon: Landmark,
+    copy: "When equity, payoff, interest rate, or timing creates a challenge, we can evaluate acquisition structures that may include taking over existing financing where appropriate."
+  },
+  {
+    title: "Seller Finance Options",
+    icon: Signature,
+    copy: "Some sellers need terms, not just a cash number. We can review whether seller financing creates a cleaner exit while protecting the owner's priorities."
+  },
+  {
+    title: "Unauthorized Occupants",
     icon: ShieldCheck,
-    copy: "Occupancy issues can be overwhelming. Our process is built to evaluate complicated situations with care."
+    copy: "Squatters, unauthorized occupants, abandoned rentals, and access problems require a careful acquisition review instead of a one-size-fits-all offer."
   },
   {
     title: "Foreclosure Concerns",
     icon: AlertTriangle,
-    copy: "When time matters, we help homeowners compare a cash sale with other available paths forward."
+    copy: "When deadlines matter, we help owners compare a private sale with other available paths and move only when the numbers and timeline are realistic."
   },
   {
-    title: "Major Repairs",
+    title: "Major Repairs & Code Issues",
     icon: Wrench,
-    copy: "You do not need to renovate, clean out, or prepare the property before requesting a review."
+    copy: "Foundation problems, roof failure, outdated systems, code violations, liens, and cleanouts can be reviewed as part of the acquisition model."
   },
   {
     title: "Vacant Properties",
     icon: Building2,
-    copy: "We work with owners who want to move on from vacant, neglected, or hard-to-manage homes."
+    copy: "Vacant and neglected homes can create taxes, insurance risk, vandalism, utilities, and maintenance exposure. We evaluate them without requiring repairs."
   },
   {
     title: "Title or Ownership Issues",
     icon: FileWarning,
-    copy: "If ownership details are complicated, we can coordinate with closing partners to clarify next steps."
+    copy: "If ownership, probate, liens, payoff statements, judgments, or title questions are complicated, our closing partners help clarify the transaction path."
   },
   {
     title: "Fire, Water, or Storm Damage",
     icon: Flame,
-    copy: "Damaged properties can still have options. We buy as-is and evaluate the full situation."
+    copy: "Fire damage, smoke damage, storm impact, water intrusion, and insurance-related complications can still be evaluated for an as-is acquisition."
   }
 ];
 
 export const process = [
   {
-    title: "Tell us about the property",
-    copy: "Share the address, the condition, and what is making the situation difficult. A short summary is enough to begin."
+    title: "Submit the property",
+    copy: "Share the address, condition, occupancy, financing, and timeline. A concise summary is enough for an initial review."
   },
   {
-    title: "Receive a fair cash offer",
-    copy: "We review the property, local market, repairs, occupancy, title, and timeline before discussing your options."
+    title: "Review the acquisition options",
+    copy: "We evaluate market data, repairs, title, tenants, existing debt, and closing constraints before presenting a practical path."
   },
   {
-    title: "Close on your timeline",
-    copy: "Choose a closing date that works for you. Remote closings, flexible dates, and as-is sales are available."
+    title: "Close with professional coordination",
+    copy: "If the proposal works, closing is coordinated through professional closing partners with clear milestones and flexible timing."
   }
 ];
 
 export const trustPoints = [
-  "Local North Carolina company",
-  "No repairs needed",
-  "Fair cash offers",
-  "Fast closings",
-  "Honest and transparent",
-  "No pressure"
+  "Institutional review process",
+  "As-is acquisitions",
+  "Cash and creative structures",
+  "Closing partner coordination",
+  "Clear written terms",
+  "Private off-market sale"
 ];
 
 export const faqs = [
@@ -123,17 +136,310 @@ export const resources = [
   {
     type: "Guide",
     title: "Should I Sell My House As-Is?",
-    copy: "A homeowner-friendly breakdown of repair costs, timelines, buyer expectations, and when an as-is sale may make sense."
+    href: "/blog/sell-house-as-is-major-repairs",
+    copy: "A practical breakdown of repair costs, timelines, buyer expectations, and when an as-is sale may make sense."
   },
   {
     type: "Article",
     title: "Can I Sell a House With Problem Tenants?",
-    copy: "Learn what options owners may have when a rental property has become stressful or difficult to manage."
+    href: "/blog/sell-rental-property-with-bad-tenants",
+    copy: "Learn what options owners may have when a rental property has become stressful, occupied, or difficult to manage."
   },
   {
     type: "Guide",
-    title: "How Cash Home Buyers Actually Work",
-    copy: "A transparent overview of cash offers, closing costs, inspections, timelines, and what to compare before deciding."
+    title: "How Subject-To and Seller Finance Sales Work",
+    href: "/blog/subject-to-seller-finance-house-sale",
+    copy: "A plain-English explanation of creative acquisition structures, when they may help, and what sellers should review carefully."
+  }
+];
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  eyebrow: string;
+  description: string;
+  category: string;
+  readTime: string;
+  keywords: string[];
+  sections: Array<{
+    heading: string;
+    body: string[];
+  }>;
+  related?: string[];
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "sell-house-as-is-major-repairs",
+    title: "Selling a House As-Is When Repairs Are Bigger Than the Budget",
+    eyebrow: "Major repair properties",
+    category: "Repairs",
+    readTime: "7 min read",
+    description:
+      "A practical guide for owners dealing with roof failure, foundation issues, outdated systems, cleanouts, and repair costs that no longer make sense.",
+    keywords: ["sell house as-is", "major repairs", "cash buyer for damaged house"],
+    sections: [
+      {
+        heading: "When the repair list starts controlling the sale",
+        body: [
+          "A traditional listing assumes the property can be cleaned, photographed, shown, inspected, negotiated, and financed. That process becomes harder when the house needs a roof, HVAC, electrical work, plumbing repairs, foundation attention, or a full cleanout before it can compete with updated homes.",
+          "Many owners start with good intentions. They call contractors, collect estimates, price materials, and try to decide which repairs are worth doing. The problem is that each repair can expose another issue. A roof estimate turns into sheathing repairs. A flooring project exposes subfloor damage. A buyer inspection turns an already tight deal into a second negotiation."
+        ]
+      },
+      {
+        heading: "What an as-is acquisition changes",
+        body: [
+          "An as-is sale shifts the property from a retail buyer conversation to an acquisition conversation. Instead of asking what repairs a homeowner should complete before listing, the question becomes whether a buyer can price the property with the repairs, holding costs, and risk already included.",
+          "This does not mean every as-is offer will be the highest possible number. It means the seller can compare a net, predictable option against the time, money, uncertainty, and stress of preparing the house for the open market."
+        ]
+      },
+      {
+        heading: "What Red Clay Capital reviews",
+        body: [
+          "Red Clay Capital reviews condition, access, neighborhood demand, repair scope, title status, occupancy, utilities, timeline, and closing constraints. We are not asking homeowners to make the property perfect before we look at it.",
+          "For some sellers, the best option is still a traditional listing. For others, the cleaner decision is to accept a private as-is sale, avoid repair management, and close on a defined timeline."
+        ]
+      }
+    ],
+    related: ["sell-fire-damaged-house-north-carolina", "sell-house-with-code-violations"]
+  },
+  {
+    slug: "sell-rental-property-with-bad-tenants",
+    title: "Selling a Rental Property With Difficult Tenants",
+    eyebrow: "Tenant occupied property",
+    category: "Tenants",
+    readTime: "8 min read",
+    description:
+      "How landlords can think through non-payment, access problems, lease issues, property damage, and selling a rental without waiting for perfect conditions.",
+    keywords: ["sell house with tenants", "bad tenants", "tenant occupied rental property"],
+    sections: [
+      {
+        heading: "The rental may be worth more as a problem solved than a problem managed",
+        body: [
+          "A tenant-occupied property can be a strong asset when rent is current, access is smooth, and the home is being maintained. It can become a drain when rent stops, communication breaks down, access is limited, or the property condition is deteriorating.",
+          "Owners often wait because they believe the tenant issue must be solved before the property can be sold. In some cases that is true. In others, an investor buyer may be able to evaluate the property with the occupancy issue included."
+        ]
+      },
+      {
+        heading: "Why traditional buyers hesitate",
+        body: [
+          "Retail buyers usually want clean access, vacant delivery, financing approval, and an inspection process they can control. Difficult tenants can disrupt all four. Missed appointments, limited access, unknown interior condition, and lease uncertainty can reduce the buyer pool quickly.",
+          "A professional acquisition review looks at rent status, lease terms, legal posture, property condition, local market demand, and the cost of resolving the issue after closing."
+        ]
+      },
+      {
+        heading: "A private sale can create a cleaner exit",
+        body: [
+          "Red Clay Capital can review tenant-occupied rentals, difficult occupant situations, inherited rentals, and properties where the owner no longer wants to manage the risk. The goal is not to minimize the problem. The goal is to price it honestly and determine whether an as-is sale creates a better outcome than continued management.",
+          "Landlords should keep records organized: lease documents, payment history, notices, repair records, and communication history. Those details help clarify the situation and reduce uncertainty during review."
+        ]
+      }
+    ],
+    related: ["sell-vacant-or-abandoned-house", "subject-to-seller-finance-house-sale"]
+  },
+  {
+    slug: "subject-to-seller-finance-house-sale",
+    title: "Subject-To and Seller Finance: What Homeowners Should Understand",
+    eyebrow: "Creative finance",
+    category: "Finance",
+    readTime: "9 min read",
+    description:
+      "A careful, plain-English overview of subject-to purchases, seller finance structures, and why the terms matter as much as the purchase price.",
+    keywords: ["subject to real estate", "seller finance house sale", "creative finance buyer"],
+    sections: [
+      {
+        heading: "Cash is not the only possible acquisition structure",
+        body: [
+          "Many sellers only think in terms of a cash purchase price. That can be the right structure, especially when the seller needs a clean payoff and a fast closing. But some properties have financing, equity, rates, payoff timing, or tax considerations that make terms worth discussing.",
+          "Subject-to and seller finance are not magic phrases. They are transaction structures that need clear documentation, careful review, and a seller who understands the tradeoffs."
+        ]
+      },
+      {
+        heading: "What subject-to generally means",
+        body: [
+          "In a subject-to transaction, a buyer may acquire the property subject to existing financing remaining in place. The seller's existing loan is not automatically paid off at closing the way it would be in a typical cash sale.",
+          "That can create flexibility in some situations, but it also requires serious attention to risk, loan terms, insurance, payment controls, due-on-sale language, servicing, and documentation. Sellers should ask questions and should not sign terms they do not understand."
+        ]
+      },
+      {
+        heading: "What seller finance generally means",
+        body: [
+          "Seller finance means the seller may receive payments over time under agreed terms instead of receiving the full purchase price at closing. The structure may include a down payment, interest rate, monthly payment, maturity date, default remedies, and security documents.",
+          "The right structure depends on the seller's need for cash, risk tolerance, tax planning, existing liens, and the buyer's ability to perform. Red Clay Capital can review whether a terms-based proposal is practical, but sellers should evaluate it with appropriate legal and tax professionals."
+        ]
+      }
+    ],
+    related: ["foreclosure-timeline-cash-sale-options", "sell-house-as-is-major-repairs"]
+  },
+  {
+    slug: "sell-fire-damaged-house-north-carolina",
+    title: "Selling a Fire-Damaged House in North Carolina",
+    eyebrow: "Fire damage",
+    category: "Damage",
+    readTime: "7 min read",
+    description:
+      "What to consider when smoke, fire, water intrusion, insurance questions, or repair scope make a normal sale difficult.",
+    keywords: ["sell fire damaged house", "fire damage North Carolina", "cash buyer fire damaged property"],
+    sections: [
+      {
+        heading: "Fire damage is rarely just one problem",
+        body: [
+          "After a fire, the visible damage is only part of the issue. Smoke, water used during suppression, electrical safety, roof exposure, structural questions, odor, permitting, and insurance paperwork can all affect the path forward.",
+          "Some owners plan to repair and later realize the project is larger than expected. Others live out of area, inherited the property, or simply do not want to manage contractors, insurance timelines, and a resale process."
+        ]
+      },
+      {
+        heading: "Why as-is buyers evaluate differently",
+        body: [
+          "Most retail buyers cannot or will not buy a fire-damaged home. Financing may be difficult, inspections can be uncertain, and the repair path may be too complex for a normal buyer.",
+          "An acquisition buyer reviews the property based on current condition, repair scope, title, insurance status, local demand, and the cost of carrying the property through renovation or redevelopment."
+        ]
+      },
+      {
+        heading: "What to gather before requesting a review",
+        body: [
+          "Helpful information includes the property address, photos if available, whether utilities are active, insurance claim status, access details, known structural concerns, and any city or county notices.",
+          "Red Clay Capital can review fire, smoke, water, and storm-damaged properties without asking the owner to make repairs before the conversation starts."
+        ]
+      }
+    ],
+    related: ["sell-house-as-is-major-repairs", "sell-house-with-code-violations"]
+  },
+  {
+    slug: "foreclosure-timeline-cash-sale-options",
+    title: "Foreclosure Pressure: Comparing a Cash Sale With Other Options",
+    eyebrow: "Timeline pressure",
+    category: "Foreclosure",
+    readTime: "8 min read",
+    description:
+      "How homeowners can think about deadlines, payoff numbers, reinstatement, listing timelines, and private sale options when time is limited.",
+    keywords: ["foreclosure help", "sell house before foreclosure", "cash sale foreclosure"],
+    sections: [
+      {
+        heading: "Deadlines change the decision",
+        body: [
+          "When foreclosure pressure is involved, the best option is often the one that can be completed in time. A traditional listing may produce a strong price, but it also depends on preparation, showings, buyer financing, inspections, appraisal, title, and closing coordination.",
+          "A private cash sale may be worth comparing because it can reduce moving parts. That does not mean it is always the best choice. Homeowners should compare reinstatement, repayment, refinance, loan modification, listing, and sale options as early as possible."
+        ]
+      },
+      {
+        heading: "Information matters",
+        body: [
+          "Before anyone can evaluate a realistic sale timeline, the owner needs accurate payoff or reinstatement information, deadline dates, lien details, title status, and property access. Guessing at these details can create false confidence.",
+          "Professional closing partners help confirm what must be paid at closing and whether the transaction can be completed before a deadline."
+        ]
+      },
+      {
+        heading: "A clear offer is only useful if it can close",
+        body: [
+          "Red Clay Capital focuses on offers that can be explained and performed. When time is tight, certainty matters. A number that sounds good but cannot close before the deadline is not a solution.",
+          "If a cash sale is a fit, the process should move quickly into title review, closing coordination, and written terms so the owner understands what happens next."
+        ]
+      }
+    ],
+    related: ["subject-to-seller-finance-house-sale", "sell-house-as-is-major-repairs"]
+  },
+  {
+    slug: "sell-house-with-code-violations",
+    title: "Selling a House With Code Violations, Liens, or City Notices",
+    eyebrow: "Code and title issues",
+    category: "Distress",
+    readTime: "7 min read",
+    description:
+      "A homeowner's guide to code violations, municipal notices, liens, unsafe conditions, and selling when the paperwork feels complicated.",
+    keywords: ["sell house with code violations", "property liens", "city notices"],
+    sections: [
+      {
+        heading: "Code issues can make a normal sale harder",
+        body: [
+          "Code violations, unsafe structure notices, unpaid utilities, nuisance complaints, and municipal liens can make a property feel stuck. Owners may not know whether they need to repair the issue, pay the balance, dispute the notice, or sell before costs increase.",
+          "Traditional buyers often hesitate because they do not know what they are inheriting. Lenders may also object if the condition creates habitability or safety concerns."
+        ]
+      },
+      {
+        heading: "What a buyer needs to review",
+        body: [
+          "The review usually starts with the address, notice documents, lien information, photos, access, occupancy, and any communication from the city or county. Title and closing partners may need to confirm what must be paid or resolved at closing.",
+          "Some issues can be handled through closing. Others must be addressed before a sale can proceed. The important thing is to identify the facts early."
+        ]
+      },
+      {
+        heading: "A professional process reduces uncertainty",
+        body: [
+          "Red Clay Capital evaluates code and title complications as part of the acquisition process. That includes repair exposure, municipal requirements, title requirements, and the seller's preferred timeline.",
+          "The goal is a clear written path, not vague promises. If the issue affects price or closing timing, it should be discussed plainly before the seller makes a decision."
+        ]
+      }
+    ],
+    related: ["sell-fire-damaged-house-north-carolina", "sell-vacant-or-abandoned-house"]
+  },
+  {
+    slug: "sell-inherited-house-with-multiple-heirs",
+    title: "Selling an Inherited House When Multiple Heirs Are Involved",
+    eyebrow: "Inherited property",
+    category: "Probate",
+    readTime: "8 min read",
+    description:
+      "How families can approach inherited property decisions when repairs, emotions, probate, distance, and multiple decision-makers are involved.",
+    keywords: ["sell inherited house", "multiple heirs", "probate property sale"],
+    sections: [
+      {
+        heading: "Inherited property decisions are rarely just financial",
+        body: [
+          "An inherited house can come with memories, responsibilities, repair issues, tax questions, insurance concerns, and family disagreement. The property may be vacant, occupied by a relative, behind on maintenance, or located far from the people responsible for handling it.",
+          "When multiple heirs are involved, the sale process needs clarity. Who has authority? Is probate required? Are there liens? Does everyone agree on the timeline? Are personal belongings still inside?"
+        ]
+      },
+      {
+        heading: "Why a private as-is sale may help",
+        body: [
+          "A private as-is sale can reduce the number of decisions a family has to make before selling. Instead of coordinating repairs, cleanouts, showings, listing preparation, and open-market negotiations, the family can compare a direct sale option against the likely retail path.",
+          "That comparison should be practical. Families should consider net proceeds, time, carrying costs, emotional bandwidth, and the risk of the sale falling apart after inspection."
+        ]
+      },
+      {
+        heading: "How Red Clay Capital approaches inherited homes",
+        body: [
+          "Red Clay Capital reviews inherited properties with discretion and patience. We can evaluate repair-heavy houses, occupied inherited homes, vacant properties, and homes where the family needs time to coordinate documents or belongings.",
+          "Closing still depends on proper authority and title clearance. When the structure is workable, the goal is a clean closing timeline and a professional process that respects the family situation."
+        ]
+      }
+    ],
+    related: ["sell-house-as-is-major-repairs", "sell-vacant-or-abandoned-house"]
+  },
+  {
+    slug: "sell-vacant-or-abandoned-house",
+    title: "Selling a Vacant or Abandoned House Before It Becomes a Bigger Problem",
+    eyebrow: "Vacant homes",
+    category: "Vacancy",
+    readTime: "7 min read",
+    description:
+      "Why vacant homes can create insurance, vandalism, utility, tax, and maintenance risk, and how owners can compare private sale options.",
+    keywords: ["sell vacant house", "abandoned property", "cash buyer vacant home"],
+    sections: [
+      {
+        heading: "Vacancy has a cost",
+        body: [
+          "A vacant property can feel quiet, but it is rarely cost-free. Taxes, insurance, utilities, lawn care, break-ins, vandalism, weather exposure, and code complaints can turn a delayed decision into a more expensive problem.",
+          "Out-of-area owners often feel the pressure most. They may not be close enough to check on the property, meet contractors, manage repairs, or respond quickly if something goes wrong."
+        ]
+      },
+      {
+        heading: "Why timing matters",
+        body: [
+          "Vacant homes can deteriorate quickly. A small roof leak becomes interior damage. A broken window becomes unauthorized access. Deferred lawn care becomes a city notice. The longer the property sits, the more uncertainty a buyer has to price into the offer.",
+          "That is why some owners choose to compare a private as-is sale before the property condition gets worse."
+        ]
+      },
+      {
+        heading: "A clean exit can be worth more than waiting",
+        body: [
+          "Red Clay Capital evaluates vacant and abandoned properties based on condition, location, access, title, and timeline. Sellers do not need to clean out the house or complete repairs before requesting a review.",
+          "A direct sale may not be right for every owner, but it can create a clear exit when the property has become a liability instead of an asset."
+        ]
+      }
+    ],
+    related: ["sell-house-with-code-violations", "sell-rental-property-with-bad-tenants"]
   }
 ];
 
@@ -152,13 +458,13 @@ export const servicePages = [
   },
   {
     slug: "sell-your-house-fast",
-    title: "Sell Your House Fast",
-    eyebrow: "Fast, fair, simple",
+    title: "Sell Your House Fast With a Professional Acquisition Process",
+    eyebrow: "Private as-is acquisition",
     description:
-      "Explore a private cash sale when you want to sell without repairs, showings, agent commissions, or a long listing timeline.",
+      "Explore a private sale when you want to sell without repairs, showings, agent commissions, or a long listing timeline.",
     sections: [
-      "A fast sale should still feel thoughtful. We review the property, the situation, and the timeline before discussing whether a cash offer makes sense.",
-      "This path can be helpful for inherited homes, vacant properties, rental headaches, foreclosure pressure, and houses that need major repairs."
+      "A fast sale should still be structured. Red Clay Capital reviews the property, the situation, the timeline, title requirements, and closing logistics before discussing whether an acquisition proposal makes sense.",
+      "This path can be useful for inherited homes, vacant properties, tenant issues, foreclosure pressure, damaged houses, fire damage, code issues, and properties where repairs no longer justify the delay."
     ],
     keywords: ["sell my house fast Raleigh NC", "cash offer for my house", "sell house as-is"]
   },
@@ -177,14 +483,14 @@ export const servicePages = [
   {
     slug: "about-red-clay-capital",
     title: "About Red Clay Capital",
-    eyebrow: "Founder-led and local",
+    eyebrow: "Professional acquisitions firm",
     description:
-      "Red Clay Capital is built around respectful communication, practical options, and calmer solutions for difficult property situations.",
+      "Red Clay Capital is a North Carolina-focused real estate acquisitions company built for complex, as-is property situations.",
     sections: [
-      "Founder Michael Cobb created Red Clay Capital to help homeowners compare realistic options when a traditional sale is not the right path.",
-      "The company focuses on privacy, clarity, fair offers, and professional closings."
+      "Red Clay Capital was formed around a simple market reality: many properties do not fit neatly into a traditional retail listing. Heavy repairs, tenant issues, inherited ownership, existing financing, vacancy, fire damage, code concerns, and title complications require a more specialized acquisition process.",
+      "The company focuses on private off-market reviews, disciplined underwriting, clear written terms, and professional closing coordination. Sellers receive a practical option, not a sales pitch, and every transaction is evaluated for performance before an offer is presented."
     ],
-    keywords: ["Red Clay Capital", "Michael Cobb", "North Carolina home buyers"]
+    keywords: ["Red Clay Capital", "North Carolina acquisitions company", "professional cash home buyers"]
   },
   {
     slug: "faq",
@@ -201,24 +507,24 @@ export const servicePages = [
   {
     slug: "contact",
     title: "Contact Red Clay Capital",
-    eyebrow: "Private property review",
+    eyebrow: "Acquisitions desk",
     description:
-      "Contact Michael Cobb at Red Clay Capital to discuss an unwanted, inherited, damaged, vacant, or tenant-occupied property.",
+      "Contact Red Clay Capital to discuss an unwanted, inherited, damaged, vacant, financed, or tenant-occupied property.",
     sections: [
-      "Email MCobb@RedClayCap.com with the property address and a short summary of the situation.",
-      "Your information is reviewed privately, and the next step will be explained clearly before any decision is needed."
+      "Email the acquisitions desk with the property address, occupancy status, known repairs, timeline, and any financing or title details that may matter.",
+      "Your information is reviewed privately by the acquisitions desk, and the next step will be explained clearly before any decision is needed."
     ],
     keywords: ["contact Red Clay Capital", "cash offer for my house", "property review"]
   },
   {
     slug: "blog",
     title: "Homeowner Resource Center",
-    eyebrow: "Helpful real estate education",
+    eyebrow: "Distressed property education",
     description:
-      "Guides for homeowners comparing as-is sales, cash offers, inherited property options, repairs, tenants, and foreclosure concerns.",
+      "Guides for homeowners comparing as-is sales, cash offers, subject-to, seller finance, inherited property, repairs, tenants, fire damage, vacancy, and foreclosure concerns.",
     sections: [
-      "Our resource center gives homeowners practical, plain-English guidance before they decide how to sell.",
-      "Read about as-is sales, cash offers, inherited properties, repairs, tenants, foreclosure concerns, and remote closings so you can compare your options with confidence."
+      "The Red Clay Capital resource center is built for owners dealing with properties that require more than ordinary listing advice.",
+      "Read practical, human-written guidance about as-is sales, cash offers, inherited properties, difficult tenants, subject-to structures, seller finance, fire damage, code issues, vacancy, foreclosure pressure, and remote closings."
     ],
     keywords: ["how cash home buyers work", "sell house as-is", "probate property guide"]
   },
@@ -261,14 +567,74 @@ export const servicePages = [
   {
     slug: "why-homeowners-choose-us",
     title: "Why Homeowners Choose Us",
-    eyebrow: "Calm, clear, professional",
+    eyebrow: "Disciplined and professional",
     description:
-      "Homeowners choose Red Clay Capital for privacy, no-pressure conversations, fair cash offers, and practical solutions.",
+      "Homeowners choose Red Clay Capital for private reviews, professional underwriting, clear terms, and practical solutions for complicated properties.",
     sections: [
-      "We focus on the situation behind the sale, not just the address.",
-      "That means clear communication, flexible closing options, and no repairs or public showings."
+      "We focus on the full situation behind the sale: title, occupancy, repairs, liens, financing, timeline, and closing feasibility.",
+      "That means clear communication, flexible closing options, private off-market review, and no requirement to repair, clean, stage, or publicly show the property."
     ],
     keywords: ["why choose Red Clay Capital", "fair cash offer", "no pressure home buyer"]
+  },
+  {
+    slug: "sell-house-with-subject-to-financing",
+    title: "Sell a House With Subject-To Financing Options",
+    eyebrow: "Creative acquisition structures",
+    description:
+      "Red Clay Capital can review existing loan terms, equity, payoff timing, and seller goals to determine whether a subject-to acquisition may be practical.",
+    sections: [
+      "Subject-to transactions require careful review because the existing financing may remain in place after closing. Sellers should understand loan terms, payment controls, insurance, risk, and documentation before agreeing to any structure.",
+      "Red Clay Capital evaluates subject-to only when the structure appears workable for the property, the debt, and the seller's priorities. When cash is not the only useful option, a terms-based proposal may create flexibility that a standard offer cannot."
+    ],
+    keywords: ["sell house subject to", "subject to real estate North Carolina", "creative finance home buyer"]
+  },
+  {
+    slug: "seller-finance-house-sale",
+    title: "Seller Finance Property Sale Options",
+    eyebrow: "Terms-based exits",
+    description:
+      "Learn how seller finance may help some homeowners sell with structured payments, written terms, and a private acquisition process.",
+    sections: [
+      "Seller finance can be useful when a seller wants a structured exit instead of a single cash payoff. The details matter: down payment, interest rate, monthly payment, maturity date, default remedies, security, and title requirements all affect whether the structure is acceptable.",
+      "Red Clay Capital can review whether seller financing is a fit for the property and seller goals. Some situations call for cash. Others may benefit from terms that balance price, timing, and long-term payment structure."
+    ],
+    keywords: ["seller finance home buyer", "owner finance property sale", "sell house with terms"]
+  },
+  {
+    slug: "sell-house-with-bad-tenants",
+    title: "Sell a House With Difficult Tenants",
+    eyebrow: "Tenant occupied acquisitions",
+    description:
+      "Red Clay Capital reviews rental properties with non-payment, access issues, lease complications, property damage, and stressful tenant situations.",
+    sections: [
+      "A tenant problem can turn a rental property into a liability. Missed rent, limited access, lease disputes, damage, unauthorized occupants, and turnover costs can make a traditional sale difficult.",
+      "We evaluate the property as-is with the occupancy issue included. Sellers should be prepared to share lease documents, payment history, notices, repair records, and access details so the review can be realistic."
+    ],
+    keywords: ["sell house with bad tenants", "sell tenant occupied property", "problem tenant home buyer"]
+  },
+  {
+    slug: "sell-fire-damaged-house",
+    title: "Sell a Fire-Damaged House As-Is",
+    eyebrow: "Fire and smoke damage",
+    description:
+      "Red Clay Capital evaluates fire-damaged, smoke-damaged, storm-damaged, and water-damaged homes without requiring repairs before review.",
+    sections: [
+      "Fire damage can involve smoke, water intrusion, electrical safety, structural concerns, permitting, insurance questions, and repair scope that many retail buyers cannot handle.",
+      "A private as-is acquisition can help owners compare a clean sale against the cost, timeline, and uncertainty of repair management. Red Clay Capital reviews the full situation before discussing a proposal."
+    ],
+    keywords: ["sell fire damaged house", "cash buyer fire damaged house", "sell damaged house as-is"]
+  },
+  {
+    slug: "sell-house-with-code-violations",
+    title: "Sell a House With Code Violations or Liens",
+    eyebrow: "Code, liens, and notices",
+    description:
+      "Explore a private sale option for properties with code violations, municipal notices, liens, unsafe conditions, or title complications.",
+    sections: [
+      "Code violations and municipal notices can make a normal sale harder. Buyers may hesitate, lenders may object, and owners may not know which items must be resolved before closing.",
+      "Red Clay Capital reviews notices, lien information, repair exposure, access, occupancy, and title requirements to determine whether a direct acquisition can create a clean path forward."
+    ],
+    keywords: ["sell house with code violations", "sell house with liens", "cash buyer code violations"]
   }
 ];
 

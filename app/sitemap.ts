@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
-import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
+import { blogPosts, cityPages, localSeoPages, servicePages, site } from "@/content/site";
 
 const routes = [
   "",
   "/reviews",
   ...servicePages.map((page) => `/${page.slug}`),
+  ...blogPosts.map((post) => `/blog/${post.slug}`),
   ...localSeoPages.map((page) => `/${page.slug}`),
   ...cityPages.filter((page) => !page.href).map((page) => `/areas-we-serve/${page.slug}`)
 ];

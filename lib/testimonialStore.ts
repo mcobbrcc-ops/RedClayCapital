@@ -37,7 +37,7 @@ export const productionTestimonials: TestimonialRecord[] = [
     situation: "Transparent Pricing",
     rating: 5,
     reviewText:
-      "Red Clay Capital was patient from the first conversation. Other companies gave us numbers that sounded good at first but never explained how they got there. Michael walked us through where he could honestly be, explained why, and followed through exactly like he said he would.",
+      "Red Clay Capital was patient from the first conversation. Other companies gave us numbers that sounded good at first but never explained how they got there. The team walked us through where they could honestly be, explained why, and followed through exactly like they said they would.",
     verified: true,
     closingDate: "",
     featured: true,

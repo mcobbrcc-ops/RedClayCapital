@@ -22,15 +22,9 @@ function JsonLd() {
     url: site.url,
     email: site.email,
     telephone: site.phone,
-    image: `${site.url}${site.founderImage}`,
-    founder: {
-      "@type": "Person",
-      name: site.founder,
-      jobTitle: "Founder & Acquisition Specialist",
-      email: site.email
-    },
+    logo: `${site.url}${site.ogImage}`,
     description:
-      "Red Clay Capital helps homeowners evaluate as-is cash sale options for difficult property situations.",
+      "Red Clay Capital helps homeowners evaluate as-is acquisition options for difficult property situations, including repairs, tenants, financing, damage, vacancy, inheritance, and title complications.",
     areaServed: [
       "Raleigh NC",
       "Durham NC",
@@ -91,10 +85,11 @@ export default async function Home() {
       <section className="section dark">
         <div className="container">
           <div className="section-heading">
-            <h2>A Simpler Way to Move Forward</h2>
+            <h2>A More Professional Way to Resolve a Difficult Property</h2>
             <p className="muted">
-              Tell us about the property and the situation. We will review it
-              privately and follow up with the next best step.
+              Tell us about the property, occupancy, condition, financing, and
+              timeline. Our acquisitions desk will review it privately and
+              follow up with the next practical step.
             </p>
           </div>
           <a className="button" href="#get-my-cash-offer">

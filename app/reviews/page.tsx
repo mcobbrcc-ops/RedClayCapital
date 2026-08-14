@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     url: `${site.url}/reviews`,
     images: [
       {
-        url: site.founderImage,
-        width: 1262,
-        height: 1262,
-        alt: "Michael Cobb, founder of Red Clay Capital"
+        url: site.ogImage,
+        width: 512,
+        height: 512,
+        alt: "Red Clay Capital logo"
       }
     ]
   }
@@ -58,7 +58,7 @@ export default async function ReviewsPage() {
           <aside className="subpage-contact review-promise-card">
             <h2>A different kind of cash buyer</h2>
             <p>
-              Fair Offers. Clear Communication. Real Follow-Through. That is the standard sellers should expect from the first conversation to closing.
+              Private review, clear terms, and professional follow-through. That is the standard sellers should expect from the first conversation to closing.
             </p>
           </aside>
         </div>

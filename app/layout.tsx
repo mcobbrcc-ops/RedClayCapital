@@ -9,22 +9,22 @@ export const metadata: Metadata = {
     template: "%s | Red Clay Capital"
   },
   description:
-    "Red Clay Capital helps North Carolina homeowners sell inherited, damaged, vacant, tenant-occupied, or unwanted properties as-is with private cash offer options.",
+    "Red Clay Capital helps North Carolina homeowners sell inherited, damaged, vacant, tenant-occupied, financed, or distressed properties as-is through a private professional acquisition process.",
   alternates: {
     canonical: "/"
   },
   openGraph: {
     title: "Red Clay Capital, LLC",
     description:
-      "A calmer, more professional way to sell your house as-is in North Carolina.",
+      "Professional as-is acquisition options for North Carolina properties with repairs, tenants, financing, damage, title issues, or other distress.",
     url: site.url,
     siteName: site.name,
     images: [
       {
-        url: site.founderImage,
-        width: 1262,
-        height: 1262,
-        alt: "Michael Cobb, founder of Red Clay Capital"
+        url: site.ogImage,
+        width: 512,
+        height: 512,
+        alt: "Red Clay Capital logo"
       }
     ],
     locale: "en_US",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Red Clay Capital, LLC",
     description:
-      "Fair cash offer options for North Carolina homeowners facing stressful or complicated property situations.",
-    images: [site.founderImage]
+      "Professional acquisition options for North Carolina homeowners facing complicated property situations.",
+    images: [site.ogImage]
   },
   robots: {
     index: true,

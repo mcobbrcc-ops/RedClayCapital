@@ -35,10 +35,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `${site.url}/areas-we-serve/${page.slug}`,
       images: [
         {
-          url: site.founderImage,
-          width: 1262,
-          height: 1262,
-          alt: "Michael Cobb, founder of Red Clay Capital"
+          url: site.ogImage,
+          width: 512,
+          height: 512,
+          alt: "Red Clay Capital logo"
         }
       ]
     }
@@ -62,10 +62,7 @@ export default async function CityPage({ params }: PageProps) {
     areaServed: `${page.city}, ${page.state}`,
     email: site.email,
     telephone: site.phone,
-    founder: {
-      "@type": "Person",
-      name: site.founder
-    }
+    description: `Professional as-is acquisition options for distressed properties in ${page.city}, ${page.state}.`
   };
   const localReview =
     testimonials.find((testimonial) => testimonial.city.includes(page.city)) ||

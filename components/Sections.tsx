@@ -1,16 +1,16 @@
-import Image from "next/image";
 import { ArrowRight, CheckCircle2, CircleDollarSign, ClipboardList, MessageSquareText } from "lucide-react";
-import { faqs, localSeoPages, process, resources, site, situations, trustPoints } from "@/content/site";
+import { blogPosts, faqs, localSeoPages, process, resources, situations, trustPoints } from "@/content/site";
 
 export function SituationCards() {
   return (
     <section className="section alt" id="situations">
       <div className="container">
         <div className="section-heading">
-          <h2>Solutions For Real Property Problems</h2>
+          <h2>Acquisition Options For Distressed Property Situations</h2>
           <p className="muted">
-            Every property has a story. We take time to understand the situation
-            before discussing whether a cash offer is the right fit.
+            Some properties need more than a listing appointment. We evaluate
+            condition, occupancy, title, financing, and timing before presenting
+            a practical acquisition path.
           </p>
         </div>
         <div className="card-grid">
@@ -37,10 +37,11 @@ export function HowItWorks() {
     <section className="section">
       <div className="container">
         <div className="section-heading">
-          <h2>A Simple Process Built Around Your Timeline</h2>
+          <h2>A Structured Process Built Around Certainty</h2>
           <p className="muted">
-            No repairs required. No cleaning required. No agent commissions.
-            Flexible closing dates and remote closing options may be available.
+            No repairs required. No cleaning required. No public showings.
+            Flexible closing dates, remote closing options, and written terms
+            may be available depending on the property.
           </p>
         </div>
         <div className="steps">
@@ -68,10 +69,11 @@ export function TrustSection() {
     <section className="section dark">
       <div className="container">
         <div className="section-heading">
-          <h2>Why Homeowners Choose Red Clay Capital</h2>
+          <h2>Why Sellers Work With Red Clay Capital</h2>
           <p className="muted">
-            Our role is to reduce stress, create clarity, and provide a fair
-            path forward when a traditional listing is not the best fit.
+            Our role is to underwrite the transaction clearly, reduce moving
+            parts, and provide a credible path forward when a traditional sale
+            is not the best fit.
           </p>
         </div>
         <div className="feature-list">
@@ -90,46 +92,48 @@ export function TrustSection() {
 export function FounderProfile() {
   return (
     <section className="section alt" id="about">
-      <div className="container founder">
-        <div className="founder-image">
-          <Image
-            src={site.founderImage}
-            alt="Michael Cobb, founder of Red Clay Capital, standing in the Red Clay Capital office"
-            fill
-            sizes="(max-width: 980px) 100vw, 42vw"
-            priority={false}
-          />
+      <div className="container founder company-profile">
+        <div className="company-origin-panel">
+          <p className="eyebrow">Company origin</p>
+          <h2>Built For Properties The Traditional Market Does Not Handle Well.</h2>
+          <p>
+            Red Clay Capital was formed to acquire residential real estate where
+            condition, occupancy, financing, title, or timing creates friction.
+            The company exists because many sellers need a serious transaction
+            path before the property is retail-ready.
+          </p>
+          <div className="origin-metrics">
+            <span>As-Is</span>
+            <span>Off-Market</span>
+            <span>Complex Files</span>
+          </div>
         </div>
         <div className="founder-copy">
-          <p className="eyebrow">Meet the founder</p>
-          <h2>Real People. Real Solutions.</h2>
+          <p className="eyebrow">Operating standards</p>
+          <h2>Disciplined Underwriting. Clear Terms. Professional Closings.</h2>
           <p className="quote">
-            {site.founder} founded Red Clay Capital to give North Carolina
-            homeowners a more respectful way to solve difficult property
-            problems, especially when repairs, tenants, inheritance, title
-            questions, or time pressure make a normal sale feel unrealistic.
+            Our process is built to evaluate the whole transaction: repairs,
+            tenants, existing debt, subject-to possibilities, seller finance,
+            liens, code issues, title requirements, and the closing timeline.
+            Sellers receive a practical proposal only after the file has been
+            reviewed for feasibility.
           </p>
-          <div className="founder-contact">
-            <strong>{site.founder}</strong>
-            <span>Founder & Acquisition Specialist</span>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
-          </div>
           <div className="trust-grid">
             <div className="trust-item">
-              <h3>Clear Communication</h3>
-              <p className="muted">You will understand the process, the offer, and your options before deciding.</p>
+              <h3>Acquisition Discipline</h3>
+              <p className="muted">Every file is reviewed for condition, market, occupancy, title, financing, and closing feasibility.</p>
             </div>
             <div className="trust-item">
-              <h3>Private Reviews</h3>
-              <p className="muted">Property details are handled discreetly, with no public listing or showings.</p>
+              <h3>Private Transactions</h3>
+              <p className="muted">Property details are handled discreetly, with no public listing, open houses, or repeated showings.</p>
             </div>
             <div className="trust-item">
               <h3>Professional Closings</h3>
-              <p className="muted">Transactions are coordinated through licensed closing partners.</p>
+              <p className="muted">Transactions are coordinated through professional closing partners with written milestones.</p>
             </div>
             <div className="trust-item">
-              <h3>No Pressure</h3>
-              <p className="muted">An offer is one option, not an obligation.</p>
+              <h3>Flexible Structures</h3>
+              <p className="muted">Cash, subject-to, seller finance, or other terms may be reviewed when the situation calls for it.</p>
             </div>
           </div>
         </div>
@@ -144,11 +148,12 @@ export function CTASection() {
       <div className="container">
         <div className="cta-band">
           <div>
-            <h2>Find Out What Your Options Are</h2>
-            <p>
-              Whether you are dealing with tenants, repairs, inheritance,
-              foreclosure pressure, or simply an unwanted property, Red Clay
-              Capital can help you understand your options and move forward.
+          <h2>Request a Professional Property Review</h2>
+          <p>
+              Whether you are dealing with difficult tenants, existing
+              financing, seller finance questions, fire damage, repairs,
+              inheritance, foreclosure pressure, or a property that is no
+              longer performing, Red Clay Capital can evaluate the file.
             </p>
           </div>
           <a className="button light" href="#get-my-cash-offer">
@@ -166,18 +171,27 @@ export function ResourceCenter() {
     <section className="section alt" id="resources">
       <div className="container">
         <div className="section-heading">
-          <h2>Helpful Real Estate Guidance For Homeowners</h2>
+          <h2>Distressed Property Resource Center</h2>
           <p className="muted">
-            Learn how as-is sales, cash offers, repairs, inherited property,
-            tenants, and closing timelines work before you decide what to do next.
+            Read practical guidance about as-is sales, tenants, subject-to,
+            seller finance, inherited properties, fire damage, code issues,
+            vacancy, and closing timelines before deciding what to do next.
           </p>
         </div>
         <div className="resource-grid">
           {resources.map((resource) => (
-            <a className="resource" href="/blog" key={resource.title}>
+            <a className="resource" href={resource.href} key={resource.title}>
               <span>{resource.type}</span>
               <h3>{resource.title}</h3>
               <p className="muted">{resource.copy}</p>
+            </a>
+          ))}
+        </div>
+        <div className="article-link-grid">
+          {blogPosts.slice(3).map((post) => (
+            <a href={`/blog/${post.slug}`} key={post.slug}>
+              <span>{post.category}</span>
+              {post.title}
             </a>
           ))}
         </div>
