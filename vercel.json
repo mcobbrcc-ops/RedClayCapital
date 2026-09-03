@@ -2,6 +2,12 @@
   "framework": "nextjs",
   "cleanUrls": false,
   "trailingSlash": false,
+  "crons": [
+    {
+      "path": "/api/internal/lead-outbox",
+      "schedule": "*/5 * * * *"
+    }
+  ],
   "redirects": [
     {
       "source": "/property-review",

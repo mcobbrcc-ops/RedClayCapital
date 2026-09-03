@@ -10,3 +10,5 @@ out
 .pnpm-store
 *.log
 *.tsbuildinfo
+.env*
+!.env.example

@@ -1,10 +1,20 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { Send } from "lucide-react";
 
 export function LeadForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [reference, setReference] = useState("");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const touch = Object.fromEntries(Array.from(params.entries()).filter(([key]) => /^(utm_|gclid$|gbraid$|wbraid$|fbclid$|msclkid$)/.test(key)));
+    try {
+      if (!window.localStorage.getItem("redclay.firstTouch")) window.localStorage.setItem("redclay.firstTouch", JSON.stringify({ ...touch, landingPageUrl: window.location.href, referringUrl: document.referrer }));
+      if (!window.sessionStorage.getItem("redclay.leadSession")) window.sessionStorage.setItem("redclay.leadSession", crypto.randomUUID());
+    } catch {}
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -13,13 +23,22 @@ export function LeadForm() {
     const form = event.currentTarget;
     const formData = new FormData(form);
     const params = new URLSearchParams(window.location.search);
-    const utmParams = Object.fromEntries(
-      Array.from(params.entries()).filter(([key]) => key.startsWith("utm_"))
-    );
+    const attribution = Object.fromEntries(Array.from(params.entries()).filter(([key]) => /^(utm_|gclid$|gbraid$|wbraid$|fbclid$|msclkid$)/.test(key)));
+    let firstTouch: Record<string, string> = {};
+    let sessionId = "";
+    try {
+      firstTouch = JSON.parse(window.localStorage.getItem("redclay.firstTouch") || "{}") as Record<string, string>;
+      sessionId = window.sessionStorage.getItem("redclay.leadSession") || "";
+    } catch {}
     const payload = {
       ...Object.fromEntries(formData.entries()),
-      sourcePage: window.location.pathname,
-      utmParams
+      attribution,
+      firstTouch,
+      latestTouch: { ...attribution, landingPageUrl: window.location.href, referringUrl: document.referrer },
+      landingPageUrl: window.location.href,
+      referringUrl: document.referrer,
+      pageVariant: document.body.dataset.pageVariant || window.location.pathname,
+      sessionId,
     };
 
     try {
@@ -31,11 +50,11 @@ export function LeadForm() {
         body: JSON.stringify(payload)
       });
 
-      if (!response.ok) {
-        throw new Error("Lead submission failed");
-      }
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error(result.error || "Lead submission failed");
 
       form.reset();
+      setReference(String(result.reference || "").slice(0, 8).toUpperCase());
       setStatus("success");
     } catch {
       setStatus("error");
@@ -44,6 +63,7 @@ export function LeadForm() {
 
   return (
     <form className="lead-form" id="get-my-cash-offer" onSubmit={handleSubmit}>
+      <label className="sr-only" aria-hidden="true">Company<input name="company" tabIndex={-1} autoComplete="off" /></label>
       <p className="form-kicker">Private property review</p>
       <h2>Request an Acquisition Review</h2>
       <p>
@@ -86,6 +106,12 @@ export function LeadForm() {
             placeholder="you@example.com"
           />
         </div>
+        <label className="field field-full consent-field">
+          <span className="inline-flex items-start gap-3 text-sm">
+            <input name="consent" type="checkbox" required className="mt-1" />
+            <span>I agree that Red Clay Capital may contact me about this property request by phone, text, or email. This does not authorize unrelated or automated marketing.</span>
+          </span>
+        </label>
         <div className="field">
           <label htmlFor="propertyCondition">Property condition</label>
           <select id="propertyCondition" name="propertyCondition">
@@ -127,7 +153,7 @@ export function LeadForm() {
         </button>
       </div>
       <div className="form-status" aria-live="polite">
-        {status === "success" && "Thanks. Your property review request was received."}
+        {status === "success" && `Thanks. Your property review request was safely received${reference ? ` (reference ${reference})` : ""}.`}
           {status === "error" &&
           "We could not send the form. Please call (888) 626-3213 or email MCobb@RedClayCap.com."}
       </div>
