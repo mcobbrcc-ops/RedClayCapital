@@ -1,7 +1,8 @@
 export const INTERNET_LEAD_CONTRACT_VERSION = "2026-09-02.v1" as const;
 export const INTERNET_LEAD_FORM_NAME = "red-clay-capital-acquisition-review";
-export const INTERNET_LEAD_FORM_VERSION = "2026-09-02";
-export const INTERNET_LEAD_CONSENT_VERSION = "seller-inquiry-contact-v1";
+export const INTERNET_LEAD_FORM_VERSION = "2026-09-05";
+export const INTERNET_LEAD_CONSENT_VERSION = "seller-inquiry-contact-v2";
+export const INTERNET_LEAD_CONSENT_TEXT = "I agree that Red Clay Capital may contact me about this property inquiry using my preferred contact method. This does not sign me up for future marketing. If I choose text, message and data rates may apply; I can reply STOP to stop texts.";
 
 export type WebsiteLeadPayload = {
   contractVersion: typeof INTERNET_LEAD_CONTRACT_VERSION;

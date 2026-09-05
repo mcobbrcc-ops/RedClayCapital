@@ -1,0 +1,54 @@
+{
+  "type": "source inventory, not HTTP or production verification",
+  "baselineSitemapCount": 37,
+  "knownCurrentRoutes": 48,
+  "missingBaselineRoutes": [],
+  "duplicateRedirects": [
+    {
+      "from": "/areas-we-serve/burlington-nc",
+      "to": "/sell-your-house-fast-burlington-nc",
+      "status": 308
+    },
+    {
+      "from": "/areas-we-serve/graham-nc",
+      "to": "/sell-your-house-fast-graham-nc",
+      "status": 308
+    },
+    {
+      "from": "/areas-we-serve/greensboro-nc",
+      "to": "/sell-your-house-fast-greensboro-nc",
+      "status": 308
+    },
+    {
+      "from": "/areas-we-serve/haw-river-nc",
+      "to": "/sell-your-house-fast-haw-river-nc",
+      "status": 308
+    },
+    {
+      "from": "/areas-we-serve/roxboro-nc",
+      "to": "/sell-your-house-fast-roxboro-nc",
+      "status": 308
+    }
+  ],
+  "duplicateBlogSlugs": [],
+  "brokenRelated": [],
+  "brokenGuides": [],
+  "guidanceMissing": [],
+  "stateHubWordCounts": [
+    {
+      "state": "North Carolina",
+      "words": 422
+    },
+    {
+      "state": "Georgia",
+      "words": 388
+    },
+    {
+      "state": "Ohio",
+      "words": 386
+    }
+  ],
+  "sharedPhone": "(919) 778-1228",
+  "sharedCall": "tel:+19197781228",
+  "sharedText": "sms:+19197781228"
+}

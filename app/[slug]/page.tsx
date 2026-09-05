@@ -1,46 +1,32 @@
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SellerFeedbackBand } from "@/components/TestimonialSections";
-import { cityPages, localSeoPages, servicePages, site } from "@/content/site";
-import { getPublicTestimonials } from "@/lib/testimonialStore";
+import { cityPages, faqs, localSeoPages, servicePages, site } from "@/content/site";
+import { cityGuidance, marketPages } from "@/content/markets";
 
-type PageProps = {
-  params: Promise<{ slug: string }>;
-};
+type PageProps = { params: Promise<{ slug: string }> };
+const unindexedPages = ["testimonials", "recently-purchased-properties"];
 
 export function generateStaticParams() {
-  return [...servicePages, ...localSeoPages].map((page) => ({ slug: page.slug }));
+  return [...servicePages, ...localSeoPages].filter((page) => page.slug !== "blog").map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const page = [...servicePages, ...localSeoPages].find((item) => item.slug === slug);
-
-  if (!page) {
-    return {};
-  }
-
+  if (!page) return {};
+  const canonical = slug === "our-buying-process" ? "/how-it-works" : `/${page.slug}`;
   return {
     title: page.title,
     description: page.description,
-    alternates: {
-      canonical: `/${page.slug}`
-    },
+    alternates: { canonical },
+    ...(unindexedPages.includes(slug) ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
-      title: `${page.title} | Red Clay Capital`,
-      description: page.description,
-      url: `${site.url}/${page.slug}`,
-      images: [
-        {
-          url: site.ogImage,
-          width: 512,
-          height: 512,
-          alt: "Red Clay Capital logo"
-        }
-      ]
+      title: `${page.title} | Red Clay Capital`, description: page.description,
+      url: `${site.url}${canonical}`,
+      images: [{ url: site.ogImage, alt: "Red Clay Capital" }]
     }
   };
 }
@@ -48,130 +34,65 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ServicePage({ params }: PageProps) {
   const { slug } = await params;
   const page = [...servicePages, ...localSeoPages].find((item) => item.slug === slug);
-  const testimonials = await getPublicTestimonials();
-
-  if (!page) {
-    notFound();
-  }
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+  if (!page) notFound();
+  const city = cityPages.find((item) => item.href === `/${slug}`);
+  const local = city ? cityGuidance[city.slug] : undefined;
+  const schema = {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: site.url
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: page.title,
-        item: `${site.url}/${page.slug}`
-      }
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      { "@type": "ListItem", position: 2, name: page.title, item: `${site.url}/${slug}` }
     ]
   };
-  const topicReview =
-    testimonials.find((testimonial) =>
-      page.title.toLowerCase().includes("fast") && testimonial.tags?.includes("Fast Closing")
-    ) ||
-    testimonials.find((testimonial) =>
-      page.title.toLowerCase().includes("choose") && testimonial.tags?.includes("Transparency")
-    ) ||
-    testimonials.find((testimonial) => testimonial.featured) ||
-    testimonials[0];
-
   return (
     <main className="page">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
       <SiteHeader />
-
-      <section className="subpage-hero">
+      <section id="main-content" tabIndex={-1} className="subpage-hero">
         <div className="container subpage-grid">
           <div>
             <p className="eyebrow">{page.eyebrow}</p>
             <h1>{page.title}</h1>
             <p className="hero-copy">{page.description}</p>
             <div className="hero-actions">
-              <a className="button" href="/#get-my-cash-offer">
-                Request a Property Review
-                <ArrowRight size={18} aria-hidden="true" />
-              </a>
-              <a className="button secondary" href="/#faq">
-                Read FAQ
-              </a>
+              <a className="button" href="/get-offer">Request an offer <ArrowRight size={18} aria-hidden="true" /></a>
+              <a className="button secondary" href={slug === "how-it-works" ? "/faq" : "/how-it-works"}>{slug === "how-it-works" ? "Read the FAQs" : "How it works"}</a>
             </div>
           </div>
           <aside className="subpage-contact">
-            <MapPin size={26} aria-hidden="true" />
-            <h2>Contact the Acquisitions Desk</h2>
-            <p>
-              Send the property address, occupancy status, known repairs,
-              financing details, and a short summary of the situation. Your
-              review is private and there is no obligation.
-            </p>
-            <a href={`mailto:${site.email}`}>
-              <Mail size={18} aria-hidden="true" />
-              {site.email}
-            </a>
-            <a href="tel:+18886263213">
-              Call {site.phone}
-            </a>
+            <Phone size={26} aria-hidden="true" />
+            <h2>Prefer to talk?</h2>
+            <p>Call or text {site.phone}. Share the property location and what you are considering. A conversation is a starting point; there is no obligation to accept an offer.</p>
+            <a href={site.phoneHref}>Call {site.phone}</a>
+            <a href={site.smsHref}>Text {site.phone}</a>
+            <a href={`mailto:${site.email}`}><Mail size={18} aria-hidden="true" /> {site.email}</a>
           </aside>
         </div>
       </section>
-
       <section className="section">
         <div className="container content-page">
-          <div>
-            <p className="eyebrow">What homeowners should know</p>
-            <h2>Clear Guidance Before You Decide</h2>
-          </div>
+          <div><p className="eyebrow">Before you decide</p><h2>{local?.heading ?? (slug === "privacy" ? "How your inquiry is handled" : slug === "about-red-clay-capital" ? "A property decision starts with a conversation" : slug === "contact" ? "Start with what you know" : "Understand your next step")}</h2></div>
           <div className="content-stack">
-            {page.sections.map((section) => (
-              <p key={section}>{section}</p>
-            ))}
+            {page.sections.map((section) => <p key={section}>{section}</p>)}
+            {local && local.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            {local && <><h3>A useful first checklist</h3><ul>{local.checklist.map((item) => <li key={item}>{item}</li>)}</ul><p><a href={`/blog/${local.guide}`}>Read the related seller guide</a> or explore our <a href="/areas-we-serve/north-carolina">North Carolina guide and official resources</a>.</p></>}
+            {slug === "our-buying-process" && <p><a href="/how-it-works">Read the complete step-by-step process.</a></p>}
+            {slug === "faq" && <div className="faq-list">{faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div>}
           </div>
         </div>
       </section>
-
-      <section className="section alt">
-        <div className="container">
-          <div className="section-heading">
-            <h2>{page.slug === "areas-we-serve" ? "North Carolina Areas We Serve" : "Related Search Topics"}</h2>
-            <p className="muted">
-              {page.slug === "areas-we-serve"
-                ? "Choose your city to learn how Red Clay Capital helps homeowners compare private, as-is sale options."
-                : "These are the types of homeowner questions this page is designed to answer clearly and naturally."}
-            </p>
+      {slug === "areas-we-serve" ? (
+        <section className="section alt">
+          <div className="container">
+            <div className="section-heading"><p className="eyebrow">Three focus markets</p><h2>Start with your state</h2><p className="muted">Practical guidance for your property, with a direct path to a conversation.</p></div>
+            <div className="resource-grid">{marketPages.map((market) => <a className="resource city-link" href={`/areas-we-serve/${market.slug}`} key={market.slug}><span>{market.abbreviation}</span><h3>{market.state}</h3><p className="muted">{market.description}</p></a>)}</div>
+            <div className="section-heading"><h2>North Carolina city guides</h2><p className="muted">Existing local guides for owners comparing their sale options. We confirm fit for each property after review.</p></div>
+            <div className="resource-grid">{cityPages.map((item) => <a className="resource city-link" href={item.href ?? `/areas-we-serve/${item.slug}`} key={item.slug}><span>{item.city}, North Carolina</span><h3>{cityGuidance[item.slug]?.heading ?? item.title}</h3></a>)}</div>
           </div>
-          {page.slug === "areas-we-serve" ? (
-            <div className="resource-grid">
-              {cityPages.map((city) => (
-                <a className="resource city-link" href={city.href ?? `/areas-we-serve/${city.slug}`} key={city.slug}>
-                  <span>{city.city}, {city.state}</span>
-                  <h3>{city.title}</h3>
-                  <p className="muted">{city.description}</p>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <div className="feature-list light-list">
-              {page.keywords.map((keyword) => (
-                <div className="feature" key={keyword}>
-                  <CheckCircle2 size={20} aria-hidden="true" />
-                  <span>{keyword}</span>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-      {topicReview && <SellerFeedbackBand testimonial={topicReview} />}
+        </section>
+      ) : (
+        <section className="section alt"><div className="container"><div className="section-heading"><h2>Take the next step at your pace</h2><p className="muted">Understand the process, compare your options, or tell us about your property.</p></div><div className="hero-actions"><a className="button" href="/get-offer">Request an offer <ArrowRight size={18} aria-hidden="true" /></a><a className="button secondary" href="/blog">Explore seller resources</a><a href="/areas-we-serve">See our focus markets</a></div></div></section>
+      )}
       <SiteFooter />
     </main>
   );

@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: post.title,
     description: post.description,
-    keywords: post.keywords,
     alternates: {
       canonical: `/blog/${post.slug}`
     },
@@ -34,8 +33,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [
         {
           url: site.ogImage,
-          width: 512,
-          height: 512,
           alt: "Red Clay Capital logo"
         }
       ]
@@ -71,12 +68,12 @@ export default async function BlogPostPage({ params }: PageProps) {
     <main className="page">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: site.url }, { "@type": "ListItem", position: 2, name: "Seller resources", item: `${site.url}/blog` }, { "@type": "ListItem", position: 3, name: post.title, item: `${site.url}/blog/${post.slug}` }] }]).replace(/</g, "\\u003c") }}
       />
       <SiteHeader />
 
       <article className="article-page">
-        <header className="subpage-hero article-hero">
+        <header className="subpage-hero article-hero" id="main-content" tabIndex={-1}>
           <div className="container">
             <p className="eyebrow">{post.eyebrow}</p>
             <h1>{post.title}</h1>
@@ -99,18 +96,22 @@ export default async function BlogPostPage({ params }: PageProps) {
                   ))}
                 </section>
               ))}
+              {post.sources && <section><h2>Official resources</h2><p>For procedural questions, use current official guidance and advice appropriate to your property.</p><ul>{post.sources.map((source) => <li key={source.href}><a href={source.href}>{source.label}</a></li>)}</ul></section>}
+              <section><h2>Make the next step specific to your property</h2><p>Find the <a href="/areas-we-serve/north-carolina">North Carolina</a>, <a href="/areas-we-serve/georgia">Georgia</a>, or <a href="/areas-we-serve/ohio">Ohio</a> guide, or see <a href="/how-it-works">how a review works</a>. Requesting an offer is separate from accepting one.</p></section>
             </div>
             <aside className="article-sidebar">
               <div className="subpage-contact">
                 <h2>Have a property like this?</h2>
                 <p>
-                  Red Clay Capital can review condition, occupancy, title,
-                  financing, and closing timeline privately.
+                  Tell us about the address, condition, occupancy, and your
+                  preferred timing. A review does not commit you to a sale.
                 </p>
-                <a className="button" href="/#get-my-cash-offer">
-                  Request Review
+                <a className="button" href="/get-offer">
+                  Request an offer
                   <ArrowRight size={18} aria-hidden="true" />
                 </a>
+                <a href={site.phoneHref}>Call {site.phone}</a>
+                <a href={site.smsHref}>Text {site.phone}</a>
               </div>
               {related.length > 0 && (
                 <div className="related-articles">

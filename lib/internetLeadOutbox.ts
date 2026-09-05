@@ -11,6 +11,11 @@ type ClaimedSubmission = {
   attempt_number: number;
 };
 
+export class LeadIntakeError extends Error {
+  status: number;
+  constructor(message: string, status: number) { super(message); this.name = "LeadIntakeError"; this.status = status; }
+}
+
 function required(name: string) {
   const value = process.env[name]?.trim();
   if (!value) throw new Error("Website lead intake needs setup");
@@ -58,12 +63,18 @@ async function rpc<T>(name: string, body: Record<string, unknown>): Promise<T> {
     cache: "no-store",
     signal: AbortSignal.timeout(12_000),
   });
-  if (!response.ok) throw new Error(`Durable intake is unavailable (${response.status})`);
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    if (name === "website_accept_lead_outbox" && error?.code === "23505") throw new LeadIntakeError("This request reference already contains different details. Please update the form and submit again.", 409);
+    if (name === "website_accept_lead_outbox" && error?.code === "P0001" && /rate limit/.test(error?.message || "")) throw new LeadIntakeError("Too many requests were received. Please try again later, or call or text (919) 778-1228.", 429);
+    throw new Error(`Durable intake is unavailable (${response.status})`);
+  }
   return response.json() as Promise<T>;
 }
 
 export async function durablyAcceptWebsiteLead(payload: WebsiteLeadPayload, evidence: { ip: string; userAgent: string }) {
-  const config = integration();
+  // Acceptance remains available when downstream delivery configuration is being repaired.
+  const config = { id: required("WEBSITE_INTEGRATION_ID"), acceptSecret: required("WEBSITE_INTEGRATION_ACCEPT_SECRET") };
   const canonical = stableStringify(payload);
   const result = await rpc<Array<{ submission_id: string; submission_status: string; duplicate: boolean }>>("website_accept_lead_outbox", {
     p_integration_id: config.id,
@@ -138,6 +149,7 @@ async function deliver(submission: ClaimedSubmission, leaseToken: string, config
     pathname: config.intakeUrl.pathname,
   })).digest("hex");
   let response: Response;
+  let responseBody: Record<string, unknown>;
   try {
     response = await fetch(config.intakeUrl, {
       method: "POST",
@@ -153,31 +165,42 @@ async function deliver(submission: ClaimedSubmission, leaseToken: string, config
       body,
       cache: "no-store",
       signal: AbortSignal.timeout(15_000),
+      // Never forward the signed payload or HMAC headers to a redirect destination.
+      redirect: "manual",
     });
+    responseBody = await response.json().catch(() => ({}));
   } catch (error) {
     await fail(submission, leaseToken, { errorClass: error instanceof DOMException && error.name === "TimeoutError" ? "timeout" : "network", message: "Red Clay Intelligence is temporarily unavailable", retryable: true });
     return { delivered: false, retrying: true };
   }
-  const responseBody = await response.json().catch(() => ({}));
-  if (response.ok && responseBody?.ok) {
-    await complete(submission, leaseToken, {
+  if (response.ok && responseBody?.ok === true && typeof responseBody.inquiryId === "string" && responseBody.inquiryId) {
+    try { await complete(submission, leaseToken, {
       inquiryId: responseBody.inquiryId,
       contactId: responseBody.contactId,
       propertyId: responseBody.propertyId,
       leadId: responseBody.leadId,
       duplicate: Boolean(responseBody.duplicate),
-    }, response.status);
+    }, response.status); }
+    catch {
+      // A remote write may have succeeded. Retrying the same submission is safe at RCI's unique integration/submission key.
+      await fail(submission, leaseToken, { errorClass: "receipt_persistence", message: "Delivery receipt could not be preserved; retry the same submission", retryable: true });
+      return { delivered: false, retrying: true };
+    }
     return { delivered: true };
   }
-  const retryable = response.status === 408 || response.status === 409 || response.status === 429 || response.status >= 500;
-  await fail(submission, leaseToken, { responseStatus: response.status, errorClass: `http_${response.status}`, message: retryable ? "Red Clay Intelligence deferred the submission" : "Red Clay Intelligence rejected the submission", retryable });
+  const configurationFailure = (response.status >= 300 && response.status < 400) || [401, 403, 404].includes(response.status);
+  const retryable = configurationFailure || response.ok || response.status === 408 || response.status === 409 || response.status === 429 || response.status >= 500;
+  await fail(submission, leaseToken, { responseStatus: response.status, errorClass: configurationFailure ? `receiver_configuration_${response.status}` : `http_${response.status}`, message: configurationFailure ? "RCI receiver configuration needs repair; preserve and retry this submission" : retryable ? "Red Clay Intelligence deferred the submission" : "Red Clay Intelligence rejected the submission", retryable });
   return { delivered: false, retrying: retryable, deadLettered: !retryable };
 }
 
 export async function deliverWebsiteLeadOutbox(limit = 10) {
   const { rows, leaseToken, config } = await claim(limit);
-  const results = [];
-  for (const submission of rows) results.push(await deliver(submission, leaseToken, config));
+  // Bounded batch is concurrent so one slow downstream request cannot strand the other leased rows.
+  const results = await Promise.all(rows.map(async (submission) => {
+    try { return await deliver(submission, leaseToken, config); }
+    catch { return { delivered: false, retrying: true }; } // Expired durable leases are reclaimed by the recovery worker.
+  }));
   return {
     claimed: rows.length,
     delivered: results.filter((result) => result.delivered).length,

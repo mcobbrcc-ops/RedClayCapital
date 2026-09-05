@@ -1,89 +1,29 @@
-# Red Clay Capital Website
+# Red Clay Capital public seller website
 
-Production Next.js website for Red Clay Capital, LLC.
+Canonical public site: https://redclaycap.com
+Repository: https://github.com/mcobbrcc-ops/RedClayCapital
+Framework: Next.js 16 / React 19, pnpm; existing Vercel project `project-73xr5`.
 
-## Production Domain
+This is the homeowner website. Red Clay Intelligence is a separate operational application at https://intelligence.renting2riches.com. Renting2Riches is a separate product.
 
-Canonical domain: `https://redclaycap.com`
+## Develop and verify
 
-The `www` host should redirect to the apex domain:
+`pnpm install --frozen-lockfile`
+`pnpm run dev`
+`pnpm run check`
 
-- `http://redclaycap.com` -> `https://redclaycap.com`
-- `http://www.redclaycap.com` -> `https://redclaycap.com`
-- `https://www.redclaycap.com` -> `https://redclaycap.com`
+The old `next lint` command is not supported in Next 16. No ESLint setup existed; the check runs TypeScript, focused behavioral tests and the production build.
 
-## Local Development
+## Lead delivery
 
-```powershell
-pnpm install
-pnpm run dev
-```
+The form posts to `/api/leads`. Success requires a committed receipt from the existing Supabase `website_accept_lead_outbox` RPC. No public submissions use the legacy admin file store. The signed worker sends queued submissions to the existing RCI receiver. `/api/internal/lead-outbox` requires `CRON_SECRET`; Vercel runs a recovery sweep every five minutes. Preserve all existing integration IDs and secrets; never accept a visitor-provided workspace or owner.
 
-Local URL: `http://localhost:3000`
+The form retains the exact submission ID and payload for retries. A later edited inquiry receives a new ID. See `docs/upgrade/rci-verification.md` for the production receiver regression and the limits of current verification.
 
-## Production Build
+`/admin` is a legacy private tool. Set a strong server-only `ADMIN_PASSWORD` if it must be used; no fallback password exists. It does not represent RCI Internet Leads. Its file storage is not durable on Vercel.
 
-```powershell
-pnpm run build
-```
+## Release
 
-## Deployment Workflow
+Preserve the existing Vercel project and domain. The documented branch path is preview (`dev`) then production (`main`); deployment history also records authenticated Vercel CLI releases. Run checks, deploy a protected preview to the existing project, verify, then release the same source using the authorized workflow. Record the release and prior deployment for rollback. Never roll back the entire separate RCI app to fix a missing integration.
 
-Recommended hosting provider: Vercel.
-
-Branch strategy:
-
-- `main`: production
-- `dev`: preview/staging
-
-Recommended workflow:
-
-1. Make edits in Codex.
-2. Run `pnpm run build`.
-3. Commit changes to `dev`.
-4. Push to GitHub.
-5. Review Vercel preview deployment.
-6. Merge `dev` into `main`.
-7. Vercel automatically deploys production.
-
-## Environment Variables
-
-Copy `.env.example` into Vercel project environment variables.
-
-Server-only variables:
-
-- `LEAD_CAPTURE_WEBHOOK_URL` optional
-- `LEAD_CAPTURE_WEBHOOK_SECRET`
-- `ADMIN_PASSWORD`
-- `LEAD_STORAGE_PATH`
-- `EMAIL_NOTIFICATION_WEBHOOK_URL`
-- `CRM_WEBHOOK_URL`
-- `GOOGLE_MAPS_API_KEY`
-
-Public tracking variables:
-
-- `NEXT_PUBLIC_SITE_URL=https://redclaycap.com`
-- `NEXT_PUBLIC_GA_MEASUREMENT_ID`
-- `NEXT_PUBLIC_GTM_ID`
-- `NEXT_PUBLIC_GOOGLE_ADS_ID`
-- `NEXT_PUBLIC_META_PIXEL_ID`
-
-Do not prefix secrets with `NEXT_PUBLIC_`.
-
-## Lead Capture
-
-The primary form anchor is `/#get-my-cash-offer`.
-
-The lead form posts to `/api/leads`. Every valid submission is saved internally first and can be viewed at `/admin`.
-
-Temporary admin password:
-
-```text
-RedClay111
-```
-
-Configure `ADMIN_PASSWORD` in production to replace the temporary password.
-
-`LEAD_CAPTURE_WEBHOOK_URL` is optional. When it is configured, submissions are also sent to the webhook. When it is omitted or the webhook fails, the homeowner still sees a success confirmation because the lead has already been saved internally.
-
-For Vercel, the internal file store uses temporary server storage. For long-term durable lead storage, connect a database, Vercel KV/Postgres, Red Clay Connections, or a CRM webhook using the existing lead-store/API boundary.
+See `docs/upgrade/HANDOFF.md` for route, contact, deployment, QA and maintenance evidence.

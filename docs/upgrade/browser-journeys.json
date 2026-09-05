@@ -1,0 +1,20 @@
+[
+  {
+    "market": "north-carolina",
+    "success": true
+  },
+  {
+    "market": "georgia",
+    "success": true
+  },
+  {
+    "market": "ohio",
+    "success": true,
+    "doubleClick": true
+  },
+  {
+    "market": "campaign",
+    "success": true,
+    "recoveredFromStorageFailure": true
+  }
+]

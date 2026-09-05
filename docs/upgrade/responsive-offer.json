@@ -1,0 +1,44 @@
+[
+  {
+    "clientWidth": 305,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 305,
+    "width": 320
+  },
+  {
+    "clientWidth": 360,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 360,
+    "width": 375
+  },
+  {
+    "clientWidth": 375,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  {
+    "clientWidth": 415,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 415,
+    "width": 430
+  },
+  {
+    "clientWidth": 753,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 753,
+    "width": 768
+  },
+  {
+    "clientWidth": 1425,
+    "overflow": [],
+    "path": "/get-offer",
+    "scrollWidth": 1425,
+    "width": 1440
+  }
+]

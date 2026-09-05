@@ -1,114 +1,24 @@
-import { ArrowRight } from "lucide-react";
-import { FAQ, CTASection, FounderProfile, HowItWorks, ResourceCenter, SituationCards, TrustSection } from "@/components/Sections";
+import { ArrowRight, Home as House, KeyRound, Wrench, DoorOpen } from "lucide-react";
 import { Hero } from "@/components/Hero";
+import { LeadForm } from "@/components/LeadForm";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import {
-  CredibilityBadges,
-  CustomerExperienceTimeline,
-  HomeownerTrustSection,
-  TestimonialCarousel
-} from "@/components/TestimonialSections";
-import { faqs, servicePages, site } from "@/content/site";
-import { getPublicTestimonials } from "@/lib/testimonialStore";
-
-export const dynamic = "force-dynamic";
-
-function JsonLd() {
-  const organization = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    name: site.name,
-    url: site.url,
-    email: site.email,
-    telephone: site.phone,
-    logo: `${site.url}${site.ogImage}`,
-    description:
-      "Red Clay Capital helps homeowners evaluate as-is acquisition options for difficult property situations, including repairs, tenants, financing, damage, vacancy, inheritance, and title complications.",
-    areaServed: [
-      "Raleigh NC",
-      "Durham NC",
-      "Cary NC",
-      "Chapel Hill NC",
-      "Fayetteville NC",
-      "Wilmington NC"
-    ],
-    sameAs: []
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-    </>
-  );
-}
-
-export default async function Home() {
-  const testimonials = await getPublicTestimonials();
-
-  return (
-    <main className="page">
-      <JsonLd />
-      <SiteHeader ctaHref="#get-my-cash-offer" />
-      <Hero />
-      <SituationCards />
-      <TestimonialCarousel testimonials={testimonials} />
-      <HomeownerTrustSection />
-      <HowItWorks />
-      <TrustSection />
-      <CustomerExperienceTimeline />
-      <CredibilityBadges />
-      <FounderProfile />
-      <CTASection />
-      <ResourceCenter />
-      <FAQ />
-      <section className="section dark">
-        <div className="container">
-          <div className="section-heading">
-            <h2>A More Professional Way to Resolve a Difficult Property</h2>
-            <p className="muted">
-              Tell us about the property, occupancy, condition, financing, and
-              timeline. Our acquisitions desk will review it privately and
-              follow up with the next practical step.
-            </p>
-          </div>
-          <a className="button" href="#get-my-cash-offer">
-            Request a Cash Offer
-            <ArrowRight size={18} aria-hidden="true" />
-          </a>
-          <div className="internal-links" aria-label="Helpful Red Clay Capital pages">
-            {servicePages.slice(0, 6).map((page) => (
-              <a href={`/${page.slug}`} key={page.slug}>
-                {page.title}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-      <SiteFooter />
-      <a className="button sticky-mobile-cta" href="#get-my-cash-offer">
-        Request My Offer
-      </a>
-    </main>
-  );
+import { FAQ } from "@/components/Sections";
+import { resources } from "@/content/site";
+const situations = [
+  { icon: Wrench, title: "The repairs keep adding up.", copy: "A roof, a cleanout, or a larger project. Share the condition before deciding what to fix.", href: "/blog/sell-house-as-is-major-repairs", label: "Selling as-is" },
+  { icon: House, title: "You’ve inherited a property.", copy: "Sorting through a home and ownership questions takes time. Start with the information you have.", href: "/blog/sell-inherited-house-with-multiple-heirs", label: "Inherited properties" },
+  { icon: KeyRound, title: "Being a landlord has changed.", copy: "Tell us about occupancy, the lease, and your plans. You can explore a sale before making changes.", href: "/blog/sell-rental-property-with-bad-tenants", label: "Selling a rental" },
+  { icon: DoorOpen, title: "It’s time for a different chapter.", copy: "A vacant house, a move, or changing priorities. Talk through the practical next steps.", href: "/blog/sell-vacant-or-abandoned-house", label: "Vacant properties" }
+];
+export default function Home() {
+  return <main className="page"><SiteHeader /><Hero />
+    <section className="section" id="situations"><div className="container"><div className="section-heading split-heading"><div><p className="eyebrow">START WHERE YOU ARE</p><h2>A property doesn’t have to be perfect to have possibilities.</h2></div><p className="muted">You don’t need all the answers before reaching out. Tell us what’s happening, and we’ll help you explore whether a private sale makes sense.</p></div>
+      <div className="seller-situations">{situations.map(({ icon: Icon, ...s }) => <article key={s.title}><Icon size={27} aria-hidden="true" /><h3>{s.title}</h3><p>{s.copy}</p><a className="text-link" href={s.href}>{s.label} <ArrowRight size={16} aria-hidden="true" /></a></article>)}</div></div></section>
+    <section className="section process-section"><div className="container"><div className="section-heading"><p className="eyebrow">NO GUESSWORK ABOUT WHAT COMES NEXT</p><h2>A conversation first.<br />A decision when you’re ready.</h2></div>
+      <div className="seller-steps"><article><span>01</span><h3>Share the basics.</h3><p>Send the property address and a way to reach you. Add your timeline or questions if you’d like.</p></article><article><span>02</span><h3>Explore the fit.</h3><p>We discuss the property, condition, market, and your priorities. If a potential offer makes sense, we explain the terms.</p></article><article><span>03</span><h3>Choose your next step.</h3><p>Compare your options. A sale moves forward only with an agreement and the necessary title and closing work.</p></article></div><a className="text-link" href="/how-it-works">See how the process works <ArrowRight size={18} aria-hidden="true" /></a></div></section>
+    <section className="section"><div className="container seller-comparison"><div><p className="eyebrow">CLARITY BEFORE COMMITMENT</p><h2>The right choice starts with the whole picture.</h2><p>A direct sale can reduce the work of preparing and marketing a property. An open-market listing may reach more buyers and achieve a higher price. Compare the likely proceeds, effort, timing, and terms of each option.</p><a className="text-link" href="/blog/understanding-an-investor-offer">How to evaluate an offer <ArrowRight size={18} aria-hidden="true" /></a></div><div className="comparison-note"><h3>Before you agree, ask:</h3><ul><li>What is the price based on?</li><li>Who will buy the property?</li><li>What costs and conditions apply?</li><li>Can the contract be assigned?</li><li>What could change the closing date?</li></ul><p>Requesting an offer doesn’t obligate you to sell.</p></div></div></section>
+    <section className="section markets-section"><div className="container"><div className="split-heading section-heading"><div><p className="eyebrow">WHERE WE HELP</p><h2>Three states.<br />Your individual situation.</h2></div><p>Explore seller considerations in your state, then share the property location so we can confirm whether it’s a fit.</p></div><div className="market-links">{[["north-carolina", "North Carolina", "NC", "From the Piedmont to the coast"], ["georgia", "Georgia", "GA", "A starting point for Georgia owners"], ["ohio", "Ohio", "OH", "Practical questions for Ohio sellers"]].map(([slug, name, code, sub]) => <a href={`/areas-we-serve/${slug}`} key={slug}><span>{code}</span><h3>{name}</h3><p>{sub}</p><ArrowRight size={22} aria-hidden="true" /></a>)}</div></div></section>
+    <section className="section"><div className="container"><div className="section-heading"><p className="eyebrow">MAKE AN INFORMED DECISION</p><h2>A little more clarity, before you call.</h2></div><div className="resource-grid">{resources.map(resource => <a className="resource" href={resource.href} key={resource.href}><span>{resource.type}</span><h3>{resource.title}</h3><p>{resource.copy}</p><ArrowRight size={20} aria-hidden="true" /></a>)}</div><a className="text-link resources-more" href="/blog">All seller resources <ArrowRight size={18} aria-hidden="true" /></a></div></section>
+    <FAQ /><section className="section offer-section"><div className="container offer-grid"><div><p className="eyebrow">LET’S START WITH YOUR PROPERTY</p><h2>You have options.<br />Let’s talk about them.</h2><p>Share a few details for a conversation about a potential offer. We’ll use your chosen contact method to discuss the property and possible next steps.</p><a className="text-link" href="/about-red-clay-capital">Meet Red Clay Capital <ArrowRight size={18} aria-hidden="true" /></a></div><LeadForm /></div></section><SiteFooter /></main>;
 }

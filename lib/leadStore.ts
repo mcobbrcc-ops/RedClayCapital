@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { randomUUID } from "crypto";
+import { randomUUID, timingSafeEqual } from "crypto";
 
 export const leadStatuses = [
   "New",
@@ -36,7 +36,7 @@ export type LeadRecord = {
   lastContactedAt?: string;
 };
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "RedClay111";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 const globalStore = globalThis as typeof globalThis & {
   redClayLeadCache?: LeadRecord[];
 };
@@ -78,7 +78,10 @@ async function writeFileLeads(leads: LeadRecord[]) {
 }
 
 export function verifyAdminPassword(password: string | null | undefined) {
-  return password === ADMIN_PASSWORD;
+  if (!ADMIN_PASSWORD || !password) return false;
+  const supplied = Buffer.from(password);
+  const expected = Buffer.from(ADMIN_PASSWORD);
+  return supplied.length === expected.length && timingSafeEqual(supplied, expected);
 }
 
 export function normalizeLeadStatus(status: string | null | undefined): LeadStatus {

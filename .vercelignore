@@ -1,0 +1,11 @@
+.tmp
+.data
+.git
+.agents
+.pnpm-store
+node_modules
+.next
+docs
+tests
+scripts
+.env*

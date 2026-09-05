@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "test": "node --test tests/*.test.cjs",
+    "check": "pnpm run test && pnpm run build"
   },
   "dependencies": {
     "next": "^16.2.1",

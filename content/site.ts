@@ -18,10 +18,12 @@ import {
 export const site = {
   name: "Red Clay Capital, LLC",
   url: "https://redclaycap.com",
-  phone: "(888) 626-3213",
+  phone: "(919) 778-1228",
+  phoneHref: "tel:+19197781228",
+  smsHref: "sms:+19197781228",
   email: "MCobb@RedClayCap.com",
   contactLabel: "Acquisitions Desk",
-  ogImage: "/icon.svg"
+  ogImage: "/social-preview.png"
 };
 
 export const situations = [
@@ -33,17 +35,17 @@ export const situations = [
   {
     title: "Difficult Tenants",
     icon: UserRoundX,
-    copy: "Rental properties with non-payment, lease complications, access issues, or costly turnover can be reviewed privately and purchased as-is."
+    copy: "Share the lease, occupancy situation, and known repairs so we can discuss whether a sale could fit your plans."
   },
   {
     title: "Subject-To & Existing Finance",
     icon: Landmark,
-    copy: "When equity, payoff, interest rate, or timing creates a challenge, we can evaluate acquisition structures that may include taking over existing financing where appropriate."
+    copy: "Existing loans affect a sale. Start with your payoff questions and ask for a clear explanation of any proposed financing arrangement."
   },
   {
     title: "Seller Finance Options",
     icon: Signature,
-    copy: "Some sellers need terms, not just a cash number. We can review whether seller financing creates a cleaner exit while protecting the owner's priorities."
+    copy: "A proposal with payments over time needs careful review of the buyer, payment terms, security, and risk before you decide."
   },
   {
     title: "Unauthorized Occupants",
@@ -68,7 +70,7 @@ export const situations = [
   {
     title: "Title or Ownership Issues",
     icon: FileWarning,
-    copy: "If ownership, probate, liens, payoff statements, judgments, or title questions are complicated, our closing partners help clarify the transaction path."
+    copy: "Tell us about known ownership, estate, or lien questions. A qualified closing professional will need to confirm what a sale requires."
   },
   {
     title: "Fire, Water, or Storm Damage",
@@ -93,10 +95,10 @@ export const process = [
 ];
 
 export const trustPoints = [
-  "Institutional review process",
+  "A conversation before a commitment",
   "As-is acquisitions",
-  "Cash and creative structures",
-  "Closing partner coordination",
+  "Property-specific evaluation",
+  "Discuss closing requirements",
   "Clear written terms",
   "Private off-market sale"
 ];
@@ -104,11 +106,11 @@ export const trustPoints = [
 export const faqs = [
   {
     question: "Do I need to make repairs before selling?",
-    answer: "No. Red Clay Capital reviews properties as-is, including homes that need major repairs, cleanouts, or updates."
+    answer: "You do not need to repair or clean up a property to request a review. Any requirements for an eventual sale should be clear in the written agreement."
   },
   {
     question: "Can you buy a house with tenants?",
-    answer: "Yes. We regularly evaluate rental properties, including situations involving difficult tenants, non-payment, or vacancy concerns."
+    answer: "You can request a review of a tenant-occupied property. Share the lease and access situation; a potential sale still needs to account for tenant rights, written agreements, and applicable requirements."
   },
   {
     question: "Can you help with inherited property?",
@@ -116,7 +118,7 @@ export const faqs = [
   },
   {
     question: "How fast can you close?",
-    answer: "Closing timelines depend on title, access, and the homeowner's needs, but cash purchases can often move faster than traditional listings."
+    answer: "There is no fixed closing time for every property. Access, title, financing, contract conditions, and the closing professional's schedule all matter. Tell us your preferred date so we can discuss what may be realistic."
   },
   {
     question: "Can I close remotely?",
@@ -128,7 +130,27 @@ export const faqs = [
   },
   {
     question: "Do you buy houses in bad condition?",
-    answer: "Yes. We review damaged, neglected, outdated, and repair-heavy homes without requiring the owner to make improvements first."
+    answer: "You can request a review of a damaged or repair-heavy home without improving it first. Condition and repair uncertainty affect whether an offer is possible and its terms."
+  },
+  {
+    question: "How is an investor offer different from listing?",
+    answer: "Listing can expose a home to a wider buyer pool and may produce a higher price. A direct offer may reduce preparation and showings, but the buyer accounts for repairs, holding costs, resale costs, and risk. Compare expected proceeds and contract conditions, as well as price."
+  },
+  {
+    question: "Will there be fees or closing costs?",
+    answer: "Ask for a written breakdown of the proposed price, costs, credits, and what each party pays. We do not quote universal no-fee terms on this website; the written agreement and closing statement control."
+  },
+  {
+    question: "Who will be buying my property?",
+    answer: "Before signing, ask who the named buyer is, whether an investor partner or contract assignment is involved, who is responsible for closing, and which conditions allow cancellation. Any proposed structure should be explained in writing."
+  },
+  {
+    question: "What happens after I submit the form?",
+    answer: "Your inquiry goes to Red Clay Capital for review and follow-up using the contact information and preference you provide. We may ask about access, condition, ownership, and timing. Submitting details is a request for a conversation, not an instant valuation or a purchase agreement."
+  },
+  {
+    question: "Can I email instead of giving a phone number?",
+    answer: "Yes. The offer request accepts a usable email address or phone number. Choose how you prefer to be contacted, and provide the contact detail that matches it."
   }
 ];
 
@@ -147,9 +169,9 @@ export const resources = [
   },
   {
     type: "Guide",
-    title: "How Subject-To and Seller Finance Sales Work",
-    href: "/blog/subject-to-seller-finance-house-sale",
-    copy: "A plain-English explanation of creative acquisition structures, when they may help, and what sellers should review carefully."
+    title: "What Does an Investor Offer Really Mean?",
+    href: "/blog/understanding-an-investor-offer",
+    copy: "Compare the price, expected proceeds, repairs, and conditions behind an offer before choosing your next step."
   }
 ];
 
@@ -166,15 +188,66 @@ export type BlogPost = {
     body: string[];
   }>;
   related?: string[];
+  sources?: Array<{ label: string; href: string }>;
 };
 
 export const blogPosts: BlogPost[] = [
+{
+  "slug": "understanding-an-investor-offer",
+  "title": "How to Compare an Investor Offer With Listing Your Home",
+  "eyebrow": "Know what the number means",
+  "description": "Compare the price, expected proceeds, repairs, contract conditions, and timing behind a property offer before deciding how to sell.",
+  "category": "Comparing offers",
+  "readTime": "4 min read",
+  "keywords": [],
+  "sections": [
+    {
+      "heading": "Start with the result you need",
+      "body": [
+        "Before comparing numbers, write down the outcome that matters to you. You might want the most money after expenses, fewer repairs to manage, a workable moving date, or a way to sell an occupied property. These priorities can point to different choices.",
+        "An investor offer is one option to evaluate. A listing can bring competition from a wider pool of buyers. Neither path automatically produces the best result for every property, and a request for an offer is not a commitment."
+      ]
+    },
+    {
+      "heading": "Understand what a buyer is pricing",
+      "body": [
+        "A buyer considering renovation and resale may look at comparable properties, the current condition, estimated repair work, time to complete the project, carrying expenses, future selling costs, and a margin for uncertainty. Access restrictions or unknown damage can increase that uncertainty.",
+        "These estimates are assumptions, not a guaranteed formula for your home. Ask which comparable properties were considered, what repair scope is assumed, and whether the proposed price can change after an inspection. A buyer’s business model does not establish your property’s market value."
+      ]
+    },
+    {
+      "heading": "Compare expected proceeds, not just headline prices",
+      "body": [
+        "Make two simple worksheets: one for the direct offer and one for a listing estimate. Start with an estimated sale price, then identify the costs each route would leave with you. These might include agreed selling costs, repairs or credits, moving arrangements, and the expense of holding the property until closing.",
+        "Keep uncertainty visible. A listing estimate is not an accepted offer. A repair estimate may change. The written proposal determines who pays which costs in a direct sale. Ask a closing professional for payoff and settlement information rather than assuming the gross price is what you will receive."
+      ]
+    },
+    {
+      "heading": "Read the conditions that can change the result",
+      "body": [
+        "Check the named buyer, deposit terms, inspection or due-diligence period, financing conditions, title requirements, and cancellation provisions. Ask when the price is final, who may request an extension, and what happens if the agreed date is missed.",
+        "If an investor partner or assignment is involved, ask who ultimately purchases the home and which party remains responsible under the agreement. Do not infer that a website inquiry means a guaranteed cash purchase. Give yourself room to have an independent adviser review the proposed contract."
+      ]
+    },
+    {
+      "heading": "Prepare a useful first conversation",
+      "body": [
+        "Bring the property address, known repairs, occupancy, and your desired timing. If you already have a written offer or listing estimate, use it to identify questions about terms and costs. You do not need to send financial account details or identity documents to request an initial review.",
+        "Red Clay Capital can discuss a potential sale in North Carolina, Georgia, or Ohio. Tell us what you want to compare, and keep asking questions until the proposed next step is clear."
+      ]
+    }
+  ],
+  "related": [
+    "sell-house-as-is-major-repairs",
+    "sell-inherited-house-with-multiple-heirs"
+  ]
+},
   {
     slug: "sell-house-as-is-major-repairs",
     title: "Selling a House As-Is When Repairs Are Bigger Than the Budget",
     eyebrow: "Major repair properties",
     category: "Repairs",
-    readTime: "7 min read",
+    readTime: "3 min read",
     description:
       "A practical guide for owners dealing with roof failure, foundation issues, outdated systems, cleanouts, and repair costs that no longer make sense.",
     keywords: ["sell house as-is", "major repairs", "cash buyer for damaged house"],
@@ -190,7 +263,7 @@ export const blogPosts: BlogPost[] = [
         heading: "What an as-is acquisition changes",
         body: [
           "An as-is sale shifts the property from a retail buyer conversation to an acquisition conversation. Instead of asking what repairs a homeowner should complete before listing, the question becomes whether a buyer can price the property with the repairs, holding costs, and risk already included.",
-          "This does not mean every as-is offer will be the highest possible number. It means the seller can compare a net, predictable option against the time, money, uncertainty, and stress of preparing the house for the open market."
+          "This does not mean every as-is offer will be the highest possible number. It means the seller can compare the terms of a direct proposal against the time, money, uncertainty, and stress of preparing the house for the open market."
         ]
       },
       {
@@ -199,7 +272,14 @@ export const blogPosts: BlogPost[] = [
           "Red Clay Capital reviews condition, access, neighborhood demand, repair scope, title status, occupancy, utilities, timeline, and closing constraints. We are not asking homeowners to make the property perfect before we look at it.",
           "For some sellers, the best option is still a traditional listing. For others, the cleaner decision is to accept a private as-is sale, avoid repair management, and close on a defined timeline."
         ]
-      }
+      },
+{
+  "heading": "A comparison you can put on paper",
+  "body": [
+    "Create a list of work you would need to organize before listing, with estimated costs and time. Add the costs of keeping the home during that period. Compare that with a written as-is proposal, including any deductions, inspection conditions, and expenses you would still pay.",
+    "Ask whether the price is subject to further inspection and how changes would be handled. Selling as-is does not mean a seller can skip requirements that apply to the transaction. A qualified local professional can explain the documents and disclosures for your property."
+  ]
+}
     ],
     related: ["sell-fire-damaged-house-north-carolina", "sell-house-with-code-violations"]
   },
@@ -208,7 +288,7 @@ export const blogPosts: BlogPost[] = [
     title: "Selling a Rental Property With Difficult Tenants",
     eyebrow: "Tenant occupied property",
     category: "Tenants",
-    readTime: "8 min read",
+    readTime: "3 min read",
     description:
       "How landlords can think through non-payment, access problems, lease issues, property damage, and selling a rental without waiting for perfect conditions.",
     keywords: ["sell house with tenants", "bad tenants", "tenant occupied rental property"],
@@ -223,7 +303,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why traditional buyers hesitate",
         body: [
-          "Retail buyers usually want clean access, vacant delivery, financing approval, and an inspection process they can control. Difficult tenants can disrupt all four. Missed appointments, limited access, unknown interior condition, and lease uncertainty can reduce the buyer pool quickly.",
+          "A buyer planning to live in a rental may need access, a workable possession date, financing approval, and inspection contingencies. Difficult tenants can disrupt all four. Missed appointments, limited access, unknown interior condition, and lease uncertainty can reduce the buyer pool quickly.",
           "A professional acquisition review looks at rent status, lease terms, legal posture, property condition, local market demand, and the cost of resolving the issue after closing."
         ]
       },
@@ -233,7 +313,14 @@ export const blogPosts: BlogPost[] = [
           "Red Clay Capital can review tenant-occupied rentals, difficult occupant situations, inherited rentals, and properties where the owner no longer wants to manage the risk. The goal is not to minimize the problem. The goal is to price it honestly and determine whether an as-is sale creates a better outcome than continued management.",
           "Landlords should keep records organized: lease documents, payment history, notices, repair records, and communication history. Those details help clarify the situation and reduce uncertainty during review."
         ]
-      }
+      },
+{
+  "heading": "Prepare the handoff before choosing a route",
+  "body": [
+    "Put the lease, amendments, deposit information, rent ledger, pending maintenance requests, and property management agreement in one folder. Note what you know and what still needs confirmation. Avoid sending tenant identity documents or financial account details in an initial website inquiry.",
+    "Compare an occupied sale with waiting for an appropriate turnover. Include vacancy risk, ongoing expenses, repair needs, and your available time. Have a qualified local adviser explain tenant rights, access, notices, and any obligations that continue through a sale."
+  ]
+}
     ],
     related: ["sell-vacant-or-abandoned-house", "subject-to-seller-finance-house-sale"]
   },
@@ -242,7 +329,7 @@ export const blogPosts: BlogPost[] = [
     title: "Subject-To and Seller Finance: What Homeowners Should Understand",
     eyebrow: "Creative finance",
     category: "Finance",
-    readTime: "9 min read",
+    readTime: "3 min read",
     description:
       "A careful, plain-English overview of subject-to purchases, seller finance structures, and why the terms matter as much as the purchase price.",
     keywords: ["subject to real estate", "seller finance house sale", "creative finance buyer"],
@@ -267,8 +354,16 @@ export const blogPosts: BlogPost[] = [
           "Seller finance means the seller may receive payments over time under agreed terms instead of receiving the full purchase price at closing. The structure may include a down payment, interest rate, monthly payment, maturity date, default remedies, and security documents.",
           "The right structure depends on the seller's need for cash, risk tolerance, tax planning, existing liens, and the buyer's ability to perform. Red Clay Capital can review whether a terms-based proposal is practical, but sellers should evaluate it with appropriate legal and tax professionals."
         ]
-      }
+      },
+{
+  "heading": "Questions to take to independent advisers",
+  "body": [
+    "Ask the lender and your own attorney whether a proposed transfer is permitted, what consent is needed, and what obligations could remain with you. A deed transfer and a release from loan liability are different issues; do not rely on a buyer’s verbal assurance that the loan will be handled.",
+    "For a payment-based proposal, ask what happens after a missed payment, how payments and insurance will be verified, what security exists, and what the practical cost of enforcing the agreement could be. Compare this with a conventional sale and obtain tax advice before assuming a particular result."
+  ]
+}
     ],
+    sources: [{"label": "CFPB: mortgage assumption disclosures", "href": "https://www.consumerfinance.gov/rules-policy/regulations/1026/18/"}],
     related: ["foreclosure-timeline-cash-sale-options", "sell-house-as-is-major-repairs"]
   },
   {
@@ -276,7 +371,7 @@ export const blogPosts: BlogPost[] = [
     title: "Selling a Fire-Damaged House in North Carolina",
     eyebrow: "Fire damage",
     category: "Damage",
-    readTime: "7 min read",
+    readTime: "3 min read",
     description:
       "What to consider when smoke, fire, water intrusion, insurance questions, or repair scope make a normal sale difficult.",
     keywords: ["sell fire damaged house", "fire damage North Carolina", "cash buyer fire damaged property"],
@@ -291,7 +386,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Why as-is buyers evaluate differently",
         body: [
-          "Most retail buyers cannot or will not buy a fire-damaged home. Financing may be difficult, inspections can be uncertain, and the repair path may be too complex for a normal buyer.",
+          "Some buyers will not consider a fire-damaged home. Financing may be difficult, inspections can be uncertain, and the repair path may be too complex for a normal buyer.",
           "An acquisition buyer reviews the property based on current condition, repair scope, title, insurance status, local demand, and the cost of carrying the property through renovation or redevelopment."
         ]
       },
@@ -301,7 +396,14 @@ export const blogPosts: BlogPost[] = [
           "Helpful information includes the property address, photos if available, whether utilities are active, insurance claim status, access details, known structural concerns, and any city or county notices.",
           "Red Clay Capital can review fire, smoke, water, and storm-damaged properties without asking the owner to make repairs before the conversation starts."
         ]
-      }
+      },
+{
+  "heading": "Keep the sale decision separate from claim assumptions",
+  "body": [
+    "Ask the insurer how a transfer could affect an open claim, and ask the appropriate local authority or qualified contractor about access and repair restrictions. Do not assume a buyer’s offer includes an insurance payment or takes over every obligation.",
+    "When comparing repair with sale, separate written estimates from unknowns. Keep the documented damage scope, proposed repair costs, carrying costs, and the buyer’s contract conditions visible in the same comparison. No purchase price or repair schedule is promised by requesting a review."
+  ]
+}
     ],
     related: ["sell-house-as-is-major-repairs", "sell-house-with-code-violations"]
   },
@@ -310,7 +412,7 @@ export const blogPosts: BlogPost[] = [
     title: "Foreclosure Pressure: Comparing a Cash Sale With Other Options",
     eyebrow: "Timeline pressure",
     category: "Foreclosure",
-    readTime: "8 min read",
+    readTime: "3 min read",
     description:
       "How homeowners can think about deadlines, payoff numbers, reinstatement, listing timelines, and private sale options when time is limited.",
     keywords: ["foreclosure help", "sell house before foreclosure", "cash sale foreclosure"],
@@ -332,11 +434,19 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "A clear offer is only useful if it can close",
         body: [
-          "Red Clay Capital focuses on offers that can be explained and performed. When time is tight, certainty matters. A number that sounds good but cannot close before the deadline is not a solution.",
+          "Before relying on any offer, ask the buyer and closing professional to explain the remaining conditions and whether the transaction can be completed within the relevant time. An attractive number is not enough if required steps cannot be completed.",
           "If a cash sale is a fit, the process should move quickly into title review, closing coordination, and written terms so the owner understands what happens next."
         ]
-      }
+      },
+{
+  "heading": "Get independent help while comparing a sale",
+  "body": [
+    "The Consumer Financial Protection Bureau directs homeowners who are struggling with mortgage payments to their servicer and HUD-approved housing counselors. A counselor can help you understand available options; you do not need to wait for an investor conversation.",
+    "Foreclosure procedures differ by state and by the type of proceeding. In North Carolina, the Judicial Branch explains the court process and available resources. Use the actual notice and qualified local advice to confirm your next deadline. An offer request, negotiation, or unsigned proposal does not stop a foreclosure."
+  ]
+}
     ],
+    sources: [{"label": "CFPB: mortgage help and housing counselors", "href": "https://www.consumerfinance.gov/mortgagehelp/"}, {"label": "North Carolina Judicial Branch: foreclosures", "href": "https://www.nccourts.gov/help-topics/housing/foreclosures"}],
     related: ["subject-to-seller-finance-house-sale", "sell-house-as-is-major-repairs"]
   },
   {
@@ -344,7 +454,7 @@ export const blogPosts: BlogPost[] = [
     title: "Selling a House With Code Violations, Liens, or City Notices",
     eyebrow: "Code and title issues",
     category: "Distress",
-    readTime: "7 min read",
+    readTime: "3 min read",
     description:
       "A homeowner's guide to code violations, municipal notices, liens, unsafe conditions, and selling when the paperwork feels complicated.",
     keywords: ["sell house with code violations", "property liens", "city notices"],
@@ -369,7 +479,14 @@ export const blogPosts: BlogPost[] = [
           "Red Clay Capital evaluates code and title complications as part of the acquisition process. That includes repair exposure, municipal requirements, title requirements, and the seller's preferred timeline.",
           "The goal is a clear written path, not vague promises. If the issue affects price or closing timing, it should be discussed plainly before the seller makes a decision."
         ]
-      }
+      },
+{
+  "heading": "Build a notice checklist",
+  "body": [
+    "For each notice, record the issuing office, date, deadline, stated issue, and a contact for questions. Keep payment receipts, inspection reports, and written responses together. If a balance is disputed, distinguish the disputed amount from a confirmed payoff.",
+    "Ask the proposed closing professional what must be cleared before transfer and what the written agreement expects of you. Do not assume a buyer’s willingness to review the property cancels a municipal obligation or changes the deadline on a notice."
+  ]
+}
     ],
     related: ["sell-fire-damaged-house-north-carolina", "sell-vacant-or-abandoned-house"]
   },
@@ -378,7 +495,7 @@ export const blogPosts: BlogPost[] = [
     title: "Selling an Inherited House When Multiple Heirs Are Involved",
     eyebrow: "Inherited property",
     category: "Probate",
-    readTime: "8 min read",
+    readTime: "3 min read",
     description:
       "How families can approach inherited property decisions when repairs, emotions, probate, distance, and multiple decision-makers are involved.",
     keywords: ["sell inherited house", "multiple heirs", "probate property sale"],
@@ -403,8 +520,16 @@ export const blogPosts: BlogPost[] = [
           "Red Clay Capital reviews inherited properties with discretion and patience. We can evaluate repair-heavy houses, occupied inherited homes, vacant properties, and homes where the family needs time to coordinate documents or belongings.",
           "Closing still depends on proper authority and title clearance. When the structure is workable, the goal is a clean closing timeline and a professional process that respects the family situation."
         ]
-      }
+      },
+{
+  "heading": "Confirm authority before treating an offer as a family decision",
+  "body": [
+    "In North Carolina, the Judicial Branch explains that estate administration is generally handled through the clerk of superior court and that real property is not always administered through the probate estate. In Georgia and Ohio, use the relevant court resources below to locate the appropriate process; do not apply one state’s procedure to another property.",
+    "A useful first checklist is the deed, any will or estate appointment papers, the names of possible decision-makers, known debt, and the property’s condition. Ask a qualified local attorney or closing professional who has authority to sign and what must happen before a transfer. Agreement among relatives alone may not answer those questions."
+  ]
+}
     ],
+    sources: [{"label": "North Carolina Judicial Branch: estates", "href": "https://www.nccourts.gov/help-topics/wills-and-estates/estates"}, {"label": "Georgia Courts: court directory", "href": "https://georgiacourts.gov/georgia-courts-directory/"}, {"label": "Supreme Court of Ohio: estate forms", "href": "https://www.supremecourt.ohio.gov/forms/all-forms/decedents-estate/8"}],
     related: ["sell-house-as-is-major-repairs", "sell-vacant-or-abandoned-house"]
   },
   {
@@ -412,7 +537,7 @@ export const blogPosts: BlogPost[] = [
     title: "Selling a Vacant or Abandoned House Before It Becomes a Bigger Problem",
     eyebrow: "Vacant homes",
     category: "Vacancy",
-    readTime: "7 min read",
+    readTime: "3 min read",
     description:
       "Why vacant homes can create insurance, vandalism, utility, tax, and maintenance risk, and how owners can compare private sale options.",
     keywords: ["sell vacant house", "abandoned property", "cash buyer vacant home"],
@@ -437,7 +562,14 @@ export const blogPosts: BlogPost[] = [
           "Red Clay Capital evaluates vacant and abandoned properties based on condition, location, access, title, and timeline. Sellers do not need to clean out the house or complete repairs before requesting a review.",
           "A direct sale may not be right for every owner, but it can create a clear exit when the property has become a liability instead of an asset."
         ]
-      }
+      },
+{
+  "heading": "Compare the next three months with a proposed sale",
+  "body": [
+    "Write down the actual recurring costs: tax and insurance payments, utilities, grounds care, management, and known maintenance. Add the work needed to monitor access and respond to problems. Keep estimates separate from bills you have already received.",
+    "Ask your insurer whether the current occupancy status affects coverage and ask the relevant local office about any notices or registration requirements. If you live elsewhere, tell a prospective buyer how access can be arranged safely. Do not post lockbox codes in an initial inquiry."
+  ]
+}
     ],
     related: ["sell-house-with-code-violations", "sell-rental-property-with-bad-tenants"]
   }
@@ -445,196 +577,212 @@ export const blogPosts: BlogPost[] = [
 
 export const servicePages = [
   {
-    slug: "areas-we-serve",
-    title: "Areas We Serve",
-    eyebrow: "North Carolina property solutions",
-    description:
-      "Red Clay Capital helps homeowners throughout Raleigh, Durham, Cary, Chapel Hill, Burlington, Graham, Greensboro, Haw River, Roxboro, Fayetteville, Wilmington, and central North Carolina.",
-    sections: [
-      "Local market knowledge helps us evaluate timing, property condition, repairs, occupancy, and neighborhood demand with more context.",
-      "Homeowners across central North Carolina can request a private review for inherited homes, distressed property, tenant issues, major repairs, vacancy, and other situations where a traditional listing may not be the right fit."
+    "slug": "areas-we-serve",
+    "title": "Sell a Property in North Carolina, Georgia or Ohio",
+    "eyebrow": "Our focus markets",
+    "description": "Explore Red Clay Capital property reviews in North Carolina, Georgia, and Ohio, with practical state resources and a clear way to request an offer.",
+    "sections": [
+      "Our focus is helping owners in North Carolina, Georgia, and Ohio explore a potential sale. Start with your property address and what you want to change: repairs, an inherited home, a rental you no longer want to manage, vacancy, or a move.",
+      "Coverage is evaluated property by property. A state or city page is a place to begin the conversation; it does not guarantee that every address qualifies for an offer. We do not claim an office in each market.",
+      "Use the state guides below to organize the right questions before reaching out. An initial request does not require repairs, a cleanout, or a commitment to sell."
     ],
-    keywords: ["cash home buyers Raleigh", "sell my house fast North Carolina", "cash buyers near me", "cash home buyers central North Carolina"]
+    "keywords": []
   },
   {
-    slug: "sell-your-house-fast",
-    title: "Sell Your House Fast With a Professional Acquisition Process",
-    eyebrow: "Private as-is acquisition",
-    description:
-      "Explore a private sale when you want to sell without repairs, showings, agent commissions, or a long listing timeline.",
-    sections: [
-      "A fast sale should still be structured. Red Clay Capital reviews the property, the situation, the timeline, title requirements, and closing logistics before discussing whether an acquisition proposal makes sense.",
-      "This path can be useful for inherited homes, vacant properties, tenant issues, foreclosure pressure, damaged houses, fire damage, code issues, and properties where repairs no longer justify the delay."
+    "slug": "sell-your-house-fast",
+    "title": "Want to Sell Your House? Start With a Clear Plan.",
+    "eyebrow": "Timing without pressure",
+    "description": "Compare a potential as-is sale with listing, understand what affects timing, and request an offer from Red Clay Capital.",
+    "sections": [
+      "If you have a moving date, an unwanted property, or a growing repair list, the first useful step is to name the deadline and the reason behind it. A desired moving date and a legal notice are different constraints; both need to be discussed before any closing date is promised.",
+      "A direct sale may involve less preparation and fewer showings. Listing can reach more buyers and may produce a higher sale price. Compare the likely money you keep, the work each option requires, and the conditions that could delay or cancel a transaction.",
+      "We begin with your property details and a conversation. Condition, location, access, occupancy, ownership, and the proposed terms determine whether an offer is possible. Requesting a review does not reserve a price or a closing date.",
+      "If there is a time-sensitive notice, continue speaking with the appropriate lender, attorney, or housing counselor. An inquiry through this website does not suspend a deadline."
     ],
-    keywords: ["sell my house fast Raleigh NC", "cash offer for my house", "sell house as-is"]
+    "keywords": []
   },
   {
-    slug: "how-it-works",
-    title: "How It Works",
-    eyebrow: "A clear process",
-    description:
-      "Tell us about the property, review your offer, and close on a timeline that works for you.",
-    sections: [
-      "Start with a private property review. You do not need to prepare the home, clean it out, or make repairs before reaching out.",
-      "If the offer is a fit, closing is handled through professional closing partners with flexible dates and remote options when available."
+    "slug": "how-it-works",
+    "title": "A Clearer Path From Property Details to a Decision",
+    "eyebrow": "How it works",
+    "description": "Share your property, discuss your situation, compare a potential offer, and understand the written agreement before deciding.",
+    "sections": [
+      "1. Tell us the basics. Share the property address, your name, and a way to reach you. Condition, occupancy, and your preferred timing are useful if you know them, but you do not need a complete file to start.",
+      "2. Have a conversation. We review what you shared and may ask about repairs, access, ownership, and what matters most to you. Let us know whether you prefer a call, text, or email. You do not need to repair or clean the property before this conversation.",
+      "3. Evaluate the property and a possible offer. Nearby comparable sales, current condition, estimated repairs, holding and resale costs, access, occupancy, and title questions can affect the proposal. An offer is not guaranteed for every property.",
+      "4. Compare the written terms. Look at price, expected proceeds, who pays each cost, due diligence, cancellation rights, the named buyer, and the proposed closing date. Ask whether a partner or assignment is involved and how it affects the agreement. You can seek independent advice before signing.",
+      "5. Proceed only if the agreement fits. A sale then depends on the contract conditions and the closing professional confirming the necessary title, payoff, signing, and funding requirements. Requesting an offer is separate from accepting one or signing a purchase agreement."
     ],
-    keywords: ["cash home buyers Raleigh", "sell without repairs", "remote closing"]
+    "keywords": []
   },
   {
-    slug: "about-red-clay-capital",
-    title: "About Red Clay Capital",
-    eyebrow: "Professional acquisitions firm",
-    description:
-      "Red Clay Capital is a North Carolina-focused real estate acquisitions company built for complex, as-is property situations.",
-    sections: [
-      "Red Clay Capital was formed around a simple market reality: many properties do not fit neatly into a traditional retail listing. Heavy repairs, tenant issues, inherited ownership, existing financing, vacancy, fire damage, code concerns, and title complications require a more specialized acquisition process.",
-      "The company focuses on private off-market reviews, disciplined underwriting, clear written terms, and professional closing coordination. Sellers receive a practical option, not a sales pitch, and every transaction is evaluated for performance before an offer is presented."
+    "slug": "about-red-clay-capital",
+    "title": "About Red Clay Capital",
+    "eyebrow": "Meet the business",
+    "description": "Red Clay Capital LLC, owned by Michael Cobb, helps property owners explore potential sales in North Carolina, Georgia, and Ohio.",
+    "sections": [
+      "Red Clay Capital LLC is owned by Michael Cobb. This is our public website for homeowners considering a property sale in North Carolina, Georgia, or Ohio.",
+      "A property decision is rarely just a price. You may be managing repairs from another state, sorting through an inheritance, dealing with a rental, or making room for a move. Our starting point is understanding the property and the result you want.",
+      "We discuss a potential acquisition after reviewing the information you share. We want you to understand the proposed buyer, price, costs, conditions, and timing before deciding. If an investor partner, assignment, or financing arrangement is proposed, ask for that structure to be explained in writing.",
+      "Our website does not provide an instant valuation or guarantee a purchase. It gives you a direct way to begin a conversation with Red Clay Capital and compare a potential offer with your other options.",
+      "You can reach us by calling or texting (919) 778-1228, by emailing MCobb@RedClayCap.com, or through the offer request form."
     ],
-    keywords: ["Red Clay Capital", "North Carolina acquisitions company", "professional cash home buyers"]
+    "keywords": []
   },
   {
-    slug: "faq",
-    title: "Frequently Asked Questions",
-    eyebrow: "Straight answers",
-    description:
-      "Helpful answers about repairs, tenants, inherited property, remote closings, timelines, and cash offer obligations.",
-    sections: [
-      "The most important thing to know is that requesting a review does not obligate you to accept an offer.",
-      "Every property situation is different, so the best next step depends on title, condition, occupancy, timing, and the homeowner's goals."
+    "slug": "faq",
+    "title": "Questions Before You Request an Offer",
+    "eyebrow": "Straight answers",
+    "description": "Answers about as-is sales, fees, repairs, tenants, timing, buyer identity, privacy, and what happens after you contact Red Clay Capital.",
+    "sections": [
+      "You should be able to understand the next step before sharing your information. These answers explain the review process and the questions worth asking before accepting a proposal.",
+      "Every property and written agreement is different. If a term affects your decision, ask for it to be addressed explicitly in the proposed contract."
     ],
-    keywords: ["cash home buyer FAQ", "sell inherited house", "sell house with repairs"]
+    "keywords": []
   },
   {
-    slug: "contact",
-    title: "Contact Red Clay Capital",
-    eyebrow: "Acquisitions desk",
-    description:
-      "Contact Red Clay Capital to discuss an unwanted, inherited, damaged, vacant, financed, or tenant-occupied property.",
-    sections: [
-      "Email the acquisitions desk with the property address, occupancy status, known repairs, timeline, and any financing or title details that may matter.",
-      "Your information is reviewed privately by the acquisitions desk, and the next step will be explained clearly before any decision is needed."
+    "slug": "contact",
+    "title": "Let’s Talk About Your Property",
+    "eyebrow": "Contact Red Clay Capital",
+    "description": "Call or text (919) 778-1228, email Red Clay Capital, or request a property review in North Carolina, Georgia, or Ohio.",
+    "sections": [
+      "Call or text (919) 778-1228, or email MCobb@RedClayCap.com. If you prefer to start online, the offer request form asks for the property location, your name, and a usable phone number or email address.",
+      "A short description is enough: where the property is, what you want help comparing, and when you would like to sell. You can mention repairs, occupancy, or ownership questions if they are relevant.",
+      "Please avoid sending Social Security numbers, bank details, access codes, or unredacted identity documents in the initial inquiry. If additional documents are needed, ask how to share them appropriately.",
+      "A text link opens your messaging app; you decide whether to send a message. We do not promise immediate replies or round-the-clock availability."
     ],
-    keywords: ["contact Red Clay Capital", "cash offer for my house", "property review"]
+    "keywords": []
   },
   {
-    slug: "blog",
-    title: "Homeowner Resource Center",
-    eyebrow: "Distressed property education",
-    description:
-      "Guides for homeowners comparing as-is sales, cash offers, subject-to, seller finance, inherited property, repairs, tenants, fire damage, vacancy, and foreclosure concerns.",
-    sections: [
-      "The Red Clay Capital resource center is built for owners dealing with properties that require more than ordinary listing advice.",
-      "Read practical, human-written guidance about as-is sales, cash offers, inherited properties, difficult tenants, subject-to structures, seller finance, fire damage, code issues, vacancy, foreclosure pressure, and remote closings."
+    "slug": "blog",
+    "title": "Homeowner Resources",
+    "eyebrow": "Understand your options",
+    "description": "Practical guides to comparing as-is offers, repairs, inherited homes, rentals, vacancy, and selling decisions.",
+    "sections": [
+      "Use these guides to organize your questions and compare the work, costs, and uncertainty of different sale options. They are starting points for a property-specific conversation."
     ],
-    keywords: ["how cash home buyers work", "sell house as-is", "probate property guide"]
+    "keywords": []
   },
   {
-    slug: "testimonials",
-    title: "Testimonials",
-    eyebrow: "Homeowner experiences",
-    description:
-      "Homeowner feedback reflects the kind of experience Red Clay Capital works to provide: clear communication, privacy, and a respectful process.",
-    sections: [
-      "Every conversation starts with the property, the situation, and the homeowner's goals.",
-      "Our focus is a simple, low-pressure experience where homeowners understand their options before making a decision."
+    "slug": "testimonials",
+    "title": "Homeowner Feedback",
+    "eyebrow": "Clear expectations",
+    "description": "Learn what to expect when discussing a property with Red Clay Capital.",
+    "sections": [
+      "Trust starts with being able to ask direct questions. Before choosing a buyer, ask about the written terms, how the purchase will be funded, who is responsible for closing, and what happens if conditions change.",
+      "Our process and contact pages explain how to start a conversation and what to review before making a commitment."
     ],
-    keywords: ["Red Clay Capital reviews", "cash home buyer testimonials"]
+    "keywords": []
   },
   {
-    slug: "recently-purchased-properties",
-    title: "Recently Purchased Properties",
-    eyebrow: "Real examples",
-    description:
-      "Red Clay Capital works with a range of property situations, including inherited homes, repair-heavy houses, vacant properties, and tenant-occupied rentals.",
-    sections: [
-      "Privacy matters, so property examples are shared in a general way without exposing sensitive homeowner details.",
-      "Common situations include homes needing major repairs, properties with occupancy challenges, and owners who need a simpler as-is sale."
+    "slug": "recently-purchased-properties",
+    "title": "Property Situations We Can Discuss",
+    "eyebrow": "Explore your options",
+    "description": "Discuss inherited homes, repairs, vacancy, and rental property questions with Red Clay Capital.",
+    "sections": [
+      "A house that needs work, an inherited property, or a rental can each raise different questions. Start by explaining the condition, ownership, occupancy, and outcome you want.",
+      "The resources on this website describe sale considerations. They are not presented as completed purchases or case studies. Contact us to discuss your own property."
     ],
-    keywords: ["recently purchased homes", "as-is property buyer", "cash home buyer case studies"]
+    "keywords": []
   },
   {
-    slug: "our-buying-process",
-    title: "Our Buying Process",
-    eyebrow: "What to expect",
-    description:
-      "A transparent look at how Red Clay Capital reviews properties, evaluates repairs, discusses offers, and coordinates closing.",
-    sections: [
-      "We consider property condition, repairs, local market demand, title, occupancy, and closing timeline.",
-      "The goal is to make the process clear enough that homeowners can compare their options with confidence."
+    "slug": "our-buying-process",
+    "title": "Our Buying Process",
+    "eyebrow": "What to expect",
+    "description": "Understand the steps in a Red Clay Capital property review and how to evaluate a potential offer.",
+    "sections": [
+      "Share the property details, have a conversation, and review a potential proposal. If a proposal fits, carefully compare its written costs, conditions, buyer identity, and closing requirements.",
+      "The complete process guide explains each step, from your first inquiry to a decision about a purchase agreement."
     ],
-    keywords: ["cash home buying process", "property review", "sell house fast process"]
+    "keywords": []
   },
   {
-    slug: "why-homeowners-choose-us",
-    title: "Why Homeowners Choose Us",
-    eyebrow: "Disciplined and professional",
-    description:
-      "Homeowners choose Red Clay Capital for private reviews, professional underwriting, clear terms, and practical solutions for complicated properties.",
-    sections: [
-      "We focus on the full situation behind the sale: title, occupancy, repairs, liens, financing, timeline, and closing feasibility.",
-      "That means clear communication, flexible closing options, private off-market review, and no requirement to repair, clean, stage, or publicly show the property."
+    "slug": "why-homeowners-choose-us",
+    "title": "What You Should Expect From a Property Buyer",
+    "eyebrow": "Choose with confidence",
+    "description": "Questions to ask a property buyer about price, costs, buyer identity, written terms, and closing requirements.",
+    "sections": [
+      "Look for a clear explanation of how the offer relates to the property condition and market. A larger headline price is not automatically a better result if deductions or conditions are unclear.",
+      "Ask who the buyer is and whether a partner or contract assignment is part of the proposed transaction. Request written terms, a breakdown of costs, and an explanation of contingencies and cancellation rights.",
+      "Keep room to compare your options. A direct sale can reduce some preparation, while listing can introduce more buyers. Your decision should reflect your timing, expected proceeds, and comfort with the agreement."
     ],
-    keywords: ["why choose Red Clay Capital", "fair cash offer", "no pressure home buyer"]
+    "keywords": []
   },
   {
-    slug: "sell-house-with-subject-to-financing",
-    title: "Sell a House With Subject-To Financing Options",
-    eyebrow: "Creative acquisition structures",
-    description:
-      "Red Clay Capital can review existing loan terms, equity, payoff timing, and seller goals to determine whether a subject-to acquisition may be practical.",
-    sections: [
-      "Subject-to transactions require careful review because the existing financing may remain in place after closing. Sellers should understand loan terms, payment controls, insurance, risk, and documentation before agreeing to any structure.",
-      "Red Clay Capital evaluates subject-to only when the structure appears workable for the property, the debt, and the seller's priorities. When cash is not the only useful option, a terms-based proposal may create flexibility that a standard offer cannot."
+    "slug": "sell-house-with-subject-to-financing",
+    "title": "Questions About Selling With Existing Financing",
+    "eyebrow": "Review the full terms",
+    "description": "Understand what to ask before considering a sale where existing financing could remain in place.",
+    "sections": [
+      "If a proposal involves leaving an existing loan in place, ask your lender and an independent real estate attorney to explain the consequences before signing. Do not assume a transfer of the property also releases your loan obligations.",
+      "Ask about lender approval requirements, due-on-sale provisions, payment servicing, insurance, default remedies, and how the seller will know payments are current. A proposal should address these questions in writing.",
+      "You can share your situation with Red Clay Capital, but this page is not a promise that a particular financing structure is available or appropriate. Compare any proposal with a sale that pays off existing debt."
     ],
-    keywords: ["sell house subject to", "subject to real estate North Carolina", "creative finance home buyer"]
+    "keywords": []
   },
   {
-    slug: "seller-finance-house-sale",
-    title: "Seller Finance Property Sale Options",
-    eyebrow: "Terms-based exits",
-    description:
-      "Learn how seller finance may help some homeowners sell with structured payments, written terms, and a private acquisition process.",
-    sections: [
-      "Seller finance can be useful when a seller wants a structured exit instead of a single cash payoff. The details matter: down payment, interest rate, monthly payment, maturity date, default remedies, security, and title requirements all affect whether the structure is acceptable.",
-      "Red Clay Capital can review whether seller financing is a fit for the property and seller goals. Some situations call for cash. Others may benefit from terms that balance price, timing, and long-term payment structure."
+    "slug": "seller-finance-house-sale",
+    "title": "Considering Seller Financing? Know What to Ask.",
+    "eyebrow": "Payments over time",
+    "description": "Questions about payment terms, buyer qualification, security, and independent advice when considering seller financing.",
+    "sections": [
+      "A proposal with payments over time changes the decision from a sale price alone to a longer financial relationship. Consider how much money you need at closing and what would happen if later payments were missed.",
+      "Ask a qualified attorney and tax professional to review the buyer, down payment, repayment schedule, interest, maturity date, security documents, and remedies. Do not rely on a verbal promise about protection or tax outcomes.",
+      "If you contact Red Clay Capital, describe your priorities and existing financing. Any possible structure needs property-specific review and a written agreement."
     ],
-    keywords: ["seller finance home buyer", "owner finance property sale", "sell house with terms"]
+    "keywords": []
   },
   {
-    slug: "sell-house-with-bad-tenants",
-    title: "Sell a House With Difficult Tenants",
-    eyebrow: "Tenant occupied acquisitions",
-    description:
-      "Red Clay Capital reviews rental properties with non-payment, access issues, lease complications, property damage, and stressful tenant situations.",
-    sections: [
-      "A tenant problem can turn a rental property into a liability. Missed rent, limited access, lease disputes, damage, unauthorized occupants, and turnover costs can make a traditional sale difficult.",
-      "We evaluate the property as-is with the occupancy issue included. Sellers should be prepared to share lease documents, payment history, notices, repair records, and access details so the review can be realistic."
+    "slug": "sell-house-with-bad-tenants",
+    "title": "Selling a Tenant-Occupied Property",
+    "eyebrow": "A rental you are ready to leave behind",
+    "description": "Discuss an occupied rental, organize lease information, and compare a sale with continuing to manage the property.",
+    "sections": [
+      "You do not need to describe an occupied rental as a perfect property to start a conversation. Share whether rent is current, what the lease says about access, and which repairs are known.",
+      "Gather the lease and amendments, deposit records, a rent ledger, repair requests, and relevant notices. These help a prospective buyer understand the property without relying on assumptions.",
+      "A sale needs to account for tenant rights and existing agreements. Do not promise vacant possession or arrange access contrary to the lease or applicable requirements; ask a qualified local professional when obligations are unclear.",
+      "Compare selling occupied with waiting for an appropriate turnover. Include carrying costs, repairs, management effort, and the uncertainty of either path."
     ],
-    keywords: ["sell house with bad tenants", "sell tenant occupied property", "problem tenant home buyer"]
+    "keywords": []
   },
   {
-    slug: "sell-fire-damaged-house",
-    title: "Sell a Fire-Damaged House As-Is",
-    eyebrow: "Fire and smoke damage",
-    description:
-      "Red Clay Capital evaluates fire-damaged, smoke-damaged, storm-damaged, and water-damaged homes without requiring repairs before review.",
-    sections: [
-      "Fire damage can involve smoke, water intrusion, electrical safety, structural concerns, permitting, insurance questions, and repair scope that many retail buyers cannot handle.",
-      "A private as-is acquisition can help owners compare a clean sale against the cost, timeline, and uncertainty of repair management. Red Clay Capital reviews the full situation before discussing a proposal."
+    "slug": "sell-fire-damaged-house",
+    "title": "Selling a Fire-Damaged House As-Is",
+    "eyebrow": "After property damage",
+    "description": "Explore a potential as-is sale after fire, smoke, or water damage and organize the information a buyer may need.",
+    "sections": [
+      "After a fire, the sale decision may depend on safety restrictions, the known damage, insurance questions, and whether you want to manage repairs. You can request a review before completing renovation work.",
+      "Useful details include the address, available photos taken safely, professional damage reports, current access restrictions, and the status of any insurance claim. Do not enter an unsafe structure just to gather information for a review.",
+      "Compare the potential proceeds and obligations from selling with the money, time, and uncertainty involved in repair. Ask the insurer and relevant professionals how a proposed sale would affect an open claim or required work."
     ],
-    keywords: ["sell fire damaged house", "cash buyer fire damaged house", "sell damaged house as-is"]
+    "keywords": []
   },
   {
-    slug: "sell-house-with-code-violations",
-    title: "Sell a House With Code Violations or Liens",
-    eyebrow: "Code, liens, and notices",
-    description:
-      "Explore a private sale option for properties with code violations, municipal notices, liens, unsafe conditions, or title complications.",
-    sections: [
-      "Code violations and municipal notices can make a normal sale harder. Buyers may hesitate, lenders may object, and owners may not know which items must be resolved before closing.",
-      "Red Clay Capital reviews notices, lien information, repair exposure, access, occupancy, and title requirements to determine whether a direct acquisition can create a clean path forward."
+    "slug": "sell-house-with-code-violations",
+    "title": "Selling With Code Notices or Title Questions",
+    "eyebrow": "Get the facts together",
+    "description": "Prepare code notices, lien information, and ownership questions for a potential property sale.",
+    "sections": [
+      "Start with the actual paperwork: the notice, the issuing authority, the stated deadline, and any balance or case number. A short description from memory may miss a condition that affects closing.",
+      "Share what is known about repairs, occupancy, access, and prior attempts to resolve the issue. A qualified closing professional may need to confirm liens, payoff amounts, and the requirements for a transfer.",
+      "An offer request does not resolve a code case or change a deadline. Continue communicating with the issuing authority and appropriate advisers while exploring a sale."
     ],
-    keywords: ["sell house with code violations", "sell house with liens", "cash buyer code violations"]
+    "keywords": []
+  },
+  {
+    "slug": "privacy",
+    "title": "Privacy and Your Property Inquiry",
+    "eyebrow": "Your information",
+    "description": "How Red Clay Capital uses property inquiries, contact preferences, technical data, and attribution information.",
+    "sections": [
+      "Red Clay Capital LLC receives the name, contact details, property location, contact preference, and any optional information you submit. We use this information to review your inquiry, respond, and keep a record of the conversation.",
+      "Website inquiries are stored and delivered through service providers into Red Clay Capital’s lead management system. We use your inquiry within Red Clay Capital and with service providers needed to operate the inquiry process. Do not include sensitive identity, financial, or access information in free-text fields.",
+      "We may associate a submission with permitted campaign identifiers, referring site, landing page, and technical data used to operate and protect the website. These help us understand how an inquiry arrived and prevent abuse. Names, contact details, property addresses, and messages do not belong in general analytics events.",
+      "Requesting a reply is separate from permission for future marketing. Use the contact preference in the form to tell us how you would like us to respond. Tapping a call or text link opens your device’s app and does not by itself grant marketing permission.",
+      "To ask about your information, request a correction or deletion, or change your contact preference, email MCobb@RedClayCap.com or call (919) 778-1228. Some records may need to be retained for transaction, security, or legal purposes; we will review your request in context.",
+      "This notice describes this public website and its property inquiry process. External resources linked from our guides have their own privacy practices. Updated September 5, 2026."
+    ],
+    "keywords": []
   }
 ];
 
@@ -656,7 +804,7 @@ export const localSeoPages = [
     title: "Sell My House Fast in Graham NC",
     eyebrow: "Graham property solutions",
     description:
-      "Graham homeowners can request a private property review for an as-is sale without repairs, cleanouts, public showings, or pressure.",
+      "Graham homeowners can request a private property review for an as-is sale before making repairs or preparing a listing.",
     sections: [
       "Selling a house fast in Graham may make sense when repairs, tenants, inheritance, or timing make a traditional sale difficult.",
       "Red Clay Capital keeps the process private and explains your options clearly before any decision is needed."
@@ -668,7 +816,7 @@ export const localSeoPages = [
     title: "Sell My House Fast in Greensboro NC",
     eyebrow: "Greensboro cash offers",
     description:
-      "Red Clay Capital helps Greensboro homeowners explore fair cash offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+      "Red Clay Capital helps Greensboro homeowners explore potential offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
     sections: [
       "If you are searching for companies that buy houses in Greensboro, our process is built around privacy, clear communication, and no pressure.",
       "We can review inherited property, homes needing major repairs, vacant houses, and rental properties that no longer fit your plans."
@@ -682,8 +830,8 @@ export const localSeoPages = [
     description:
       "Haw River homeowners can compare a private as-is cash sale for houses with repairs, vacancy, inherited ownership, or stressful timelines.",
     sections: [
-      "Selling a house as-is in Haw River can help homeowners avoid repairs, cleaning, repeated showings, and uncertainty.",
-      "Red Clay Capital reviews the full situation and provides a clear next step if a cash offer is a practical fit."
+      "If you are deciding what to do with a Haw River property, separate the work needed to maintain it from work a particular buyer may request.",
+      "Red Clay Capital reviews the full situation and discusses the next step if a potential offer is a practical fit."
     ],
     keywords: ["sell house as-is Haw River NC", "cash home buyers central North Carolina", "sell distressed property Alamance County"]
   },
@@ -694,8 +842,8 @@ export const localSeoPages = [
     description:
       "Red Clay Capital helps Roxboro homeowners evaluate as-is cash offer options for unwanted, inherited, damaged, vacant, or tenant-occupied houses.",
     sections: [
-      "A private cash offer can be useful when you need a simpler sale without repairs, showings, or agent commissions.",
-      "We help Roxboro homeowners understand their options and choose a timeline that fits the situation."
+      "Compare the proposed price, costs, conditions, and timing of a direct sale with the work involved in listing.",
+      "Tell us your preferred timing; access, title, the proposed agreement, and closing requirements determine what is possible."
     ],
     keywords: ["cash home buyers Roxboro NC", "sell my house fast Roxboro NC", "sell house as-is Roxboro NC"]
   }
@@ -793,7 +941,7 @@ export const cityPages = [
     state: "NC",
     title: "Sell My House Fast in Graham NC",
     description:
-      "Graham homeowners can request a private property review for an as-is sale without repairs, cleanouts, or public showings.",
+      "Graham homeowners can request a private property review for an as-is sale before making repairs or preparing a listing.",
     localNotes: [
       "A fast sale may help when a property needs repairs, has ownership questions, or is simply no longer wanted.",
       "Red Clay Capital keeps the process calm, private, and clear from first conversation to closing."
@@ -806,7 +954,7 @@ export const cityPages = [
     state: "NC",
     title: "Sell My House Fast in Greensboro NC",
     description:
-      "Red Clay Capital helps Greensboro homeowners explore fair cash offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+      "Red Clay Capital helps Greensboro homeowners explore potential offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
     localNotes: [
       "Greensboro homeowners may need a simpler sale when repairs, tenants, inheritance, or timing make listing stressful.",
       "We evaluate the full situation and provide a clear, no-pressure option."

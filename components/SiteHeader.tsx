@@ -1,56 +1,22 @@
-import { Menu } from "lucide-react";
-
-type SiteHeaderProps = {
-  ctaHref?: string;
-};
-
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/about-red-clay-capital", label: "About Us" },
-  { href: "/areas-we-serve", label: "Areas We Serve" },
-  { href: "/blog", label: "Blog" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" }
-];
-
-export function SiteHeader({ ctaHref = "/#get-my-cash-offer" }: SiteHeaderProps) {
-  return (
-    <header className="site-header">
-      <div className="container header-inner">
-        <a className="brand" href="/" aria-label="Red Clay Capital home">
-          <span className="brand-mark" aria-hidden="true">RC</span>
-          <span>Red Clay Capital, LLC</span>
-        </a>
-        <nav className="nav" aria-label="Main navigation">
-          {navItems.slice(0, 5).map((item) => (
-            <a href={item.href} key={item.href}>
-            {item.label}
-          </a>
-        ))}
-        <a href="tel:+18886263213">Call</a>
-        <a className="button nav-button" href={ctaHref}>
-          Get My Offer
-        </a>
+"use client";
+import { useRef } from "react";
+import { Menu, Phone } from "lucide-react";
+import { site } from "@/content/site";
+const navigation = [["/how-it-works", "How it works"], ["/areas-we-serve", "Where we help"], ["/about-red-clay-capital", "About us"], ["/blog", "Seller resources"]];
+export function SiteHeader({ ctaHref = "/get-offer" }: { ctaHref?: string }) {
+  const menu = useRef<HTMLDetailsElement>(null);
+  return <header className="site-header"><a className="skip-link" href="#main-content">Skip to content</a>
+    <div className="container header-inner">
+      <a className="brand" href="/" aria-label="Red Clay Capital home"><span className="brand-mark" aria-hidden="true">RC</span><span className="brand-wordmark">RED CLAY<span>CAPITAL, LLC</span></span></a>
+      <nav className="nav" aria-label="Main navigation">{navigation.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
+      <div className="header-contact"><a href={site.phoneHref}><Phone size={15} aria-hidden="true" />{site.phone}</a><a href={site.smsHref}>Call or text us</a></div>
+      <a className="button desktop-offer" href={ctaHref}>Request an offer</a>
+      <details className="mobile-menu" ref={menu} onKeyDown={event => { if (event.key === "Escape") { menu.current?.removeAttribute("open"); menu.current?.querySelector("summary")?.focus(); } }}>
+        <summary aria-label="Navigation menu"><Menu size={23} aria-hidden="true" /></summary>
+        <nav className="mobile-menu-panel" aria-label="Mobile navigation" onClick={() => menu.current?.removeAttribute("open")}>
+          <a href="/">Home</a>{navigation.map(([href, label]) => <a href={href} key={href}>{label}</a>)}
+          <a href="/faq">Common questions</a><a href="/contact">Contact</a><a href={site.phoneHref}>Call {site.phone}</a><a href={site.smsHref}>Text {site.phone}</a><a className="button" href={ctaHref}>Request an offer</a>
         </nav>
-        <details className="mobile-menu">
-          <summary aria-label="Open navigation menu">
-            <Menu size={22} aria-hidden="true" />
-          </summary>
-          <div className="mobile-menu-panel">
-            {navItems.map((item) => (
-              <a href={item.href} key={item.href}>
-            {item.label}
-          </a>
-        ))}
-            <a href="tel:+18886263213">Call (888) 626-3213</a>
-            <a className="button" href={ctaHref}>
-              Get My Offer
-            </a>
-          </div>
-        </details>
-      </div>
-    </header>
-  );
+      </details>
+    </div></header>;
 }

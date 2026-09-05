@@ -1,0 +1,323 @@
+{
+  "requests": 5,
+  "accepted": 4,
+  "duplicate": 0,
+  "rows": [
+    {
+      "id": "279ba1ad-3e4c-423d-bad5-b241f962c7f4",
+      "payload": {
+        "contractVersion": "2026-09-02.v1",
+        "externalSubmissionId": "279ba1ad-3e4c-423d-bad5-b241f962c7f4",
+        "submittedAt": "2026-09-05T22:37:13.964Z",
+        "contact": {
+          "fullName": "QA north-carolina Synthetic Seller",
+          "firstName": "QA",
+          "lastName": "north-carolina Synthetic Seller",
+          "phone": "",
+          "email": "qa-north-carolina@example.com",
+          "preferredContactMethod": "email"
+        },
+        "property": {
+          "address": "TEST ONLY 100 Example Lane, Raleigh NC 27601",
+          "line1": "",
+          "line2": "",
+          "city": "",
+          "state": "",
+          "postalCode": ""
+        },
+        "inquiry": {
+          "message": "",
+          "motivation": "",
+          "timeline": "",
+          "occupancy": "",
+          "askingPrice": "",
+          "propertyCondition": ""
+        },
+        "form": {
+          "name": "red-clay-capital-acquisition-review",
+          "version": "2026-09-05",
+          "pageVariant": "/get-offer"
+        },
+        "attribution": {
+          "source": "qa",
+          "medium": "test",
+          "campaign": "north-carolina",
+          "term": "",
+          "content": "",
+          "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "referringUrl": "",
+          "firstTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "north-carolina",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/north-carolina"
+          },
+          "latestTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "north-carolina",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+            "pageUrl": "http://127.0.0.1:3100/get-offer"
+          },
+          "gclid": "",
+          "gbraid": "",
+          "wbraid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "sessionId": ""
+        },
+        "consent": {
+          "provided": true,
+          "disclosureVersion": "seller-inquiry-contact-v2",
+          "capturedAt": "2026-09-05T22:37:13.964Z",
+          "formName": "red-clay-capital-acquisition-review",
+          "pageUrl": "http://127.0.0.1:3100/get-offer",
+          "channels": [
+            "email"
+          ]
+        },
+        "technical": {
+          "sourceWebsite": "redclaycap.com",
+          "acceptedAt": "2026-09-05T22:37:13.964Z"
+        }
+      }
+    },
+    {
+      "id": "5103309a-2d40-49ca-be5a-e3732823dd90",
+      "payload": {
+        "contractVersion": "2026-09-02.v1",
+        "externalSubmissionId": "5103309a-2d40-49ca-be5a-e3732823dd90",
+        "submittedAt": "2026-09-05T22:37:17.79Z",
+        "contact": {
+          "fullName": "QA georgia Synthetic Seller",
+          "firstName": "QA",
+          "lastName": "georgia Synthetic Seller",
+          "phone": "",
+          "email": "qa-georgia@example.com",
+          "preferredContactMethod": "email"
+        },
+        "property": {
+          "address": "TEST ONLY 100 Example Lane, Atlanta GA 30301",
+          "line1": "",
+          "line2": "",
+          "city": "",
+          "state": "",
+          "postalCode": ""
+        },
+        "inquiry": {
+          "message": "",
+          "motivation": "",
+          "timeline": "",
+          "occupancy": "",
+          "askingPrice": "",
+          "propertyCondition": ""
+        },
+        "form": {
+          "name": "red-clay-capital-acquisition-review",
+          "version": "2026-09-05",
+          "pageVariant": "/get-offer"
+        },
+        "attribution": {
+          "source": "qa",
+          "medium": "test",
+          "campaign": "georgia",
+          "term": "",
+          "content": "",
+          "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/georgia",
+          "referringUrl": "",
+          "firstTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "georgia",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/georgia"
+          },
+          "latestTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "georgia",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/georgia",
+            "pageUrl": "http://127.0.0.1:3100/get-offer"
+          },
+          "gclid": "",
+          "gbraid": "",
+          "wbraid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "sessionId": ""
+        },
+        "consent": {
+          "provided": true,
+          "disclosureVersion": "seller-inquiry-contact-v2",
+          "capturedAt": "2026-09-05T22:37:17.79Z",
+          "formName": "red-clay-capital-acquisition-review",
+          "pageUrl": "http://127.0.0.1:3100/get-offer",
+          "channels": [
+            "email"
+          ]
+        },
+        "technical": {
+          "sourceWebsite": "redclaycap.com",
+          "acceptedAt": "2026-09-05T22:37:17.79Z"
+        }
+      }
+    },
+    {
+      "id": "fb2ca015-1745-455c-b42a-04f5e4d6c00b",
+      "payload": {
+        "contractVersion": "2026-09-02.v1",
+        "externalSubmissionId": "fb2ca015-1745-455c-b42a-04f5e4d6c00b",
+        "submittedAt": "2026-09-05T22:38:03.832Z",
+        "contact": {
+          "fullName": "QA Ohio Synthetic Seller",
+          "firstName": "QA",
+          "lastName": "Ohio Synthetic Seller",
+          "phone": "202-555-0147",
+          "email": "qa-ohio@example.com",
+          "preferredContactMethod": "sms"
+        },
+        "property": {
+          "address": "TEST ONLY 100 Example Lane, Columbus OH 43215",
+          "line1": "",
+          "line2": "",
+          "city": "",
+          "state": "",
+          "postalCode": ""
+        },
+        "inquiry": {
+          "message": "",
+          "motivation": "",
+          "timeline": "",
+          "occupancy": "",
+          "askingPrice": "",
+          "propertyCondition": ""
+        },
+        "form": {
+          "name": "red-clay-capital-acquisition-review",
+          "version": "2026-09-05",
+          "pageVariant": "/get-offer"
+        },
+        "attribution": {
+          "source": "qa",
+          "medium": "test",
+          "campaign": "ohio",
+          "term": "",
+          "content": "",
+          "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/ohio",
+          "referringUrl": "",
+          "firstTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "ohio",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/ohio"
+          },
+          "latestTouch": {
+            "utm_source": "qa",
+            "utm_medium": "test",
+            "utm_campaign": "ohio",
+            "landingPageUrl": "http://127.0.0.1:3100/areas-we-serve/ohio",
+            "pageUrl": "http://127.0.0.1:3100/get-offer"
+          },
+          "gclid": "",
+          "gbraid": "",
+          "wbraid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "sessionId": ""
+        },
+        "consent": {
+          "provided": true,
+          "disclosureVersion": "seller-inquiry-contact-v2",
+          "capturedAt": "2026-09-05T22:38:03.832Z",
+          "formName": "red-clay-capital-acquisition-review",
+          "pageUrl": "http://127.0.0.1:3100/get-offer",
+          "channels": [
+            "sms"
+          ]
+        },
+        "technical": {
+          "sourceWebsite": "redclaycap.com",
+          "acceptedAt": "2026-09-05T22:38:03.832Z"
+        }
+      }
+    },
+    {
+      "id": "549ceec9-6451-47e5-ab02-f178814fc97f",
+      "payload": {
+        "contractVersion": "2026-09-02.v1",
+        "externalSubmissionId": "549ceec9-6451-47e5-ab02-f178814fc97f",
+        "submittedAt": "2026-09-05T22:38:55.764Z",
+        "contact": {
+          "fullName": "QA Campaign Synthetic Seller",
+          "firstName": "QA",
+          "lastName": "Campaign Synthetic Seller",
+          "phone": "",
+          "email": "qa-campaign@example.com",
+          "preferredContactMethod": "email"
+        },
+        "property": {
+          "address": "TEST ONLY 100 Example Lane, Atlanta GA 30301",
+          "line1": "",
+          "line2": "",
+          "city": "",
+          "state": "",
+          "postalCode": ""
+        },
+        "inquiry": {
+          "message": "",
+          "motivation": "",
+          "timeline": "",
+          "occupancy": "",
+          "askingPrice": "",
+          "propertyCondition": ""
+        },
+        "form": {
+          "name": "red-clay-capital-acquisition-review",
+          "version": "2026-09-05",
+          "pageVariant": "/get-offer"
+        },
+        "attribution": {
+          "source": "qa",
+          "medium": "paid-test",
+          "campaign": "campaign",
+          "term": "",
+          "content": "",
+          "landingPageUrl": "http://127.0.0.1:3100/get-offer",
+          "referringUrl": "",
+          "firstTouch": {
+            "utm_source": "qa",
+            "utm_medium": "paid-test",
+            "utm_campaign": "campaign",
+            "landingPageUrl": "http://127.0.0.1:3100/get-offer"
+          },
+          "latestTouch": {
+            "utm_source": "qa",
+            "utm_medium": "paid-test",
+            "utm_campaign": "campaign",
+            "landingPageUrl": "http://127.0.0.1:3100/get-offer",
+            "pageUrl": "http://127.0.0.1:3100/get-offer"
+          },
+          "gclid": "",
+          "gbraid": "",
+          "wbraid": "",
+          "fbclid": "",
+          "msclkid": "",
+          "sessionId": ""
+        },
+        "consent": {
+          "provided": true,
+          "disclosureVersion": "seller-inquiry-contact-v2",
+          "capturedAt": "2026-09-05T22:38:55.764Z",
+          "formName": "red-clay-capital-acquisition-review",
+          "pageUrl": "http://127.0.0.1:3100/get-offer",
+          "channels": [
+            "email"
+          ]
+        },
+        "technical": {
+          "sourceWebsite": "redclaycap.com",
+          "acceptedAt": "2026-09-05T22:38:55.764Z"
+        }
+      }
+    }
+  ]
+}

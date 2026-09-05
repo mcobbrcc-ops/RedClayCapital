@@ -1,119 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "./seller.css";
 import { site } from "@/content/site";
-
+import { SiteExperience } from "@/components/SiteExperience";
+export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#f0eee5" };
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: {
-    default: "Red Clay Capital, LLC | Cash Home Buyers in North Carolina",
-    template: "%s | Red Clay Capital"
-  },
-  description:
-    "Red Clay Capital helps North Carolina homeowners sell inherited, damaged, vacant, tenant-occupied, financed, or distressed properties as-is through a private professional acquisition process.",
-  alternates: {
-    canonical: "/"
-  },
-  openGraph: {
-    title: "Red Clay Capital, LLC",
-    description:
-      "Professional as-is acquisition options for North Carolina properties with repairs, tenants, financing, damage, title issues, or other distress.",
-    url: site.url,
-    siteName: site.name,
-    images: [
-      {
-        url: site.ogImage,
-        width: 512,
-        height: 512,
-        alt: "Red Clay Capital logo"
-      }
-    ],
-    locale: "en_US",
-    type: "website"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Red Clay Capital, LLC",
-    description:
-      "Professional acquisition options for North Carolina homeowners facing complicated property situations.",
-    images: [site.ogImage]
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
+  title: { default: "Sell Your Property As-Is in NC, GA & OH | Red Clay Capital", template: "%s | Red Clay Capital" },
+  description: "Explore an as-is sale for your property in North Carolina, Georgia or Ohio. Red Clay Capital helps owners understand a potential offer, the process and their options.",
+  alternates: { canonical: "/" },
+  openGraph: { title: "Red Clay Capital | A simpler way to sell your property", description: "Explore your options in North Carolina, Georgia and Ohio. Start with a conversation.", url: site.url, siteName: site.name, images: [{ url: "/social-preview.png", width: 1200, height: 630, alt: "Red Clay Capital — a simpler way to sell your property" }], locale: "en_US", type: "website" },
+  twitter: { card: "summary_large_image", title: "Red Clay Capital", description: "A simpler way to sell your property in NC, GA and OH.", images: ["/social-preview.png"] },
+  robots: { index: true, follow: true }
 };
-
-export default function RootLayout({
-  children
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-  const metaPixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
-
-  return (
-    <html lang="en">
-      <body>
-        {gtmId && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-              title="Google Tag Manager"
-            />
-          </noscript>
-        )}
-        {children}
-        {gaId && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${gaId}');
-                `
-              }}
-            />
-          </>
-        )}
-        {gtmId && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','${gtmId}');
-              `
-            }}
-          />
-        )}
-        {metaPixelId && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', '${metaPixelId}');
-                fbq('track', 'PageView');
-              `
-            }}
-          />
-        )}
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const organization = { "@context": "https://schema.org", "@type": "Organization", "@id": `${site.url}/#organization`, name: site.name, url: site.url, telephone: "+19197781228", email: site.email, logo: `${site.url}/icon.svg`, areaServed: ["North Carolina", "Georgia", "Ohio"], founder: { "@type": "Person", name: "Michael Cobb" } };
+  return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, "\\u003c") }} />{children}<SiteExperience gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} gtmId={process.env.NEXT_PUBLIC_GTM_ID} /></body></html>;
 }
