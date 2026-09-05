@@ -70,7 +70,7 @@ export function LeadForm() {
       <div className="field"><label htmlFor="timeline">Your timeline</label><select id="timeline" name="timeline"><option value="">Choose if you’d like</option><option>As soon as practical</option><option>Within 1–3 months</option><option>Flexible</option><option>Just exploring</option></select></div>
       <div className="field field-full"><label htmlFor="details">Anything we should know?</label><textarea id="details" name="details" maxLength={5000} placeholder="Your questions, property condition or situation" /></div>
     </div></details>
-    <label className="consent-row"><input name="consent" type="checkbox" required /><span>{INTERNET_LEAD_CONSENT_TEXT} <a href="/privacy">Privacy & contact choices</a>.</span></label>
+    <label className="consent-row"><input name="consent" type="checkbox" required /><span>{INTERNET_LEAD_CONSENT_TEXT} <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy & contact choices (opens in a new tab)</a>.</span></label>
     <button className="button submit-button" type="submit" disabled={status === "submitting"}>{status === "submitting" ? "Saving your request…" : status === "error" ? "Retry request" : "Request an offer"}<ArrowRight size={18} aria-hidden="true" /></button>
     </fieldset>
     {error && <div className="form-error" role="alert" ref={messageRef} tabIndex={-1}>{error}</div>}

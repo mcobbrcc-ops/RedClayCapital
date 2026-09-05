@@ -143,6 +143,7 @@ a:hover { text-underline-offset: 6px; }
 .subpage-hero h1 { font-size: clamp(2.6rem, 4.8vw, 4.8rem); }
 .subpage-contact { border-radius: 3px; border-color: #cbd0c1; background: #fbf9f5; padding: 30px; box-shadow: none; }
 .subpage-contact h2 { font-size: 1.7rem; }
+.article-sidebar .subpage-contact a.button { color: #fff; }
 .article-body { max-width: 850px; }
 .article-body p, .article-copy p { font-size: 1.06rem; }
 .article-body a:not(.button), .article-copy a:not(.button) { text-decoration: underline; text-underline-offset: 4px; }
@@ -193,3 +194,6 @@ a:hover { text-underline-offset: 6px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media (max-width:760px) { .offer-page .offer-benefits, .offer-page .offer-owner { display:none; } }
 .faq-list article { border-top: 1px solid #d5d6ca; padding: 25px 0; }
+/* Readable controls and inquiry disclosure at small sizes. */
+.field label, .consent-row, .hero-contact, .form-contact, .mobile-actions a, .nav { font-size: .875rem; }
+@media (max-width:760px) { .seller-hero-copy .eyebrow { font-size:.75rem; } }

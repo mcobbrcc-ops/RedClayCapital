@@ -23,7 +23,7 @@ At the time of this crawl, `/get-offer` supplied page-level Open Graph metadata 
 
 The `.faq-list` wrapper had no literal CSS selector during the scan. Many new homepage/form/mobile classes were also absent while the integrating task was still writing the stylesheet. This source scan is not a visual failure finding; include the FAQ details controls in the final browser/keyboard review.
 
-The privacy copy is compatible with the implementation described by the integrating task: contact-reply permission, no marketing permission, optional analytics default off, Do Not Track respected, per-tab session attribution, and no browser persistence of form personal data. A useful explicit addition would explain that analytics runs only when enabled, the consent choice is retained locally, and attribution is stored for the tab session. The existing notice already describes the purpose and use of inquiry/attribution data, how to ask for correction/deletion, and separation from marketing.
+The privacy copy is compatible with the implementation described by the integrating task: contact-reply permission, no marketing permission, optional analytics default off, Do Not Track respected, per-tab session attribution, and no browser persistence of form personal data. The final notice now explicitly explains optional analytics choice, the choice retained locally, referral/campaign context stored for the tab session, and inquiry availability when analytics is declined. It also describes the purpose and use of inquiry/attribution data, how to ask for correction/deletion, and separation from marketing.
 
 ## Evidence
 

@@ -1,0 +1,1383 @@
+{
+  "generatedAt": "2026-09-05T23:13:08.004Z",
+  "method": "Lighthouse 13.4.1 custom read-only geometry gatherer in isolated Edge 152; real page and CDP layout dimensions; no form interaction",
+  "target": "local production build",
+  "results": [
+    {
+      "page": "home",
+      "requestedWidth": 320,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "outerWidth": 320,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "scrollHeight": 11212,
+          "visualViewportWidth": 320,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 21,
+              "right": 287,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 266,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 20,
+              "right": 207.265625,
+              "top": 522.359375,
+              "bottom": 573.421875,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 279,
+              "top": 10132.96875,
+              "bottom": 10184.03125,
+              "width": 238,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 190,
+              "top": 786,
+              "bottom": 834,
+              "width": 174,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 11212
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 11212
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 320; document 320; requested 320"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-home-320.png"
+    },
+    {
+      "page": "home",
+      "requestedWidth": 375,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "outerWidth": 375,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "scrollHeight": 10519,
+          "visualViewportWidth": 375,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 58,
+              "right": 342,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 20,
+              "right": 207.265625,
+              "top": 475.375,
+              "bottom": 526.4375,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 334,
+              "top": 9463.59375,
+              "bottom": 9514.65625,
+              "width": 293,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 245,
+              "top": 786,
+              "bottom": 834,
+              "width": 229,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 10519
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 10519
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 375; document 375; requested 375"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "home",
+      "requestedWidth": 430,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "outerWidth": 430,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "scrollHeight": 10205,
+          "visualViewportWidth": 430,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 113,
+              "right": 397,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 20,
+              "right": 207.265625,
+              "top": 489.625,
+              "bottom": 540.6875,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 389,
+              "top": 9169.296875,
+              "bottom": 9220.359375,
+              "width": 348,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 300,
+              "top": 786,
+              "bottom": 834,
+              "width": 284,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 10205
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 10205
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 430; document 430; requested 430"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "home",
+      "requestedWidth": 768,
+      "requestedHeight": 1000,
+      "mobile": false,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "outerWidth": 780,
+          "outerHeight": 580,
+          "devicePixelRatio": 1,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "scrollHeight": 7875,
+          "visualViewportWidth": 753,
+          "visualViewportHeight": 1000,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 424,
+              "right": 708,
+              "top": 578.515625,
+              "bottom": 629.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 32,
+              "right": 219.265625,
+              "top": 504.609375,
+              "bottom": 555.671875,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 421.28125,
+              "right": 686,
+              "top": 7209.625,
+              "bottom": 7260.6875,
+              "width": 264.71875,
+              "height": 51.0625,
+              "display": "inline-flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 7875
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 7875
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 768; document 753; requested 768"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 375,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "outerWidth": 375,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "scrollHeight": 2484,
+          "visualViewportWidth": 375,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 58,
+              "right": 342,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 334,
+              "top": 1428.625,
+              "bottom": 1479.6875,
+              "width": 293,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 245,
+              "top": 786,
+              "bottom": 834,
+              "width": 229,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 2484
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 2484
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 375; document 375; requested 375"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 390,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "outerWidth": 390,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "scrollHeight": 2458,
+          "visualViewportWidth": 390,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 73,
+              "right": 357,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 349,
+              "top": 1402.234375,
+              "bottom": 1453.296875,
+              "width": 308,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 260,
+              "top": 786,
+              "bottom": 834,
+              "width": 244,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 2458
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 2458
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 390; document 390; requested 390"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 430,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "outerWidth": 430,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "scrollHeight": 2416,
+          "visualViewportWidth": 430,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 113,
+              "right": 397,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 389,
+              "top": 1380.546875,
+              "bottom": 1431.609375,
+              "width": 348,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 300,
+              "top": 786,
+              "bottom": 834,
+              "width": 284,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 2416
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 2416
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 430; document 430; requested 430"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 768,
+      "requestedHeight": 1000,
+      "mobile": false,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "outerWidth": 780,
+          "outerHeight": 580,
+          "devicePixelRatio": 1,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "scrollHeight": 1831,
+          "visualViewportWidth": 753,
+          "visualViewportHeight": 1000,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 424,
+              "right": 708,
+              "top": 578.515625,
+              "bottom": 629.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 421.28125,
+              "right": 686,
+              "top": 1165.28125,
+              "bottom": 1216.34375,
+              "width": 264.71875,
+              "height": 51.0625,
+              "display": "inline-flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 1831
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 1831
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 768; document 753; requested 768"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": null
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 1440,
+      "requestedHeight": 1000,
+      "mobile": false,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "outerWidth": 780,
+          "outerHeight": 580,
+          "devicePixelRatio": 1,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "scrollHeight": 1671,
+          "visualViewportWidth": 1425,
+          "visualViewportHeight": 1000,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 1203.765625,
+              "right": 1332.5,
+              "top": 23,
+              "bottom": 73,
+              "width": 128.734375,
+              "height": 50,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 770.34375,
+              "right": 1297.5,
+              "top": 1047,
+              "bottom": 1098.0625,
+              "width": 527.15625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 1671
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 1671
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 1440; document 1425; requested 1440"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-get-offer-1440.png"
+    },
+    {
+      "page": "home",
+      "requestedWidth": 390,
+      "requestedHeight": 812,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 390,
+          "innerHeight": 812,
+          "outerWidth": 390,
+          "outerHeight": 812,
+          "devicePixelRatio": 1,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "scrollHeight": 10458,
+          "visualViewportWidth": 390,
+          "visualViewportHeight": 812,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 73,
+              "right": 357,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 284,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 20,
+              "right": 207.265625,
+              "top": 475.375,
+              "bottom": 526.4375,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 349,
+              "top": 9402.46875,
+              "bottom": 9453.53125,
+              "width": 308,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 260,
+              "top": 754,
+              "bottom": 802,
+              "width": 244,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 812
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 812,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 10458
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 812
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 812,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 10458
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 390; document 390; requested 390"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-home-390.png"
+    },
+    {
+      "page": "home",
+      "requestedWidth": 1440,
+      "requestedHeight": 990,
+      "mobile": false,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/",
+          "innerWidth": 1440,
+          "innerHeight": 990,
+          "outerWidth": 780,
+          "outerHeight": 580,
+          "devicePixelRatio": 1,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "scrollHeight": 7469,
+          "visualViewportWidth": 1425,
+          "visualViewportHeight": 990,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 1203.765625,
+              "right": 1332.5,
+              "top": 23,
+              "bottom": 73,
+              "width": 128.734375,
+              "height": 50,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 92.5,
+              "right": 279.765625,
+              "top": 626.859375,
+              "bottom": 677.921875,
+              "width": 187.265625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 770.34375,
+              "right": 1297.5,
+              "top": 6845.703125,
+              "bottom": 6896.765625,
+              "width": 527.15625,
+              "height": 51.0625,
+              "display": "inline-flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 990
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 990,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 7469
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 990
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 990,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 7469
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 1440; document 1425; requested 1440"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-home-1440.png"
+    },
+    {
+      "page": "get-offer",
+      "requestedWidth": 320,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "outerWidth": 320,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "scrollHeight": 2676,
+          "visualViewportWidth": 320,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 21,
+              "right": 287,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 266,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 279,
+              "top": 1596.46875,
+              "bottom": 1647.53125,
+              "width": 238,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 190,
+              "top": 786,
+              "bottom": 834,
+              "width": 174,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 2676
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 2676
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 320; document 320; requested 320"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-get-offer-320.png"
+    }
+  ]
+}

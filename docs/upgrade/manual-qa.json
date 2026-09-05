@@ -1,0 +1,19 @@
+{
+  "menu": "Native menu opened; Escape closed and focused summary",
+  "privacy": "Labeled target=_blank and noopener noreferrer verified; clicking retained original /get-offer path and synthetic name/address. Automation did not expose the opened popup, so popup reading and history return are not claimed.",
+  "faq": "Enter opened and Space closed the native FAQ disclosure",
+  "target": "Local production build",
+  "form": "Four local synthetic accepted flows; required validation, email-only, double click, acceptance failure and retry tested. No production writes.",
+  "unverified": [
+    "Arbitrary navigation away/back draft restoration",
+    "Physical iOS/Android app dispatch",
+    "Native device zoom",
+    "Full assistive-technology conformance"
+  ],
+  "evidence": [
+    "browser-journeys.json",
+    "local-synthetic-submissions.json",
+    "responsive-final.json",
+    "accessibility/README.md"
+  ]
+}

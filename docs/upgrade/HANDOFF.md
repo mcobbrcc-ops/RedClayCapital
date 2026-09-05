@@ -10,7 +10,7 @@ Updated September 5, 2026. This file is the maintenance entry point.
 - Existing Vercel project project-73xr5 / prj_tx6iRynIeADLp2EF4loKPnWCVLMP, Red Clay Capital team. Git production branch main. CLI releases are also established deployment history. Do not create a replacement Sites project or change DNS.
 - Preview protection verified: Vercel SSO all_except_custom_domains. Keep protection enabled.
 - Prior public deployment / rollback target: dpl_F6p23Dd8zDrmBD3zMgoPjTyEQ7HU.
-- Release identifiers and final production checks: see RELEASE.md (completed during deployment).
+- Release status, explicit push/deploy approval gate and production-check steps: see RELEASE.md. Initial implementation commit89aabf3 is local; no upgrade release has occurred yet.
 
 ## Routes and identity
 
@@ -32,7 +32,7 @@ No real seller was contacted, no calls/texts were placed, and no production test
 
 Optional analytics is off until chosen, honors Do Not Track, and uses the existing configured GA or GTM (one event owner). Accepted-lead conversion is receipt-deduplicated and fires only after acceptance; call/text taps are intent only. No form fields or raw URL query/referrer are sent to general analytics. GTM container configuration remains an external verification dependency. No new analytics account or paid service was created.
 
-Versioned inquiry contact permission is separate from future marketing (none requested). Form PII is held only in the mounted flow and request; no local/session storage draft. Sanitized first/latest acquisition context uses per-tab sessionStorage, analytics choice uses localStorage, and dedup stores hashed receipts. Missing attribution is unknown. Browser/storage/tracker failures do not block submissions.
+Versioned inquiry contact permission is separate from future marketing (none requested). Form PII is held only in the mounted flow and request; no local/session storage draft. The form privacy link opens a clearly labeled new tab so the original form stays mounted while the notice is read. Arbitrary navigation away/back still depends on browser restoration; do not promise persisted drafts. Sanitized first/latest acquisition context uses per-tab sessionStorage, analytics choice uses localStorage, and dedup stores hashed receipts. Missing attribution is unknown. Browser/storage/tracker failures do not block submissions. The privacy notice explains these choices.
 
 Search Console account is signed in but denied the attempted domain property. 90-day query/page/geo/device/conversion exports and field Core Web Vitals remain unavailable; no ranking/traffic/conversion lift claimed. See seo-90-day-backlog.md for a prioritized 90-day content/measurement plan and two future experiment designs.
 
@@ -43,6 +43,7 @@ Search Console account is signed in but denied the attempted domain property. 90
 - Actual adjacent RCI Zod payload compatibility passes for phone/SMS/email-only. Seven existing RCI contract tests pass. These are not live delivery proof.
 - 49-route HTTP crawl: 43 successful pages, five expected 308 redirects, one intentional 404; canonicals/descriptions/H1/JSON-LD/anchors and verification file checked. One transient dev-compile 500 resolved and full recrawl passed; repeat production crawl in RELEASE.md.
 - Browser home and offer widths 320, 375, 390, 430, 768 and 1440 had no horizontal overflow; menu open/Escape close verified. Screenshot shows entered email retained on failure and retry remains unobscured. Form-field focus hides mobile actions; safe-area padding preserves content.
+- Keyboard FAQ Enter/Space opens/closes correctly. Three final local automated accessibility audits passed with100 scores and no failed scored or unscored checks, after fixing a brand-name override and state sidebar button contrast. Native phone zoom and complete assistive-technology coverage are not verified; this is not a full WCAG conformance claim.
 - Four labeled browser flows (NC, GA, OH, campaign) accepted by an isolated local synthetic RPC fixture using the actual production build. Ohio double click generated one request. Campaign simulated storage failure recovered to one acceptance. Exactly four accepted local records, no production/RCI writes. Raw synthetic evidence is in local-synthetic-submissions.json; do not call this RCI E2E.
 - iOS/Android messaging app dispatch and provider voice/SMS capabilities of the requested phone remain untested; correct call/text URI attributes verified without initiating communications.
 - Before/after images in screenshots/. Mobile lab baseline three-run median score97, LCP1.524s, TBT185ms, CLS0. Matched post-release values recorded in performance/README.md. TBT is not INP; lab is not 75th-percentile field data.

@@ -7,7 +7,7 @@ export function SiteHeader({ ctaHref = "/get-offer" }: { ctaHref?: string }) {
   const menu = useRef<HTMLDetailsElement>(null);
   return <header className="site-header"><a className="skip-link" href="#main-content">Skip to content</a>
     <div className="container header-inner">
-      <a className="brand" href="/" aria-label="Red Clay Capital home"><span className="brand-mark" aria-hidden="true">RC</span><span className="brand-wordmark">RED CLAY<span>CAPITAL, LLC</span></span></a>
+      <a className="brand" href="/"><span className="brand-mark" aria-hidden="true">RC</span><span className="brand-wordmark">RED CLAY <span>CAPITAL, LLC</span></span></a>
       <nav className="nav" aria-label="Main navigation">{navigation.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
       <div className="header-contact"><a href={site.phoneHref}><Phone size={15} aria-hidden="true" />{site.phone}</a><a href={site.smsHref}>Call or text us</a></div>
       <a className="button desktop-offer" href={ctaHref}>Request an offer</a>

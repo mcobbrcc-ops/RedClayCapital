@@ -1,0 +1,119 @@
+{
+  "scope": "Independent responsive QA requested against local production server http://127.0.0.1:3100",
+  "status": "Browser interaction unavailable in this subagent; no responsive measurements fabricated",
+  "connectionEvidence": [
+    "Runtime setup succeeded",
+    "getForUrl returned No browser is available",
+    "Prescribed bootstrap troubleshooting read",
+    "agent.browsers.list returned []"
+  ],
+  "requestedMatrix": [
+    {
+      "path": "/",
+      "requestedWidth": 320,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/",
+      "requestedWidth": 375,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/",
+      "requestedWidth": 390,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/",
+      "requestedWidth": 430,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/",
+      "requestedWidth": 768,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/",
+      "requestedWidth": 1440,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 320,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 375,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 390,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 430,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 768,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    },
+    {
+      "path": "/get-offer",
+      "requestedWidth": 1440,
+      "actualInnerWidth": null,
+      "actualInnerHeight": null,
+      "overflowVerified": false
+    }
+  ],
+  "existingAfterScreenshots": {
+    "sameFileBytes": true,
+    "actualImageDimensions": [
+      375,
+      812
+    ],
+    "actualEncoding": "JPEG",
+    "filenames": [
+      "after-desktop.png",
+      "after-mobile.png"
+    ],
+    "desktopEvidenceValid": false,
+    "visualInspection": "The image is a mobile layout; heading, call/text links, owner photo, and fixed bottom actions are visible and readable. The photo continues behind the action bar; no form actions are visible in this viewport, so their clearance is not assessed."
+  },
+  "formBackNavigation": {
+    "browserVerified": false,
+    "sourceFinding": "Privacy uses an ordinary anchor navigation. Uncontrolled field values plus React contact-preference state and submission refs are not stored outside the component. Restoration after back depends on browser history/BFCache behavior; no reliable preservation mechanism is explicit.",
+    "implementationFile": "components/LeadForm.tsx",
+    "changeMade": false
+  },
+  "noNewLeadSubmissions": true,
+  "nextStep": "Root task must use its available browser binding, confirm innerWidth/innerHeight after each resize, capture each screenshot immediately after matching DOM inspection, and verify values after privacy/back without submission.",
+  "resolution": "Initial secondary review retained for traceability. Root replaced the duplicate desktop capture; final independent Lighthouse geometry and native screenshots are in responsive-final.json and responsive-final.md. All 12 actual widths passed. Form privacy now targets a labeled new tab; original values remained after click. Arbitrary browser back restoration remains unverified."
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Historical screenshot defect checkpoint; superseded by corrected captures documented in responsive-final.md",
+  "observations": [
+    {
+      "file": "after-desktop.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 812,
+      "sha256": "22f8f52e25d44acce8c01ec1fd31800fca47e8f58508b111e73bb00b969aec06"
+    },
+    {
+      "file": "after-mobile.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 812,
+      "sha256": "22f8f52e25d44acce8c01ec1fd31800fca47e8f58508b111e73bb00b969aec06"
+    },
+    {
+      "file": "before-desktop.png",
+      "format": "JPEG",
+      "width": 1425,
+      "height": 990,
+      "sha256": "eb3ea8327603785ba4be56486365ea9ef8c9928408606a18536c560d133f32c0"
+    },
+    {
+      "file": "before-mobile.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 812,
+      "sha256": "fd7545c982744802524b329de5b96651875b2283eefe09fd5641121bc0fc4638"
+    },
+    {
+      "file": "local-retry.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 211,
+      "sha256": "de71d99b1a646404d76660af0c0aa74ac2f372bdc7d48b12e4b71c2d4cb12a34"
+    },
+    {
+      "file": "local-success.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 812,
+      "sha256": "41a91b06b737ec6b953579b1c89f709ea666c3bf36539b02e4b1f3f54903cb3b"
+    },
+    {
+      "file": "state-mobile.png",
+      "format": "JPEG",
+      "width": 375,
+      "height": 812,
+      "sha256": "399b060f01703448fce4e5b4c03be564c40acdb956ea6aaf4f9a9bcd310f40d6"
+    }
+  ]
+}
