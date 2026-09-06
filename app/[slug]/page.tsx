@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ContactCard } from "@/components/ContactCard";
 import { cityPages, faqs, localSeoPages, servicePages, site } from "@/content/site";
 import { cityGuidance, marketPages } from "@/content/markets";
 
@@ -59,14 +60,7 @@ export default async function ServicePage({ params }: PageProps) {
               <a className="button secondary" href={slug === "how-it-works" ? "/faq" : "/how-it-works"}>{slug === "how-it-works" ? "Read the FAQs" : "How it works"}</a>
             </div>
           </div>
-          <aside className="subpage-contact">
-            <Phone size={26} aria-hidden="true" />
-            <h2>Prefer to talk?</h2>
-            <p>Call or text {site.phone}. Share the property location and what you are considering. A conversation is a starting point; there is no obligation to accept an offer.</p>
-            <a href={site.phoneHref}>Call {site.phone}</a>
-            <a href={site.smsHref}>Text {site.phone}</a>
-            <a href={`mailto:${site.email}`}><Mail size={18} aria-hidden="true" /> {site.email}</a>
-          </aside>
+          <ContactCard />
         </div>
       </section>
       <section className="section">

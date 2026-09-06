@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { notFound, permanentRedirect } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ContactCard } from "@/components/ContactCard";
 import { blogPosts, cityPages, site } from "@/content/site";
 import { cityGuidance, marketPages } from "@/content/markets";
 
@@ -53,7 +54,7 @@ export default async function AreaPage({ params }: PageProps) {
             <p className="hero-copy">{market?.introduction ?? page.description}</p>
             <div className="hero-actions"><a className="button" href="/get-offer">Request an offer <ArrowRight size={18} aria-hidden="true" /></a><a className="button secondary" href="/how-it-works">How it works</a></div>
           </div>
-          <aside className="subpage-contact"><h2>Start with the property</h2><p>Share your address, the situation, and a way to reach you. We will review whether a potential sale is a fit. No repairs are needed before the conversation.</p><a href={site.phoneHref}>Call {site.phone}</a><a href={site.smsHref}>Text {site.phone}</a><a href={`mailto:${site.email}`}>{site.email}</a></aside>
+          <ContactCard>Share your address, the situation, and a way to reach you. We will review whether a potential sale is a fit. No repairs are needed before the conversation.</ContactCard>
         </div>
       </section>
       <section className="section">

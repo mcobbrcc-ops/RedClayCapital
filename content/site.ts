@@ -1,3 +1,4 @@
+import { publicContact } from "../lib/publicContact";
 import {
   AlertTriangle,
   BadgeCheck,
@@ -18,10 +19,7 @@ import {
 export const site = {
   name: "Red Clay Capital, LLC",
   url: "https://redclaycap.com",
-  phone: "(919) 778-1228",
-  phoneHref: "tel:+19197781228",
-  smsHref: "sms:+19197781228",
-  email: "MCobb@RedClayCap.com",
+  ...publicContact,
   contactLabel: "Acquisitions Desk",
   ogImage: "/social-preview.png"
 };
@@ -625,7 +623,7 @@ export const servicePages = [
       "A property decision is rarely just a price. You may be managing repairs from another state, sorting through an inheritance, dealing with a rental, or making room for a move. Our starting point is understanding the property and the result you want.",
       "We discuss a potential acquisition after reviewing the information you share. We want you to understand the proposed buyer, price, costs, conditions, and timing before deciding. If an investor partner, assignment, or financing arrangement is proposed, ask for that structure to be explained in writing.",
       "Our website does not provide an instant valuation or guarantee a purchase. It gives you a direct way to begin a conversation with Red Clay Capital and compare a potential offer with your other options.",
-      "You can reach us by calling or texting (919) 778-1228, by emailing MCobb@RedClayCap.com, or through the offer request form."
+      `You can reach us by calling or texting ${publicContact.phone}, by emailing ${publicContact.email}, or through the offer request form.`
     ],
     "keywords": []
   },
@@ -644,9 +642,9 @@ export const servicePages = [
     "slug": "contact",
     "title": "Let’s Talk About Your Property",
     "eyebrow": "Contact Red Clay Capital",
-    "description": "Call or text (919) 778-1228, email Red Clay Capital, or request a property review in North Carolina, Georgia, or Ohio.",
+    "description": `Call or text ${publicContact.phone}, email Red Clay Capital, or request a property review in North Carolina, Georgia, or Ohio.`,
     "sections": [
-      "Call or text (919) 778-1228, or email MCobb@RedClayCap.com. If you prefer to start online, the offer request form asks for the property location, your name, and a usable phone number or email address.",
+      `Call or text ${publicContact.phone}, or email ${publicContact.email}. If you prefer to start online, the offer request form asks for the property location, your name, and a usable phone number or email address.`,
       "A short description is enough: where the property is, what you want help comparing, and when you would like to sell. You can mention repairs, occupancy, or ownership questions if they are relevant.",
       "Please avoid sending Social Security numbers, bank details, access codes, or unredacted identity documents in the initial inquiry. If additional documents are needed, ask how to share them appropriately.",
       "A text link opens your messaging app; you decide whether to send a message. We do not promise immediate replies or round-the-clock availability."
@@ -780,7 +778,7 @@ export const servicePages = [
       "We may associate a submission with permitted campaign identifiers, referring site, landing page, and technical data used to operate and protect the website. These help us understand how an inquiry arrived and prevent abuse. Names, contact details, property addresses, and messages do not belong in general analytics events.",
       "We keep limited referral and campaign context in your browser tab while you browse. If optional analytics is available, you can allow or decline it; we remember that choice in your browser and honor Do Not Track. Declining optional analytics does not prevent an inquiry. We do not save a draft of your form details in browser storage.",
       "Requesting a reply is separate from permission for future marketing. Use the contact preference in the form to tell us how you would like us to respond. Tapping a call or text link opens your device’s app and does not by itself grant marketing permission.",
-      "To ask about your information, request a correction or deletion, or change your contact preference, email MCobb@RedClayCap.com or call (919) 778-1228. Some records may need to be retained for transaction, security, or legal purposes; we will review your request in context.",
+      `To ask about your information, request a correction or deletion, or change your contact preference, email ${publicContact.email} or call ${publicContact.phone}. Some records may need to be retained for transaction, security, or legal purposes; we will review your request in context.`,
       "This notice describes this public website and its property inquiry process. External resources linked from our guides have their own privacy practices. Updated September 5, 2026."
     ],
     "keywords": []

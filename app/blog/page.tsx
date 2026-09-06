@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ContactCard } from "@/components/ContactCard";
 import { SiteHeader } from "@/components/SiteHeader";
 import { blogPosts, site } from "@/content/site";
 
@@ -35,18 +36,7 @@ export default function BlogIndexPage() {
               </a>
             </div>
           </div>
-          <aside className="subpage-contact">
-            <h2>Want to talk it through?</h2>
-            <p>
-              You can start with the property location and a short description.
-              Explore a potential sale in North Carolina, Georgia, or Ohio
-              without committing to an offer.
-            </p>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
-            <a href={site.phoneHref}>Call {site.phone}</a>
-            <a href={site.smsHref}>Text {site.phone}</a>
-            <a href="/areas-we-serve">Explore your state guide</a>
-          </aside>
+          <ContactCard title="Want to talk it through?">Start with the property location and a short description. Explore a potential sale in North Carolina, Georgia, or Ohio without committing to an offer.</ContactCard>
         </div>
       </section>
 

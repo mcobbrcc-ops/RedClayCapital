@@ -86,3 +86,54 @@ test('arbitrary URL paths and analytics failures cannot leak form data or break 
   window.gtag = () => { throw new Error('tracking blocked'); };
   await assert.doesNotReject(() => tracker.trackSiteEvent('generate_lead', 'receipt'));
 });
+test('call and text taps remain contact intent; canceled composer creates no SMS or lead', async () => {
+  const tracker = load(); tracker.configureSiteTracking({ gtmId: 'GTM-TEST' }); tracker.allowTracking(true);
+  let networkRequests = 0;
+  const originalFetch = global.fetch;
+  global.fetch = async () => { networkRequests++; throw new Error('Tap must not submit a lead or import a message'); };
+  try {
+    await tracker.trackContactTap('call', 'header');
+    await tracker.trackContactTap('text', 'contact_card');
+    assert.deepEqual(window.dataLayer.map(item => item.event), ['call_tap', 'text_tap']);
+    assert.equal(window.dataLayer[1].cta_placement, 'contact_card');
+    assert.equal(window.dataLayer[1].attribution_scope, 'website_tap');
+    assert.equal(networkRequests, 0);
+    assert.equal(storage.has('rcc.conversions.v1'), false);
+    assert.equal(window.dataLayer.some(item => /lead|inbound|notification/.test(item.event)), false);
+    await tracker.trackContactTap('inbound_sms', 'content');
+    assert.equal(window.dataLayer.length, 2);
+  } finally { global.fetch = originalFetch; }
+});
+test('tap context includes only whitelisted placement and coarse campaign/referrer categories', async () => {
+  const tracker = load(); tracker.configureSiteTracking({ gaId: 'G-TEST' }); tracker.allowTracking(true);
+  visit('https://redclaycap.com/areas-we-serve/north-carolina?utm_source=google&utm_medium=cpc&utm_campaign=private_seller_name&email=seller@example.invalid&gclid=private-click-reference');
+  document.referrer = 'https://www.google.com/search?q=private_property_address';
+  await tracker.trackContactTap('text', 'mobile_actions');
+  const args = Array.from(window.dataLayer[0]);
+  assert.equal(args[1], 'text_tap');
+  assert.equal(args[2].cta_placement, 'mobile_actions');
+  assert.equal(args[2].acquisition_source, 'search');
+  assert.equal(args[2].acquisition_medium, 'paid');
+  assert.equal(args[2].first_touch_source, 'search');
+  assert.equal(args[2].referrer_category, 'search');
+  assert.equal(args[2].campaign_context, 'tagged');
+  assert.doesNotMatch(JSON.stringify(args), /private|seller@|google\.com|gclid|north-carolina/);
+});
+test('arbitrary placement and acquisition labels cannot become analytics dimensions', async () => {
+  const tracker = load(); tracker.configureSiteTracking({ gtmId: 'GTM-TEST' }); tracker.allowTracking(true);
+  visit('https://redclaycap.com/get-offer?utm_source=Private_Seller&utm_medium=Private_Address&utm_campaign=Private_Message');
+  document.referrer = 'https://private-account.example.invalid/seller/private';
+  await tracker.trackContactTap('text', 'seller@example.invalid');
+  const event = window.dataLayer[0];
+  assert.equal(event.cta_placement, 'unknown');
+  assert.equal(event.acquisition_source, 'unknown');
+  assert.equal(event.acquisition_medium, 'unknown');
+  assert.equal(event.referrer_category, 'external');
+  assert.doesNotMatch(JSON.stringify(event), /Private|private|seller@|example.invalid/);
+});
+test('tracking declined still leaves contact taps free of analytics or lead side effects', async () => {
+  const tracker = load(); tracker.configureSiteTracking({ gaId: 'G-TEST' }); tracker.allowTracking(false);
+  await tracker.trackContactTap('text', 'contact_card');
+  assert.equal(window.dataLayer, undefined);
+  assert.equal(storage.size, 0);
+});

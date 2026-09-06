@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true }
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const organization = { "@context": "https://schema.org", "@type": "Organization", "@id": `${site.url}/#organization`, name: site.name, url: site.url, telephone: "+19197781228", email: site.email, logo: `${site.url}/icon.svg`, areaServed: ["North Carolina", "Georgia", "Ohio"] };
+  const organization = { "@context": "https://schema.org", "@type": "Organization", "@id": `${site.url}/#organization`, name: site.name, url: site.url, telephone: site.phoneE164, email: site.email, logo: `${site.url}/icon.svg`, areaServed: ["North Carolina", "Georgia", "Ohio"] };
   return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, "\\u003c") }} />{children}<SiteExperience gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} gtmId={process.env.NEXT_PUBLIC_GTM_ID} /></body></html>;
 }
 

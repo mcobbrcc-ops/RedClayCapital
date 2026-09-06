@@ -1,3 +1,4 @@
+import { publicContact } from "@/lib/publicContact";
 import { after, type NextRequest } from "next/server";
 import { buildWebsiteLeadPayload, LeadValidationError, readLeadRequest } from "@/lib/internetLeadValidation";
 import { deliverWebsiteLeadOutbox, durablyAcceptWebsiteLead, LeadIntakeError } from "@/lib/internetLeadOutbox";
@@ -19,6 +20,6 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     if (error instanceof LeadValidationError || error instanceof LeadIntakeError) return Response.json({ ok: false, error: error.message }, { status: error.status, headers: { "cache-control": "no-store", ...(error.status === 429 ? { "retry-after": "3600" } : {}) } });
     console.error("[redclaycap] Durable lead acceptance failed", { errorClass: error instanceof Error ? error.name : "unknown_error" });
-    return Response.json({ ok: false, error: "We could not confirm your request was saved. Please retry, or call or text (919) 778-1228." }, { status: 503, headers: { "retry-after": "30", "cache-control": "no-store" } });
+    return Response.json({ ok: false, error: `We could not confirm your request was saved. Please retry, or call or text ${publicContact.phone}.` }, { status: 503, headers: { "retry-after": "30", "cache-control": "no-store" } });
   }
 }

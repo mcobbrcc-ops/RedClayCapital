@@ -18,6 +18,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ORIGIN = "https://redclaycap.com"
+CONTACT = json.loads((Path(__file__).resolve().parents[1] / "lib" / "public-contact.json").read_text(encoding="utf-8"))
 UNKNOWN = "/does-not-exist-upgrade-test"
 DUPLICATES = {
     f"/areas-we-serve/{city}-nc": f"/sell-your-house-fast-{city}-nc"
@@ -129,11 +130,11 @@ def fetch(base, path):
             ogWidth=document.meta.get("og:image:width"), ogHeight=document.meta.get("og:image:height"),
             links=sorted(set(document.links)), ids=sorted(document.ids), images=document.images,
             schema=document.schema, schemaErrors=document.schema_errors,
-            oldPhone=bool(re.search(r"888.?626.?3213|18886263213", visible + " ".join(document.links))),
+            oldPhone=bool(re.search(r"(?:888\D{0,4}626\D{0,4}3213|919\D{0,4}778\D{0,4}1228)", visible + " ".join(document.links))),
             founderReferences=bool(re.search(r"Michael\s+Cobb|owned by Michael|meet (?:the|our) founder|a person behind the process|a person behind this process", visible, re.I)),
             founderImageReferences=[image for image in document.images if re.search(r"founder|michael|portrait|headshot", json.dumps(image), re.I)],
-            callPresent="tel:+19197781228" in document.links,
-            textPresent="sms:+19197781228" in document.links,
+            callPresent=f"tel:{CONTACT['phoneE164']}" in document.links,
+            textPresent=f"sms:{CONTACT['phoneE164']}" in document.links,
         )
     return result, body
 

@@ -48,6 +48,52 @@ export function trackingPageContext(pathname: string) {
   return { page_type: pageType, page_location: `https://redclaycap.com${safePath}`, page_referrer: "", page_title: "Red Clay Capital" };
 }
 
+const placements = new Set(["header", "footer", "contact_card", "mobile_actions", "lead_form", "confirmation", "content"]);
+export function sanitizeCtaPlacement(value: unknown) {
+  return typeof value === "string" && placements.has(value) ? value : "unknown";
+}
+function acquisitionBucket(value: unknown) {
+  const source = typeof value === "string" ? value.toLowerCase() : "";
+  if (["google", "bing", "duckduckgo", "yahoo"].includes(source)) return "search";
+  if (["facebook", "instagram", "meta", "linkedin", "pinterest"].includes(source)) return "social";
+  if (["email", "newsletter"].includes(source)) return "email";
+  if (["partner", "referral"].includes(source)) return "referral";
+  return "unknown";
+}
+function mediumBucket(value: unknown) {
+  const medium = typeof value === "string" ? value.toLowerCase() : "";
+  if (["cpc", "ppc", "paid", "paid_search", "paid_social"].includes(medium)) return "paid";
+  return ["organic", "email", "social", "referral"].includes(medium) ? medium : "unknown";
+}
+function referrerBucket(value: unknown) {
+  try {
+    const host = new URL(sanitizeLeadUrl(value, true)).hostname.toLowerCase();
+    if (["redclaycap.com", "www.redclaycap.com"].includes(host)) return "internal";
+    if (["google.com", "www.google.com", "bing.com", "www.bing.com", "duckduckgo.com", "search.yahoo.com"].includes(host)) return "search";
+    if (["facebook.com", "www.facebook.com", "l.facebook.com", "instagram.com", "www.instagram.com", "linkedin.com", "www.linkedin.com", "t.co"].includes(host)) return "social";
+    return "external";
+  } catch { return "unknown"; }
+}
+export function contactTapContext(placement?: unknown) {
+  const acquisition = captureTouch();
+  const tags = sanitizeAttribution(acquisition?.attribution);
+  // General analytics gets categories, never user-supplied campaign labels, click IDs or referrer URLs.
+  return {
+    cta_placement: sanitizeCtaPlacement(placement),
+    acquisition_source: acquisitionBucket(tags.utm_source),
+    acquisition_medium: mediumBucket(tags.utm_medium),
+    first_touch_source: acquisitionBucket(acquisition?.firstTouch?.utm_source),
+    referrer_category: referrerBucket(acquisition?.referringUrl),
+    campaign_context: tags.utm_campaign ? "tagged" : "unknown",
+    attribution_scope: "website_tap",
+  };
+}
+/** Contact intent only: this function never submits a form, imports SMS, or creates a lead. */
+export function trackContactTap(channel: "call" | "text", placement?: unknown) {
+  if (channel !== "call" && channel !== "text") return Promise.resolve();
+  return trackSiteEvent(channel === "call" ? "call_tap" : "text_tap", undefined, placement);
+}
+
 async function wasConversionRecorded(reference: string) {
   if (conversionReceipts.has(reference)) return true;
   conversionReceipts.add(reference); // Lock immediately, before asynchronous hashing.
@@ -63,13 +109,13 @@ async function wasConversionRecorded(reference: string) {
   return false;
 }
 
-export async function trackSiteEvent(event: SiteEvent, reference?: string) {
+export async function trackSiteEvent(event: SiteEvent, reference?: string, placement?: unknown) {
   if (typeof window === "undefined" || !provider || !trackingAllowed || navigator.doNotTrack === "1") return;
   if (event === "generate_lead" && (!reference || await wasConversionRecorded(reference))) return;
   // Consent may have been withdrawn while hashing the acceptance receipt.
   if (!trackingAllowed || navigator.doNotTrack === "1") return;
   const tracker = window as TrackerWindow;
-  const params = trackingPageContext(window.location.pathname);
+  const params = { ...trackingPageContext(window.location.pathname), ...(event === "call_tap" || event === "text_tap" ? contactTapContext(placement) : {}) };
   try {
     tracker.dataLayer ||= [];
     if (provider === "gtm") tracker.dataLayer.push({ event, ...params });

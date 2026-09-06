@@ -1,3 +1,4 @@
+import { publicContact } from "./publicContact";
 import { cleanText, INTERNET_LEAD_CONSENT_VERSION, INTERNET_LEAD_CONTRACT_VERSION, INTERNET_LEAD_FORM_NAME, INTERNET_LEAD_FORM_VERSION, splitName, type WebsiteLeadPayload } from "./internetLeadContract";
 
 export const ATTRIBUTION_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "gbraid", "wbraid", "fbclid", "msclkid"] as const;
@@ -76,7 +77,7 @@ export async function readLeadRequest(request: Request, maximum = 32_768): Promi
 export function buildWebsiteLeadPayload(value: unknown): WebsiteLeadPayload {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new LeadValidationError("Check the form and try again.");
   const body = value as Record<string, unknown>;
-  if (cleanText(body.company, 100)) throw new LeadValidationError("We could not accept this form. Please clear the company field or call (919) 778-1228.");
+  if (cleanText(body.company, 100)) throw new LeadValidationError(`We could not accept this form. Please clear the company field or call ${publicContact.phone}.`);
   const fullName = cleanText(body.name, 200);
   const address = cleanText(body.address, 500);
   const phone = cleanText(body.phone, 80);

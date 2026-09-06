@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ContactCard } from "@/components/ContactCard";
 import { SiteHeader } from "@/components/SiteHeader";
 import { blogPosts, site } from "@/content/site";
 
@@ -100,19 +101,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <section><h2>Make the next step specific to your property</h2><p>Find the <a href="/areas-we-serve/north-carolina">North Carolina</a>, <a href="/areas-we-serve/georgia">Georgia</a>, or <a href="/areas-we-serve/ohio">Ohio</a> guide, or see <a href="/how-it-works">how a review works</a>. Requesting an offer is separate from accepting one.</p></section>
             </div>
             <aside className="article-sidebar">
-              <div className="subpage-contact">
-                <h2>Have a property like this?</h2>
-                <p>
-                  Tell us about the address, condition, occupancy, and your
-                  preferred timing. A review does not commit you to a sale.
-                </p>
-                <a className="button" href="/get-offer">
-                  Request an offer
-                  <ArrowRight size={18} aria-hidden="true" />
-                </a>
-                <a href={site.phoneHref}>Call {site.phone}</a>
-                <a href={site.smsHref}>Text {site.phone}</a>
-              </div>
+              <ContactCard as="div" title="Have a property like this?" offerLink>Tell us about the address, condition, occupancy, and your preferred timing. A review does not commit you to a sale.</ContactCard>
               {related.length > 0 && (
                 <div className="related-articles">
                   <h3>Related articles</h3>

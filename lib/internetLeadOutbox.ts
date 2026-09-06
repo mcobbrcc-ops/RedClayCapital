@@ -1,3 +1,4 @@
+import { publicContact } from "./publicContact";
 import "server-only";
 import { createHash, createHmac, randomUUID } from "node:crypto";
 import type { WebsiteLeadPayload } from "./internetLeadContract";
@@ -66,7 +67,7 @@ async function rpc<T>(name: string, body: Record<string, unknown>): Promise<T> {
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
     if (name === "website_accept_lead_outbox" && error?.code === "23505") throw new LeadIntakeError("This request reference already contains different details. Please update the form and submit again.", 409);
-    if (name === "website_accept_lead_outbox" && error?.code === "P0001" && /rate limit/.test(error?.message || "")) throw new LeadIntakeError("Too many requests were received. Please try again later, or call or text (919) 778-1228.", 429);
+    if (name === "website_accept_lead_outbox" && error?.code === "P0001" && /rate limit/.test(error?.message || "")) throw new LeadIntakeError(`Too many requests were received. Please try again later, or call or text ${publicContact.phone}.`, 429);
     throw new Error(`Durable intake is unavailable (${response.status})`);
   }
   return response.json() as Promise<T>;
