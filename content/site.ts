@@ -618,10 +618,10 @@ export const servicePages = [
   {
     "slug": "about-red-clay-capital",
     "title": "About Red Clay Capital",
-    "eyebrow": "Meet the business",
-    "description": "Red Clay Capital LLC, owned by Michael Cobb, helps property owners explore potential sales in North Carolina, Georgia, and Ohio.",
+    "eyebrow": "About the company",
+    "description": "Red Clay Capital LLC helps property owners compare potential as-is sales in North Carolina, Georgia, and Ohio through a clear, property-specific review.",
     "sections": [
-      "Red Clay Capital LLC is owned by Michael Cobb. This is our public website for homeowners considering a property sale in North Carolina, Georgia, or Ohio.",
+      "Red Clay Capital LLC focuses on property acquisition opportunities in North Carolina, Georgia, and Ohio. We help homeowners explore a potential sale through a review of the property, the situation, and the proposed terms.",
       "A property decision is rarely just a price. You may be managing repairs from another state, sorting through an inheritance, dealing with a rental, or making room for a move. Our starting point is understanding the property and the result you want.",
       "We discuss a potential acquisition after reviewing the information you share. We want you to understand the proposed buyer, price, costs, conditions, and timing before deciding. If an investor partner, assignment, or financing arrangement is proposed, ask for that structure to be explained in writing.",
       "Our website does not provide an instant valuation or guarantee a purchase. It gives you a direct way to begin a conversation with Red Clay Capital and compare a potential offer with your other options.",
