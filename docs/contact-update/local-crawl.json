@@ -1,0 +1,4197 @@
+{
+  "label": "contact-update-final-local",
+  "base": "http://127.0.0.1:3100",
+  "checkedAt": "2026-09-06T07:08:40.233262+00:00",
+  "readOnly": true,
+  "formSubmissions": 0,
+  "baselineCount": 37,
+  "sitemapCount": 39,
+  "routeCount": 49,
+  "statusCounts": {
+    "200": 43,
+    "308": 5,
+    "404": 1
+  },
+  "findings": [],
+  "assets": [
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "contentType": "application/xml",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.359,
+      "bytes": 6420,
+      "sha256": "d00aa91cff9f2070a6438fa64a3dc9dbae729d7f658685045de8c9a96a7c214d"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "location": null,
+      "contentType": "text/plain",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.064,
+      "bytes": 101,
+      "sha256": "47af5338c4a560a3d7e4014335ce432ff0d8fb9d6ae0deae7cbdc57197df8688",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\n\nSitemap: https://redclaycap.com/sitemap.xml\n"
+    },
+    {
+      "path": "/google3b135227f2cfe181.html",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=UTF-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.042,
+      "bytes": 53,
+      "sha256": "78e20252d74c8014587ea72b14e642ef47aaa4936ce3278e355ecde9f2c51729",
+      "title": "",
+      "h1Count": 0,
+      "canonical": [],
+      "description": null,
+      "robots": null,
+      "ogImage": null,
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false,
+      "body": "google-site-verification: google3b135227f2cfe181.html"
+    },
+    {
+      "path": "/social-preview.png",
+      "status": 200,
+      "location": null,
+      "contentType": "image/png",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.041,
+      "bytes": 57181,
+      "sha256": "03afb7d70b4fb3424cc442513ec247872db0a962434d6c20935d8eb4903df2ee",
+      "imageDimensions": [
+        1200,
+        630
+      ]
+    }
+  ],
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.152,
+      "bytes": 68561,
+      "sha256": "0f4382a6fa1e39f743bb15d0de04003343b085fca5c91984d00eb4f0387e90c3",
+      "title": "Sell Your Property As-Is in NC, GA & OH | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com"
+      ],
+      "description": "Explore an as-is sale for your property in North Carolina, Georgia or Ohio. Red Clay Capital helps owners understand a potential offer, the process and their options.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "address",
+        "details",
+        "email",
+        "faq",
+        "get-my-cash-offer",
+        "main-content",
+        "name",
+        "phone",
+        "preferredContactMethod",
+        "propertyCondition",
+        "situations",
+        "timeline"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/about-red-clay-capital",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.129,
+      "bytes": 32318,
+      "sha256": "c7eebfcb70b3f6ca9bbb6b456c7f8646d2989e06d07f0aab2669f7f864805ec6",
+      "title": "About Red Clay Capital | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/about-red-clay-capital"
+      ],
+      "description": "Red Clay Capital LLC helps property owners compare potential as-is sales in North Carolina, Georgia, and Ohio through a clear, property-specific review.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Red Clay Capital",
+              "item": "https://redclaycap.com/about-red-clay-capital"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.472,
+      "bytes": 37472,
+      "sha256": "3a7574fcb449a6e2d38e660999483be4995b01286953660445f90e186a4e108c",
+      "title": "Sell a Property in North Carolina, Georgia or Ohio | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve"
+      ],
+      "description": "Explore Red Clay Capital property reviews in North Carolina, Georgia, and Ohio, with practical state resources and a clear way to request an offer.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/cary-nc",
+        "/areas-we-serve/chapel-hill-nc",
+        "/areas-we-serve/durham-nc",
+        "/areas-we-serve/fayetteville-nc",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/areas-we-serve/raleigh-nc",
+        "/areas-we-serve/wilmington-nc",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "/sell-your-house-fast-burlington-nc",
+        "/sell-your-house-fast-graham-nc",
+        "/sell-your-house-fast-greensboro-nc",
+        "/sell-your-house-fast-haw-river-nc",
+        "/sell-your-house-fast-roxboro-nc",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell a Property in North Carolina, Georgia or Ohio",
+              "item": "https://redclaycap.com/areas-we-serve"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/burlington-nc",
+      "status": 308,
+      "location": "/sell-your-house-fast-burlington-nc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.348,
+      "bytes": 10528,
+      "sha256": "069b36896e7c27af7a794c0486f7725674b4e5a566d9e045433d6c6a2aaafd24",
+      "title": "Sell My House Fast in Burlington NC | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-burlington-nc"
+      ],
+      "description": "Red Clay Capital helps Burlington homeowners compare private cash offer options for inherited, distressed, vacant, or repair-heavy houses.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/areas-we-serve/cary-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.26,
+      "bytes": 32927,
+      "sha256": "8950d4027312474c6b9ef2ca294e3249faa39e378a2af9a79362bdf746528963",
+      "title": "Sell My House Fast in Cary NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/cary-nc"
+      ],
+      "description": "Cary homeowners can request a private property review and compare an as-is cash offer with a traditional listing.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Cary, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/cary-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/chapel-hill-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.17,
+      "bytes": 33289,
+      "sha256": "12b1d1cf32685f4207486a1512ce4b3d8548ec090de2c148d3401d9dbc18982e",
+      "title": "Sell My House Fast in Chapel Hill NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/chapel-hill-nc"
+      ],
+      "description": "Red Clay Capital helps Chapel Hill homeowners evaluate as-is sale options for stressful or complicated property situations.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Chapel Hill, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/chapel-hill-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/durham-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.215,
+      "bytes": 32970,
+      "sha256": "fb47ecce5ffcd4800987fa85a64acbb16fd2334469903e8e1548396bfb103686",
+      "title": "Sell My House Fast in Durham NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/durham-nc"
+      ],
+      "description": "Explore a respectful as-is cash sale option for unwanted, inherited, occupied, or repair-heavy properties in Durham.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Durham, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/durham-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/fayetteville-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.203,
+      "bytes": 32931,
+      "sha256": "a728e60b86bc0a03cc6fea00d466deee2817b51ac881673b7cd637ff98a07544",
+      "title": "Sell My House Fast in Fayetteville NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/fayetteville-nc"
+      ],
+      "description": "Fayetteville homeowners can request a private cash offer review for unwanted houses, tenant issues, major repairs, or fast timeline needs.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Fayetteville, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/fayetteville-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/georgia",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.192,
+      "bytes": 40572,
+      "sha256": "ecbf8942b1bf091ddeec7dedfee429612a32d6cbd0394497af8f664465b0e643",
+      "title": "Explore an As-Is Property Sale in Georgia | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/georgia"
+      ],
+      "description": "Considering selling a Georgia house, inherited property, or rental? Organize your questions and request a property-specific review from Red Clay Capital.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "https://georgia.gov/write-will",
+        "https://georgiacourts.gov/georgia-courts-directory/",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Georgia",
+              "item": "https://redclaycap.com/areas-we-serve/georgia"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/graham-nc",
+      "status": 308,
+      "location": "/sell-your-house-fast-graham-nc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.185,
+      "bytes": 10408,
+      "sha256": "023517ebaf878f57447d23bbee5c52ff4fd59329d52a630c96d4233175e0e601",
+      "title": "Sell My House Fast in Graham NC | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-graham-nc"
+      ],
+      "description": "Graham homeowners can request a private property review for an as-is sale before making repairs or preparing a listing.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/areas-we-serve/greensboro-nc",
+      "status": 308,
+      "location": "/sell-your-house-fast-greensboro-nc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.179,
+      "bytes": 10548,
+      "sha256": "f1e653981832f19b718afc3cf6d208191f5ba410a1c9c14bde020f56a82f7b58",
+      "title": "Sell My House Fast in Greensboro NC | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-greensboro-nc"
+      ],
+      "description": "Red Clay Capital helps Greensboro homeowners explore potential offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/areas-we-serve/haw-river-nc",
+      "status": 308,
+      "location": "/sell-your-house-fast-haw-river-nc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.142,
+      "bytes": 10513,
+      "sha256": "9a8c763513fe03f9e38af50cc7ab4145a21164caf19df7d9996072f8ef88efe3",
+      "title": "Sell My House Fast in Haw River NC | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-haw-river-nc"
+      ],
+      "description": "Haw River homeowners can compare a private as-is cash sale for houses with repairs, vacancy, inherited ownership, or stressful timelines.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/areas-we-serve/north-carolina",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.166,
+      "bytes": 46782,
+      "sha256": "e464176c1603ab10636699266a5ea4d06ee7c334684e4773b0405bf911dfb7de",
+      "title": "Sell a House As-Is in North Carolina | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/north-carolina"
+      ],
+      "description": "Explore a potential property sale in North Carolina. Compare repairs, inherited ownership, and timing with a clear offer review from Red Clay Capital.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/cary-nc",
+        "/areas-we-serve/chapel-hill-nc",
+        "/areas-we-serve/durham-nc",
+        "/areas-we-serve/fayetteville-nc",
+        "/areas-we-serve/raleigh-nc",
+        "/areas-we-serve/wilmington-nc",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "/sell-your-house-fast-burlington-nc",
+        "/sell-your-house-fast-graham-nc",
+        "/sell-your-house-fast-greensboro-nc",
+        "/sell-your-house-fast-haw-river-nc",
+        "/sell-your-house-fast-roxboro-nc",
+        "https://www.nccourts.gov/help-topics/housing/foreclosures",
+        "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/north-carolina"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/ohio",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.14,
+      "bytes": 40513,
+      "sha256": "344ea904d6d1593f76ef6980ba4ad3b8424ad4311b8cf780c9725fff431d98d5",
+      "title": "Compare As-Is Home Sale Options in Ohio | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/ohio"
+      ],
+      "description": "Review the options for an Ohio house with repairs, vacancy, or inherited ownership. Request a potential offer and understand the steps before a sale.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "https://www.consumerfinance.gov/mortgagehelp/",
+        "https://www.supremecourt.ohio.gov/forms/all-forms/decedents-estate/8",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ohio",
+              "item": "https://redclaycap.com/areas-we-serve/ohio"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/raleigh-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.187,
+      "bytes": 32942,
+      "sha256": "1a03ed5e9cb90c97c4a5242b1884ac209536aee2e959727dbc6442db03b88e51",
+      "title": "Sell My House Fast in Raleigh NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/raleigh-nc"
+      ],
+      "description": "Red Clay Capital helps Raleigh homeowners compare private cash offer options for inherited, damaged, vacant, tenant-occupied, or unwanted houses.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Raleigh, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/raleigh-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/areas-we-serve/roxboro-nc",
+      "status": 308,
+      "location": "/sell-your-house-fast-roxboro-nc",
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.14,
+      "bytes": 10495,
+      "sha256": "d259a30d196c529ffbb4b97183dfb962807265d511da9c2958b095f64a3f2f39",
+      "title": "Sell My House Fast in Roxboro NC | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-roxboro-nc"
+      ],
+      "description": "Red Clay Capital helps Roxboro homeowners evaluate cash offer options for unwanted, inherited, damaged, vacant, or tenant-occupied houses.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/areas-we-serve/wilmington-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.133,
+      "bytes": 33051,
+      "sha256": "c8507c5a4cc026dbfae8e5161735d654e43dab75bebc169c4eec1195da558f38",
+      "title": "Sell My House Fast in Wilmington NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/areas-we-serve/wilmington-nc"
+      ],
+      "description": "Red Clay Capital helps Wilmington homeowners compare as-is cash sale options for damaged, inherited, vacant, or unwanted properties.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-fire-damaged-house-north-carolina",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Areas we serve",
+              "item": "https://redclaycap.com/areas-we-serve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Wilmington, North Carolina",
+              "item": "https://redclaycap.com/areas-we-serve/wilmington-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.193,
+      "bytes": 33477,
+      "sha256": "2db0055ceddf8457f45b426f43f2e5a9624a9d76d70a327199c4505115da6d7a",
+      "title": "Seller Resources: Compare Your Home Sale Options | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog"
+      ],
+      "description": "Practical guides to as-is offers, repairs, inherited homes, rentals, vacancy, and questions to ask before deciding how to sell.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/blog/foreclosure-timeline-cash-sale-options",
+        "/blog/sell-fire-damaged-house-north-carolina",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-house-with-code-violations",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/blog/subject-to-seller-finance-house-sale",
+        "/blog/understanding-an-investor-offer",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/foreclosure-timeline-cash-sale-options",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.183,
+      "bytes": 38949,
+      "sha256": "844d8c3dd693690a394032d31d7b055ce19e4912834dcdb9712c7faec65e6930",
+      "title": "Foreclosure Pressure: Comparing a Cash Sale With Other Options | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/foreclosure-timeline-cash-sale-options"
+      ],
+      "description": "How homeowners can think about deadlines, payoff numbers, reinstatement, listing timelines, and private sale options when time is limited.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/subject-to-seller-finance-house-sale",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "https://www.consumerfinance.gov/mortgagehelp/",
+        "https://www.nccourts.gov/help-topics/housing/foreclosures",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Foreclosure Pressure: Comparing a Cash Sale With Other Options",
+            "description": "How homeowners can think about deadlines, payoff numbers, reinstatement, listing timelines, and private sale options when time is limited.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/foreclosure-timeline-cash-sale-options",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Foreclosure Pressure: Comparing a Cash Sale With Other Options",
+                "item": "https://redclaycap.com/blog/foreclosure-timeline-cash-sale-options"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-fire-damaged-house-north-carolina",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.166,
+      "bytes": 36895,
+      "sha256": "3de0dc7e609719a0291cbaaeadbe734fbd6e108f923dd29e589233c42313d4ad",
+      "title": "Selling a Fire-Damaged House in North Carolina | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-fire-damaged-house-north-carolina"
+      ],
+      "description": "What to consider when smoke, fire, water intrusion, insurance questions, or repair scope make a normal sale difficult.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-house-with-code-violations",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling a Fire-Damaged House in North Carolina",
+            "description": "What to consider when smoke, fire, water intrusion, insurance questions, or repair scope make a normal sale difficult.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-fire-damaged-house-north-carolina",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling a Fire-Damaged House in North Carolina",
+                "item": "https://redclaycap.com/blog/sell-fire-damaged-house-north-carolina"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-house-as-is-major-repairs",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.152,
+      "bytes": 38500,
+      "sha256": "52c36a834420c44d9a657445e8ac554e85eedddc8d7a2623d965405c212bda85",
+      "title": "Selling a House As-Is When Repairs Are Bigger Than the Budget | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-house-as-is-major-repairs"
+      ],
+      "description": "A practical guide for owners dealing with roof failure, foundation issues, outdated systems, cleanouts, and repair costs that no longer make sense.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-fire-damaged-house-north-carolina",
+        "/blog/sell-house-with-code-violations",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling a House As-Is When Repairs Are Bigger Than the Budget",
+            "description": "A practical guide for owners dealing with roof failure, foundation issues, outdated systems, cleanouts, and repair costs that no longer make sense.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-house-as-is-major-repairs",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling a House As-Is When Repairs Are Bigger Than the Budget",
+                "item": "https://redclaycap.com/blog/sell-house-as-is-major-repairs"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-house-with-code-violations",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.138,
+      "bytes": 37025,
+      "sha256": "1d06d0d1f204da64ce4fdd5347ec87f722e940995df8891e9d8b82bb07dbb7c4",
+      "title": "Selling a House With Code Violations, Liens, or City Notices | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-house-with-code-violations"
+      ],
+      "description": "A homeowner's guide to code violations, municipal notices, liens, unsafe conditions, and selling when the paperwork feels complicated.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-fire-damaged-house-north-carolina",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling a House With Code Violations, Liens, or City Notices",
+            "description": "A homeowner's guide to code violations, municipal notices, liens, unsafe conditions, and selling when the paperwork feels complicated.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-house-with-code-violations",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling a House With Code Violations, Liens, or City Notices",
+                "item": "https://redclaycap.com/blog/sell-house-with-code-violations"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-inherited-house-with-multiple-heirs",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.117,
+      "bytes": 39987,
+      "sha256": "f8164f12bd86d8f23c001130a8b32b80ab94c56a851b44df5b97bcadd415ec4e",
+      "title": "Selling an Inherited House When Multiple Heirs Are Involved | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-inherited-house-with-multiple-heirs"
+      ],
+      "description": "How families can approach inherited property decisions when repairs, emotions, probate, distance, and multiple decision-makers are involved.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "https://georgiacourts.gov/georgia-courts-directory/",
+        "https://www.nccourts.gov/help-topics/wills-and-estates/estates",
+        "https://www.supremecourt.ohio.gov/forms/all-forms/decedents-estate/8",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling an Inherited House When Multiple Heirs Are Involved",
+            "description": "How families can approach inherited property decisions when repairs, emotions, probate, distance, and multiple decision-makers are involved.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-inherited-house-with-multiple-heirs",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling an Inherited House When Multiple Heirs Are Involved",
+                "item": "https://redclaycap.com/blog/sell-inherited-house-with-multiple-heirs"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-rental-property-with-bad-tenants",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.143,
+      "bytes": 38339,
+      "sha256": "958c071daa1ef6c7e167b56592f392c09f5778d4b1dd356b2899713423b501b3",
+      "title": "Selling a Rental Property With Difficult Tenants | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-rental-property-with-bad-tenants"
+      ],
+      "description": "How landlords can think through non-payment, access problems, lease issues, property damage, and selling a rental without waiting for perfect conditions.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/blog/subject-to-seller-finance-house-sale",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling a Rental Property With Difficult Tenants",
+            "description": "How landlords can think through non-payment, access problems, lease issues, property damage, and selling a rental without waiting for perfect conditions.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-rental-property-with-bad-tenants",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling a Rental Property With Difficult Tenants",
+                "item": "https://redclaycap.com/blog/sell-rental-property-with-bad-tenants"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/sell-vacant-or-abandoned-house",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.143,
+      "bytes": 36892,
+      "sha256": "a8f52b6144c9eedfc32da4bf1f708affb621c6dd9cc361e4b2e118d0e797688e",
+      "title": "Selling a Vacant or Abandoned House Before It Becomes a Bigger Problem | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/sell-vacant-or-abandoned-house"
+      ],
+      "description": "Why vacant homes can create insurance, vandalism, utility, tax, and maintenance risk, and how owners can compare private sale options.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-with-code-violations",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Selling a Vacant or Abandoned House Before It Becomes a Bigger Problem",
+            "description": "Why vacant homes can create insurance, vandalism, utility, tax, and maintenance risk, and how owners can compare private sale options.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/sell-vacant-or-abandoned-house",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Selling a Vacant or Abandoned House Before It Becomes a Bigger Problem",
+                "item": "https://redclaycap.com/blog/sell-vacant-or-abandoned-house"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/subject-to-seller-finance-house-sale",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.136,
+      "bytes": 39351,
+      "sha256": "2abbe35c79b5a92a66649832db0929b29080e1af0b2a6a72e342b22aa4938358",
+      "title": "Subject-To and Seller Finance: What Homeowners Should Understand | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/subject-to-seller-finance-house-sale"
+      ],
+      "description": "A careful, plain-English overview of subject-to purchases, seller finance structures, and why the terms matter as much as the purchase price.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/foreclosure-timeline-cash-sale-options",
+        "/blog/sell-house-as-is-major-repairs",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "https://www.consumerfinance.gov/rules-policy/regulations/1026/18/",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Subject-To and Seller Finance: What Homeowners Should Understand",
+            "description": "A careful, plain-English overview of subject-to purchases, seller finance structures, and why the terms matter as much as the purchase price.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/subject-to-seller-finance-house-sale",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Subject-To and Seller Finance: What Homeowners Should Understand",
+                "item": "https://redclaycap.com/blog/subject-to-seller-finance-house-sale"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/blog/understanding-an-investor-offer",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.144,
+      "bytes": 40444,
+      "sha256": "d863e0c056a60959f09df94ca00709f086e24754f3d461061efc99361b1cdaa8",
+      "title": "How to Compare an Investor Offer With Listing Your Home | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/blog/understanding-an-investor-offer"
+      ],
+      "description": "Compare the price, expected proceeds, repairs, contract conditions, and timing behind a property offer before deciding how to sell.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/georgia",
+        "/areas-we-serve/north-carolina",
+        "/areas-we-serve/ohio",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        [
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Compare an Investor Offer With Listing Your Home",
+            "description": "Compare the price, expected proceeds, repairs, contract conditions, and timing behind a property offer before deciding how to sell.",
+            "mainEntityOfPage": "https://redclaycap.com/blog/understanding-an-investor-offer",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Red Clay Capital, LLC",
+              "url": "https://redclaycap.com",
+              "logo": "https://redclaycap.com/social-preview.png"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://redclaycap.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seller resources",
+                "item": "https://redclaycap.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "How to Compare an Investor Offer With Listing Your Home",
+                "item": "https://redclaycap.com/blog/understanding-an-investor-offer"
+              }
+            ]
+          }
+        ]
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.202,
+      "bytes": 30948,
+      "sha256": "f69f6e375c94958e68ab0a5135cb0bd1acd34ffe7ba3e0668b9810bfadb6e98b",
+      "title": "Let’s Talk About Your Property | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/contact"
+      ],
+      "description": "Call or text (919) 588-3714, email Red Clay Capital, or request a property review in North Carolina, Georgia, or Ohio.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Let’s Talk About Your Property",
+              "item": "https://redclaycap.com/contact"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/does-not-exist-upgrade-test",
+      "status": 404,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.571,
+      "bytes": 10640,
+      "sha256": "af5c65d79449895c706ccd055e887f3db579923788d38865ab944f378d343147",
+      "title": "Sell Your Property As-Is in NC, GA & OH | Red Clay Capital",
+      "h1Count": 0,
+      "canonical": [
+        "https://redclaycap.com"
+      ],
+      "description": "Explore an as-is sale for your property in North Carolina, Georgia or Ohio. Red Clay Capital helps owners understand a potential offer, the process and their options.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "links": [],
+      "ids": [
+        "_R_",
+        "__next_error__"
+      ],
+      "images": [],
+      "schema": [],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": false,
+      "textPresent": false
+    },
+    {
+      "path": "/faq",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.473,
+      "bytes": 37627,
+      "sha256": "084f0c2c256e9a0844782249d1c298c2a617f535afa72ce1a07f0cc04c038aa9",
+      "title": "Questions Before You Request an Offer | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/faq"
+      ],
+      "description": "Answers about as-is sales, fees, repairs, tenants, timing, buyer identity, privacy, and what happens after you contact Red Clay Capital.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Questions Before You Request an Offer",
+              "item": "https://redclaycap.com/faq"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/get-offer",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.412,
+      "bytes": 23858,
+      "sha256": "f143baad8f7e8ef98d35b1ca49fb0cb10d348fbc910feecbaead25cf806c8563",
+      "title": "Request an Offer for Your Property | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/get-offer"
+      ],
+      "description": "Tell Red Clay Capital about your property in North Carolina, Georgia, or Ohio. Request a conversation about a potential as-is offer, with no obligation to sell.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "links": [
+        "#get-my-cash-offer",
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "address",
+        "details",
+        "email",
+        "get-my-cash-offer",
+        "main-content",
+        "name",
+        "phone",
+        "preferredContactMethod",
+        "propertyCondition",
+        "timeline"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/how-it-works",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.116,
+      "bytes": 32781,
+      "sha256": "19075755ff4c37abe162e2bf818b3368898b735edb14e76072710d2de9ae8c58",
+      "title": "A Clearer Path From Property Details to a Decision | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/how-it-works"
+      ],
+      "description": "Share your property, discuss your situation, compare a potential offer, and understand the written agreement before deciding.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "A Clearer Path From Property Details to a Decision",
+              "item": "https://redclaycap.com/how-it-works"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/our-buying-process",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.118,
+      "bytes": 29419,
+      "sha256": "a75fa4855e2a2da1684b607b4f022791a537a91388919bd20a1c2240b4e978bb",
+      "title": "Our Buying Process | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/how-it-works"
+      ],
+      "description": "Understand the steps in a Red Clay Capital property review and how to evaluate a potential offer.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Buying Process",
+              "item": "https://redclaycap.com/our-buying-process"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/privacy",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.152,
+      "bytes": 34621,
+      "sha256": "ae24fd7fb8565a19c7030189082a7df9406f825d3ba462de4ed4ddce8cc814bb",
+      "title": "Privacy and Your Property Inquiry | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/privacy"
+      ],
+      "description": "How Red Clay Capital uses property inquiries, contact preferences, technical data, and attribution information.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy and Your Property Inquiry",
+              "item": "https://redclaycap.com/privacy"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/recently-purchased-properties",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.133,
+      "bytes": 29598,
+      "sha256": "73541d1f9e583b03d7efbb2d1ccad2ad45741b60c3106a838c5fb4f42edb096b",
+      "title": "Property Situations We Can Discuss | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/recently-purchased-properties"
+      ],
+      "description": "Discuss inherited homes, repairs, vacancy, and rental property questions with Red Clay Capital.",
+      "robots": "noindex, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Property Situations We Can Discuss",
+              "item": "https://redclaycap.com/recently-purchased-properties"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/reviews",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.128,
+      "bytes": 19692,
+      "sha256": "e7b4f47bbaa0b315269df7a2ef04eaed5ddaa6d4b2974a518ebb5f1c0466cc2d",
+      "title": "Seller Confidence & Due Diligence | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/reviews"
+      ],
+      "description": "Questions to ask when evaluating Red Clay Capital and a potential property offer.",
+      "robots": "noindex, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": "1200",
+      "ogHeight": "630",
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-fire-damaged-house",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.094,
+      "bytes": 30772,
+      "sha256": "65cca53dd9f1016e93315206bb1fedc867b73741881f10c897a250560332115e",
+      "title": "Selling a Fire-Damaged House As-Is | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-fire-damaged-house"
+      ],
+      "description": "Explore a potential as-is sale after fire, smoke, or water damage and organize the information a buyer may need.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Selling a Fire-Damaged House As-Is",
+              "item": "https://redclaycap.com/sell-fire-damaged-house"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-house-with-bad-tenants",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.159,
+      "bytes": 31184,
+      "sha256": "f140bbdc4af7e837682bf0e12c0215d96dd1f256059c7fa4fb024f528d05fc30",
+      "title": "Selling a Tenant-Occupied Property | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-house-with-bad-tenants"
+      ],
+      "description": "Discuss an occupied rental, organize lease information, and compare a sale with continuing to manage the property.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Selling a Tenant-Occupied Property",
+              "item": "https://redclaycap.com/sell-house-with-bad-tenants"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-house-with-code-violations",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.117,
+      "bytes": 30513,
+      "sha256": "331c5ed05f63d96d5ac94e73e0ebc4673b88762daa7b5118c420222667945390",
+      "title": "Selling With Code Notices or Title Questions | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-house-with-code-violations"
+      ],
+      "description": "Prepare code notices, lien information, and ownership questions for a potential property sale.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Selling With Code Notices or Title Questions",
+              "item": "https://redclaycap.com/sell-house-with-code-violations"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-house-with-subject-to-financing",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.098,
+      "bytes": 30869,
+      "sha256": "ba9f7dd255b2746e055a1f0f6e5725b0537aa61625ec958e9413af0f9c6a1a98",
+      "title": "Questions About Selling With Existing Financing | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-house-with-subject-to-financing"
+      ],
+      "description": "Understand what to ask before considering a sale where existing financing could remain in place.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Questions About Selling With Existing Financing",
+              "item": "https://redclaycap.com/sell-house-with-subject-to-financing"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.174,
+      "bytes": 31791,
+      "sha256": "bc6d4d29d82220d00d9477a787ce5aa2d0aa6e1eed3cfc77c00b714351604fa2",
+      "title": "Want to Sell Your House? Start With a Clear Plan. | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast"
+      ],
+      "description": "Compare a potential as-is sale with listing, understand what affects timing, and request an offer from Red Clay Capital.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Want to Sell Your House? Start With a Clear Plan.",
+              "item": "https://redclaycap.com/sell-your-house-fast"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast-burlington-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.171,
+      "bytes": 32495,
+      "sha256": "d385adb3d96b5f56ca7384abb7f871af662da5d96fc2975c3387737b1462dab5",
+      "title": "Sell My House Fast in Burlington NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-burlington-nc"
+      ],
+      "description": "Red Clay Capital helps Burlington homeowners compare private cash offer options for inherited, distressed, repair-heavy, vacant, or unwanted properties.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-house-as-is-major-repairs",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell My House Fast in Burlington NC",
+              "item": "https://redclaycap.com/sell-your-house-fast-burlington-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast-graham-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.152,
+      "bytes": 32199,
+      "sha256": "00646b6243108a043a6345154051114d8458e0390c7a31157a627517263db07c",
+      "title": "Sell My House Fast in Graham NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-graham-nc"
+      ],
+      "description": "Graham homeowners can request a private property review for an as-is sale before making repairs or preparing a listing.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell My House Fast in Graham NC",
+              "item": "https://redclaycap.com/sell-your-house-fast-graham-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast-greensboro-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.16,
+      "bytes": 32593,
+      "sha256": "98980aa6cbf2032e0632736ce949f68900fdd3d396c87a3cddee5fac0f263638",
+      "title": "Sell My House Fast in Greensboro NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-greensboro-nc"
+      ],
+      "description": "Red Clay Capital helps Greensboro homeowners explore potential offer options for inherited, distressed, tenant-occupied, or repair-heavy homes.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-rental-property-with-bad-tenants",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell My House Fast in Greensboro NC",
+              "item": "https://redclaycap.com/sell-your-house-fast-greensboro-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast-haw-river-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.149,
+      "bytes": 32540,
+      "sha256": "05efbfc111d591f8da6219c49c2a8ae143955e5c0b595405a13c4b15e44d7c35",
+      "title": "Sell My House Fast in Haw River NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-haw-river-nc"
+      ],
+      "description": "Haw River homeowners can compare a private as-is cash sale for houses with repairs, vacancy, inherited ownership, or stressful timelines.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-inherited-house-with-multiple-heirs",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell My House Fast in Haw River NC",
+              "item": "https://redclaycap.com/sell-your-house-fast-haw-river-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/sell-your-house-fast-roxboro-nc",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.18,
+      "bytes": 32385,
+      "sha256": "a5720bb286c8e18e02c3ffa8ac9412b2be3bc42e5da3650923b22aadddce85a7",
+      "title": "Sell My House Fast in Roxboro NC | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/sell-your-house-fast-roxboro-nc"
+      ],
+      "description": "Red Clay Capital helps Roxboro homeowners evaluate as-is cash offer options for unwanted, inherited, damaged, vacant, or tenant-occupied houses.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/areas-we-serve/north-carolina",
+        "/blog",
+        "/blog/sell-vacant-or-abandoned-house",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sell My House Fast in Roxboro NC",
+              "item": "https://redclaycap.com/sell-your-house-fast-roxboro-nc"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/seller-finance-house-sale",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.125,
+      "bytes": 30718,
+      "sha256": "e93d0e28ed98f054c476e6678a13171ca38d723b5ea77b47c4ece88b573f63e3",
+      "title": "Considering Seller Financing? Know What to Ask. | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/seller-finance-house-sale"
+      ],
+      "description": "Questions about payment terms, buyer qualification, security, and independent advice when considering seller financing.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Considering Seller Financing? Know What to Ask.",
+              "item": "https://redclaycap.com/seller-finance-house-sale"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/testimonials",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.124,
+      "bytes": 29082,
+      "sha256": "819957df8deeb3d38bb2497d343fa2e709229ef36bbf84bcd3f1dac0e7288aef",
+      "title": "Homeowner Feedback | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/testimonials"
+      ],
+      "description": "Learn what to expect when discussing a property with Red Clay Capital.",
+      "robots": "noindex, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Homeowner Feedback",
+              "item": "https://redclaycap.com/testimonials"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    },
+    {
+      "path": "/why-homeowners-choose-us",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8",
+      "xRobotsTag": null,
+      "vercelId": null,
+      "cache": null,
+      "seconds": 0.116,
+      "bytes": 30685,
+      "sha256": "d0384f8a074c63b9f9b19cd001517d771ed882d4893c201ae5ddfb825cb0489b",
+      "title": "What You Should Expect From a Property Buyer | Red Clay Capital",
+      "h1Count": 1,
+      "canonical": [
+        "https://redclaycap.com/why-homeowners-choose-us"
+      ],
+      "description": "Questions to ask a property buyer about price, costs, buyer identity, written terms, and closing requirements.",
+      "robots": "index, follow",
+      "ogImage": "https://redclaycap.com/social-preview.png",
+      "ogWidth": null,
+      "ogHeight": null,
+      "links": [
+        "#main-content",
+        "/",
+        "/about-red-clay-capital",
+        "/areas-we-serve",
+        "/blog",
+        "/contact",
+        "/faq",
+        "/get-offer",
+        "/how-it-works",
+        "/privacy",
+        "mailto:offers@redclaycap.com",
+        "sms:+19195883714",
+        "tel:+19195883714"
+      ],
+      "ids": [
+        "_R_",
+        "main-content"
+      ],
+      "images": [],
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://redclaycap.com/#organization",
+          "name": "Red Clay Capital, LLC",
+          "url": "https://redclaycap.com",
+          "telephone": "+19195883714",
+          "email": "offers@redclaycap.com",
+          "logo": "https://redclaycap.com/icon.svg",
+          "areaServed": [
+            "North Carolina",
+            "Georgia",
+            "Ohio"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://redclaycap.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "What You Should Expect From a Property Buyer",
+              "item": "https://redclaycap.com/why-homeowners-choose-us"
+            }
+          ]
+        }
+      ],
+      "schemaErrors": [],
+      "oldPhone": false,
+      "founderReferences": false,
+      "founderImageReferences": [],
+      "callPresent": true,
+      "textPresent": true
+    }
+  ]
+}

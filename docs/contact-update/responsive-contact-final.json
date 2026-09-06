@@ -1,0 +1,3282 @@
+{
+  "generatedAt": "2026-09-06T07:15:13.108Z",
+  "target": "local production3100",
+  "expected": {
+    "phoneDisplay": "(919) 588-3714",
+    "phoneE164": "+19195883714",
+    "email": "offers@redclaycap.com"
+  },
+  "method": "Isolated Lighthouse custom laboratory audit; no selected-browser connection, calls, texts, form fills or submissions. Text enlargement changes only the disposable test document.",
+  "results": [
+    {
+      "page": "contact",
+      "requestedWidth": 320,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 320,
+            "bottom": 844,
+            "width": 320,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 604.484375,
+            "right": 300,
+            "bottom": 1129.65625,
+            "width": 280,
+            "height": 525.171875
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 218,
+            "scrollWidth": 218,
+            "left": 51,
+            "top": 1054.65625,
+            "right": 269,
+            "bottom": 1098.65625,
+            "width": 218,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 925.875,
+              "right": 269,
+              "bottom": 974.265625,
+              "width": 218,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 986.265625,
+              "right": 269,
+              "bottom": 1034.65625,
+              "width": 218,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 1054.65625,
+              "right": 269,
+              "bottom": 1098.65625,
+              "width": 218,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 190,
+              "bottom": 834,
+              "width": 174,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 198,
+              "top": 786,
+              "right": 247,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 255,
+              "top": 786,
+              "right": 304,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 134,
+          "bar": {
+            "left": 0,
+            "top": 718.59375,
+            "right": 320,
+            "bottom": 844,
+            "width": 320,
+            "height": 125.40625
+          },
+          "barHeightVariable": "134px",
+          "card": {
+            "left": 20,
+            "top": 1384.859375,
+            "right": 300,
+            "bottom": 2682.828125,
+            "width": 280,
+            "height": 1297.96875
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 218,
+            "scrollWidth": 218,
+            "left": 51,
+            "top": 2535.828125,
+            "right": 269,
+            "bottom": 2651.828125,
+            "width": 218,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2362.234375,
+              "right": 269,
+              "bottom": 2433.03125,
+              "width": 218,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2445.03125,
+              "right": 269,
+              "bottom": 2515.828125,
+              "width": 218,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2535.828125,
+              "right": 269,
+              "bottom": 2651.828125,
+              "width": 218,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 729.59375,
+              "right": 190,
+              "bottom": 834,
+              "width": 174,
+              "height": 104.40625
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 198,
+              "top": 747.6875,
+              "right": 247,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 255,
+              "top": 747.6875,
+              "right": 304,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 3602
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 3602
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "scrollY": 584,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "scrollY": 2322,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "contact",
+      "requestedWidth": 375,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 375,
+            "bottom": 844,
+            "width": 375,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 577.296875,
+            "right": 355,
+            "bottom": 1015.6875,
+            "width": 335,
+            "height": 438.390625
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 273,
+            "scrollWidth": 273,
+            "left": 51,
+            "top": 940.6875,
+            "right": 324,
+            "bottom": 984.6875,
+            "width": 273,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 872.296875,
+              "right": 181.5,
+              "bottom": 920.6875,
+              "width": 130.5,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 193.5,
+              "top": 872.296875,
+              "right": 324,
+              "bottom": 920.6875,
+              "width": 130.5,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 940.6875,
+              "right": 324,
+              "bottom": 984.6875,
+              "width": 273,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 245,
+              "bottom": 834,
+              "width": 229,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 253,
+              "top": 786,
+              "right": 302,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 310,
+              "top": 786,
+              "right": 359,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 134,
+          "bar": {
+            "left": 0,
+            "top": 718.59375,
+            "right": 375,
+            "bottom": 844,
+            "width": 375,
+            "height": 125.40625
+          },
+          "barHeightVariable": "134px",
+          "card": {
+            "left": 20,
+            "top": 1198.484375,
+            "right": 355,
+            "bottom": 2308.0625,
+            "width": 335,
+            "height": 1109.578125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 273,
+            "scrollWidth": 273,
+            "left": 51,
+            "top": 2161.0625,
+            "right": 324,
+            "bottom": 2277.0625,
+            "width": 273,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2070.265625,
+              "right": 181.5,
+              "bottom": 2141.0625,
+              "width": 130.5,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 193.5,
+              "top": 2070.265625,
+              "right": 324,
+              "bottom": 2141.0625,
+              "width": 130.5,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2161.0625,
+              "right": 324,
+              "bottom": 2277.0625,
+              "width": 273,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 729.59375,
+              "right": 245,
+              "bottom": 834,
+              "width": 229,
+              "height": 104.40625
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 253,
+              "top": 747.6875,
+              "right": 302,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 310,
+              "top": 747.6875,
+              "right": 359,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 3317
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 3317
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "scrollY": 557,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "scrollY": 2030,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [
+        "Clearing the browser cache timed out. Try auditing this page again and file a bug if the issue persists."
+      ],
+      "runtimeError": null
+    },
+    {
+      "page": "contact",
+      "requestedWidth": 390,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 390,
+            "bottom": 844,
+            "width": 390,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 577.296875,
+            "right": 370,
+            "bottom": 1015.6875,
+            "width": 350,
+            "height": 438.390625
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 288,
+            "scrollWidth": 288,
+            "left": 51,
+            "top": 940.6875,
+            "right": 339,
+            "bottom": 984.6875,
+            "width": 288,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 872.296875,
+              "right": 189,
+              "bottom": 920.6875,
+              "width": 138,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 201,
+              "top": 872.296875,
+              "right": 339,
+              "bottom": 920.6875,
+              "width": 138,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 940.6875,
+              "right": 339,
+              "bottom": 984.6875,
+              "width": 288,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 260,
+              "bottom": 834,
+              "width": 244,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 268,
+              "top": 786,
+              "right": 317,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 325,
+              "top": 786,
+              "right": 374,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 98,
+          "bar": {
+            "left": 0,
+            "top": 754.796875,
+            "right": 390,
+            "bottom": 844,
+            "width": 390,
+            "height": 89.203125
+          },
+          "barHeightVariable": "98px",
+          "card": {
+            "left": 20,
+            "top": 1198.484375,
+            "right": 370,
+            "bottom": 2202.46875,
+            "width": 350,
+            "height": 1003.984375
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 288,
+            "scrollWidth": 288,
+            "left": 51,
+            "top": 2055.46875,
+            "right": 339,
+            "bottom": 2171.46875,
+            "width": 288,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 1964.671875,
+              "right": 189,
+              "bottom": 2035.46875,
+              "width": 138,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 201,
+              "top": 1964.671875,
+              "right": 339,
+              "bottom": 2035.46875,
+              "width": 138,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2055.46875,
+              "right": 339,
+              "bottom": 2171.46875,
+              "width": 288,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 767.296875,
+              "right": 260,
+              "bottom": 832.5,
+              "width": 244,
+              "height": 65.203125
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 268,
+              "top": 765.796875,
+              "right": 317,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 325,
+              "top": 765.796875,
+              "right": 374,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 3317
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 3317
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollY": 557,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollY": 1925,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "contact",
+      "requestedWidth": 430,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 430,
+            "bottom": 844,
+            "width": 430,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 577.296875,
+            "right": 410,
+            "bottom": 989.296875,
+            "width": 390,
+            "height": 412
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 328,
+            "scrollWidth": 328,
+            "left": 51,
+            "top": 914.296875,
+            "right": 379,
+            "bottom": 958.296875,
+            "width": 328,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 845.90625,
+              "right": 209,
+              "bottom": 894.296875,
+              "width": 158,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 221,
+              "top": 845.90625,
+              "right": 379,
+              "bottom": 894.296875,
+              "width": 158,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 914.296875,
+              "right": 379,
+              "bottom": 958.296875,
+              "width": 328,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 300,
+              "bottom": 834,
+              "width": 284,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 308,
+              "top": 786,
+              "right": 357,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 365,
+              "top": 786,
+              "right": 414,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 98,
+          "bar": {
+            "left": 0,
+            "top": 754.796875,
+            "right": 430,
+            "bottom": 844,
+            "width": 430,
+            "height": 89.203125
+          },
+          "barHeightVariable": "98px",
+          "card": {
+            "left": 20,
+            "top": 1144.078125,
+            "right": 410,
+            "bottom": 2017.953125,
+            "width": 390,
+            "height": 873.875
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 328,
+            "scrollWidth": 328,
+            "left": 51,
+            "top": 1870.953125,
+            "right": 379,
+            "bottom": 1986.953125,
+            "width": 328,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 1780.15625,
+              "right": 209,
+              "bottom": 1850.953125,
+              "width": 158,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 221,
+              "top": 1780.15625,
+              "right": 379,
+              "bottom": 1850.953125,
+              "width": 158,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 1870.953125,
+              "right": 379,
+              "bottom": 1986.953125,
+              "width": 328,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 767.296875,
+              "right": 300,
+              "bottom": 832.5,
+              "width": 284,
+              "height": 65.203125
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 308,
+              "top": 765.796875,
+              "right": 357,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 365,
+              "top": 765.796875,
+              "right": 414,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 3243
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 3243
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "scrollY": 557,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "scrollY": 1740,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "contact",
+      "requestedWidth": 768,
+      "requestedHeight": 1000,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 481.375,
+            "top": 151,
+            "right": 721,
+            "bottom": 752.953125,
+            "width": 239.625,
+            "height": 601.953125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 178,
+            "scrollWidth": 178,
+            "left": 512.375,
+            "top": 653.953125,
+            "right": 690,
+            "bottom": 721.953125,
+            "width": 177.625,
+            "height": 68
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 525.171875,
+              "right": 690,
+              "bottom": 573.5625,
+              "width": 177.625,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 585.5625,
+              "right": 690,
+              "bottom": 633.953125,
+              "width": 177.625,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 512.375,
+              "top": 653.953125,
+              "right": 690,
+              "bottom": 721.953125,
+              "width": 177.625,
+              "height": 68
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 481.375,
+            "top": 155,
+            "right": 721,
+            "bottom": 1728,
+            "width": 239.625,
+            "height": 1573
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 178,
+            "scrollWidth": 178,
+            "left": 512.375,
+            "top": 1533,
+            "right": 690,
+            "bottom": 1697,
+            "width": 177.625,
+            "height": 164
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1359.40625,
+              "right": 690,
+              "bottom": 1430.203125,
+              "width": 177.625,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1442.203125,
+              "right": 690,
+              "bottom": 1513,
+              "width": 177.625,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1533,
+              "right": 690,
+              "bottom": 1697,
+              "width": 177.625,
+              "height": 164
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 2396
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 2396
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "scrollY": 0,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "scrollY": 1319,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "contact",
+      "requestedWidth": 1440,
+      "requestedHeight": 1000,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 877.859375,
+            "top": 167,
+            "right": 1332.5,
+            "bottom": 579,
+            "width": 454.640625,
+            "height": 412
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 393,
+            "scrollWidth": 393,
+            "left": 908.859375,
+            "top": 504,
+            "right": 1301.5,
+            "bottom": 548,
+            "width": 392.640625,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 435.609375,
+              "right": 1099.171875,
+              "bottom": 484,
+              "width": 190.3125,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 1111.171875,
+              "top": 435.609375,
+              "right": 1301.5,
+              "bottom": 484,
+              "width": 190.328125,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 504,
+              "right": 1301.5,
+              "bottom": 548,
+              "width": 392.640625,
+              "height": 44
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/contact",
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 877.859375,
+            "top": 191.40625,
+            "right": 1332.5,
+            "bottom": 964.484375,
+            "width": 454.640625,
+            "height": 773.078125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 393,
+            "scrollWidth": 393,
+            "left": 908.859375,
+            "top": 865.484375,
+            "right": 1301.5,
+            "bottom": 933.484375,
+            "width": 392.640625,
+            "height": 68
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 774.6875,
+              "right": 1099.171875,
+              "bottom": 845.484375,
+              "width": 190.3125,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 1111.171875,
+              "top": 774.6875,
+              "right": 1301.5,
+              "bottom": 845.484375,
+              "width": 190.328125,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 865.484375,
+              "right": 1301.5,
+              "bottom": 933.484375,
+              "width": 392.640625,
+              "height": 68
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 2224
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 2224
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 65
+        },
+        "screenshotViewport": {
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "scrollY": 0,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "scrollY": 735,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 320,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 320,
+            "bottom": 844,
+            "width": 320,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 676.578125,
+            "right": 300,
+            "bottom": 1228.140625,
+            "width": 280,
+            "height": 551.5625
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 218,
+            "scrollWidth": 218,
+            "left": 51,
+            "top": 1153.140625,
+            "right": 269,
+            "bottom": 1197.140625,
+            "width": 218,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 1024.359375,
+              "right": 269,
+              "bottom": 1072.75,
+              "width": 218,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 1084.75,
+              "right": 269,
+              "bottom": 1133.140625,
+              "width": 218,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 1153.140625,
+              "right": 269,
+              "bottom": 1197.140625,
+              "width": 218,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 190,
+              "bottom": 834,
+              "width": 174,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 198,
+              "top": 786,
+              "right": 247,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 255,
+              "top": 786,
+              "right": 304,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 134,
+          "bar": {
+            "left": 0,
+            "top": 718.59375,
+            "right": 320,
+            "bottom": 844,
+            "width": 320,
+            "height": 125.40625
+          },
+          "barHeightVariable": "134px",
+          "card": {
+            "left": 20,
+            "top": 1602.484375,
+            "right": 300,
+            "bottom": 2953.25,
+            "width": 280,
+            "height": 1350.765625
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 218,
+            "scrollWidth": 218,
+            "left": 51,
+            "top": 2806.25,
+            "right": 269,
+            "bottom": 2922.25,
+            "width": 218,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2632.65625,
+              "right": 269,
+              "bottom": 2703.453125,
+              "width": 218,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2715.453125,
+              "right": 269,
+              "bottom": 2786.25,
+              "width": 218,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2806.25,
+              "right": 269,
+              "bottom": 2922.25,
+              "width": 218,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 729.59375,
+              "right": 190,
+              "bottom": 834,
+              "width": 174,
+              "height": 104.40625
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 198,
+              "top": 747.6875,
+              "right": 247,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 255,
+              "top": 747.6875,
+              "right": 304,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 9876
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 9876
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "scrollY": 657,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "scrollY": 2593,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 375,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 375,
+            "bottom": 844,
+            "width": 375,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 631.671875,
+            "right": 355,
+            "bottom": 1096.453125,
+            "width": 335,
+            "height": 464.78125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 273,
+            "scrollWidth": 273,
+            "left": 51,
+            "top": 1021.453125,
+            "right": 324,
+            "bottom": 1065.453125,
+            "width": 273,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 953.0625,
+              "right": 181.5,
+              "bottom": 1001.453125,
+              "width": 130.5,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 193.5,
+              "top": 953.0625,
+              "right": 324,
+              "bottom": 1001.453125,
+              "width": 130.5,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 1021.453125,
+              "right": 324,
+              "bottom": 1065.453125,
+              "width": 273,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 245,
+              "bottom": 834,
+              "width": 229,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 253,
+              "top": 786,
+              "right": 302,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 310,
+              "top": 786,
+              "right": 359,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "clientWidth": 375,
+          "scrollWidth": 375,
+          "bodyScrollWidth": 375,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 134,
+          "bar": {
+            "left": 0,
+            "top": 718.59375,
+            "right": 375,
+            "bottom": 844,
+            "width": 375,
+            "height": 125.40625
+          },
+          "barHeightVariable": "134px",
+          "card": {
+            "left": 20,
+            "top": 1505.96875,
+            "right": 355,
+            "bottom": 2668.34375,
+            "width": 335,
+            "height": 1162.375
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 273,
+            "scrollWidth": 273,
+            "left": 51,
+            "top": 2521.34375,
+            "right": 324,
+            "bottom": 2637.34375,
+            "width": 273,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2430.546875,
+              "right": 181.5,
+              "bottom": 2501.34375,
+              "width": 130.5,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 193.5,
+              "top": 2430.546875,
+              "right": 324,
+              "bottom": 2501.34375,
+              "width": 130.5,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2521.34375,
+              "right": 324,
+              "bottom": 2637.34375,
+              "width": 273,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 729.59375,
+              "right": 245,
+              "bottom": 834,
+              "width": 229,
+              "height": 104.40625
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 253,
+              "top": 747.6875,
+              "right": 302,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 310,
+              "top": 747.6875,
+              "right": 359,
+              "bottom": 815.890625,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 8834
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 375,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 8834
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "scrollY": 612,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 375,
+          "innerHeight": 844,
+          "scrollY": 2391,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 390,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 390,
+            "bottom": 844,
+            "width": 390,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 631.671875,
+            "right": 370,
+            "bottom": 1096.453125,
+            "width": 350,
+            "height": 464.78125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 288,
+            "scrollWidth": 288,
+            "left": 51,
+            "top": 1021.453125,
+            "right": 339,
+            "bottom": 1065.453125,
+            "width": 288,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 953.0625,
+              "right": 189,
+              "bottom": 1001.453125,
+              "width": 138,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 201,
+              "top": 953.0625,
+              "right": 339,
+              "bottom": 1001.453125,
+              "width": 138,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 1021.453125,
+              "right": 339,
+              "bottom": 1065.453125,
+              "width": 288,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 260,
+              "bottom": 834,
+              "width": 244,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 268,
+              "top": 786,
+              "right": 317,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 325,
+              "top": 786,
+              "right": 374,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "clientWidth": 390,
+          "scrollWidth": 390,
+          "bodyScrollWidth": 390,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 98,
+          "bar": {
+            "left": 0,
+            "top": 754.796875,
+            "right": 390,
+            "bottom": 844,
+            "width": 390,
+            "height": 89.203125
+          },
+          "barHeightVariable": "98px",
+          "card": {
+            "left": 20,
+            "top": 1451.5625,
+            "right": 370,
+            "bottom": 2561.140625,
+            "width": 350,
+            "height": 1109.578125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 288,
+            "scrollWidth": 288,
+            "left": 51,
+            "top": 2414.140625,
+            "right": 339,
+            "bottom": 2530.140625,
+            "width": 288,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2323.34375,
+              "right": 189,
+              "bottom": 2394.140625,
+              "width": 138,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 201,
+              "top": 2323.34375,
+              "right": 339,
+              "bottom": 2394.140625,
+              "width": 138,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2414.140625,
+              "right": 339,
+              "bottom": 2530.140625,
+              "width": 288,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 767.296875,
+              "right": 260,
+              "bottom": 832.5,
+              "width": 244,
+              "height": 65.203125
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 268,
+              "top": 765.796875,
+              "right": 317,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 325,
+              "top": 765.796875,
+              "right": 374,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 8654
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 390,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 8654
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollY": 612,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollY": 2283,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 430,
+      "requestedHeight": 844,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 77,
+          "bar": {
+            "left": 0,
+            "top": 775,
+            "right": 430,
+            "bottom": 844,
+            "width": 430,
+            "height": 69
+          },
+          "barHeightVariable": "77px",
+          "card": {
+            "left": 20,
+            "top": 604.484375,
+            "right": 410,
+            "bottom": 1042.875,
+            "width": 390,
+            "height": 438.390625
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 328,
+            "scrollWidth": 328,
+            "left": 51,
+            "top": 967.875,
+            "right": 379,
+            "bottom": 1011.875,
+            "width": 328,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 899.484375,
+              "right": 209,
+              "bottom": 947.875,
+              "width": 158,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 221,
+              "top": 899.484375,
+              "right": 379,
+              "bottom": 947.875,
+              "width": 158,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 967.875,
+              "right": 379,
+              "bottom": 1011.875,
+              "width": 328,
+              "height": 44
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 786,
+              "right": 300,
+              "bottom": 834,
+              "width": 284,
+              "height": 48
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 308,
+              "top": 786,
+              "right": 357,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 365,
+              "top": 786,
+              "right": 414,
+              "bottom": 834,
+              "width": 49,
+              "height": 48
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "clientWidth": 430,
+          "scrollWidth": 430,
+          "bodyScrollWidth": 430,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 98,
+          "bar": {
+            "left": 0,
+            "top": 754.796875,
+            "right": 430,
+            "bottom": 844,
+            "width": 430,
+            "height": 89.203125
+          },
+          "barHeightVariable": "98px",
+          "card": {
+            "left": 20,
+            "top": 1361.703125,
+            "right": 410,
+            "bottom": 2288.375,
+            "width": 390,
+            "height": 926.671875
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 328,
+            "scrollWidth": 328,
+            "left": 51,
+            "top": 2141.375,
+            "right": 379,
+            "bottom": 2257.375,
+            "width": 328,
+            "height": 116
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 51,
+              "top": 2050.578125,
+              "right": 209,
+              "bottom": 2121.375,
+              "width": 158,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 221,
+              "top": 2050.578125,
+              "right": 379,
+              "bottom": 2121.375,
+              "width": 158,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 51,
+              "top": 2141.375,
+              "right": 379,
+              "bottom": 2257.375,
+              "width": 328,
+              "height": 116
+            },
+            {
+              "text": "Request an offer",
+              "href": "/get-offer",
+              "scope": "mobile",
+              "left": 16,
+              "top": 767.296875,
+              "right": 300,
+              "bottom": 832.5,
+              "width": 284,
+              "height": 65.203125
+            },
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "mobile",
+              "left": 308,
+              "top": 765.796875,
+              "right": 357,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "mobile",
+              "left": 365,
+              "top": 765.796875,
+              "right": 414,
+              "bottom": 834,
+              "width": 49,
+              "height": 68.203125
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 8126
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 430,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 430,
+            "height": 8126
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "scrollY": 584,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 430,
+          "innerHeight": 844,
+          "scrollY": 2011,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 768,
+      "requestedHeight": 1000,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 481.375,
+            "top": 151,
+            "right": 721,
+            "bottom": 752.953125,
+            "width": 239.625,
+            "height": 601.953125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 178,
+            "scrollWidth": 178,
+            "left": 512.375,
+            "top": 653.953125,
+            "right": 690,
+            "bottom": 721.953125,
+            "width": 177.625,
+            "height": 68
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 525.171875,
+              "right": 690,
+              "bottom": 573.5625,
+              "width": 177.625,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 585.5625,
+              "right": 690,
+              "bottom": 633.953125,
+              "width": 177.625,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 512.375,
+              "top": 653.953125,
+              "right": 690,
+              "bottom": 721.953125,
+              "width": 177.625,
+              "height": 68
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "clientWidth": 753,
+          "scrollWidth": 753,
+          "bodyScrollWidth": 753,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 481.375,
+            "top": 155,
+            "right": 721,
+            "bottom": 1728,
+            "width": 239.625,
+            "height": 1573
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 178,
+            "scrollWidth": 178,
+            "left": 512.375,
+            "top": 1533,
+            "right": 690,
+            "bottom": 1697,
+            "width": 177.625,
+            "height": 164
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1359.40625,
+              "right": 690,
+              "bottom": 1430.203125,
+              "width": 177.625,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1442.203125,
+              "right": 690,
+              "bottom": 1513,
+              "width": 177.625,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 512.375,
+              "top": 1533,
+              "right": 690,
+              "bottom": 1697,
+              "width": 177.625,
+              "height": 164
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 5774
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 753,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 753,
+            "height": 5774
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "scrollY": 0,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 768,
+          "innerHeight": 1000,
+          "scrollY": 1319,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "page": "north-carolina",
+      "requestedWidth": 1440,
+      "requestedHeight": 1000,
+      "observed": {
+        "baseline": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 877.859375,
+            "top": 167,
+            "right": 1332.5,
+            "bottom": 579,
+            "width": 454.640625,
+            "height": 412
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 393,
+            "scrollWidth": 393,
+            "left": 908.859375,
+            "top": 504,
+            "right": 1301.5,
+            "bottom": 548,
+            "width": 392.640625,
+            "height": 44
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 435.609375,
+              "right": 1099.171875,
+              "bottom": 484,
+              "width": 190.3125,
+              "height": 48.390625
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 1111.171875,
+              "top": 435.609375,
+              "right": 1301.5,
+              "bottom": 484,
+              "width": 190.328125,
+              "height": 48.390625
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 504,
+              "right": 1301.5,
+              "bottom": 548,
+              "width": 392.640625,
+              "height": 44
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "enlarged": {
+          "url": "http://127.0.0.1:3100/areas-we-serve/north-carolina",
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "clientWidth": 1425,
+          "scrollWidth": 1425,
+          "bodyScrollWidth": 1425,
+          "devicePixelRatio": 1,
+          "bodyPaddingBottom": 0,
+          "bar": null,
+          "barHeightVariable": "8px",
+          "card": {
+            "left": 877.859375,
+            "top": 191.40625,
+            "right": 1332.5,
+            "bottom": 964.484375,
+            "width": 454.640625,
+            "height": 773.078125
+          },
+          "numberText": "(919) 588-3714",
+          "email": {
+            "text": "offers@redclaycap.com",
+            "clientWidth": 393,
+            "scrollWidth": 393,
+            "left": 908.859375,
+            "top": 865.484375,
+            "right": 1301.5,
+            "bottom": 933.484375,
+            "width": 392.640625,
+            "height": 68
+          },
+          "buttons": [
+            {
+              "text": "Call",
+              "href": "tel:+19195883714",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 774.6875,
+              "right": 1099.171875,
+              "bottom": 845.484375,
+              "width": 190.3125,
+              "height": 70.796875
+            },
+            {
+              "text": "Text",
+              "href": "sms:+19195883714",
+              "scope": "card",
+              "left": 1111.171875,
+              "top": 774.6875,
+              "right": 1301.5,
+              "bottom": 845.484375,
+              "width": 190.328125,
+              "height": 70.796875
+            },
+            {
+              "text": "offers@redclaycap.com",
+              "href": "mailto:offers@redclaycap.com",
+              "scope": "card",
+              "left": 908.859375,
+              "top": 865.484375,
+              "right": 1301.5,
+              "bottom": 933.484375,
+              "width": 392.640625,
+              "height": 68
+            }
+          ],
+          "buttonSeparation": 12,
+          "overflowingElements": [],
+          "overflowingText": []
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 4540
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1425,
+            "clientHeight": 1000,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1425,
+            "height": 4540
+          }
+        },
+        "magnification": {
+          "method": "200% computed font size and numeric line height for text-bearing elements and form controls; isolated test document only",
+          "elements": 113
+        },
+        "screenshotViewport": {
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "scrollY": 0,
+          "focus": "contact card"
+        },
+        "enlargedScreenshotViewport": {
+          "innerWidth": 1440,
+          "innerHeight": 1000,
+          "scrollY": 735,
+          "focus": "enlarged contact actions"
+        }
+      },
+      "baselineResult": {
+        "pass": true,
+        "failures": []
+      },
+      "enlargedResult": {
+        "pass": true,
+        "failures": []
+      },
+      "warnings": [],
+      "runtimeError": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "deployment": "dpl_2M3P7MaqgJh5Rr5Viy83tjg8SyfE",
+  "httpStatus": 200,
+  "phone": true,
+  "call": true,
+  "text": true,
+  "email": true,
+  "oldContactAbsent": true,
+  "card": true
+}

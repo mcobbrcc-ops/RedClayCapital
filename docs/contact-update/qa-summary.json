@@ -1,0 +1,135 @@
+{
+  "target": "Local production build http://127.0.0.1:3100",
+  "buildId": "Qg1FiACehIlbGWRBNSs0P",
+  "expected": {
+    "phoneDisplay": "(919) 588-3714",
+    "phoneE164": "+19195883714",
+    "email": "offers@redclaycap.com"
+  },
+  "viewportWidths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1440
+  ],
+  "pages": [
+    "/contact",
+    "/areas-we-serve/north-carolina"
+  ],
+  "normalScenarios": 12,
+  "normalPassed": 12,
+  "text200Scenarios": 12,
+  "text200Passed": 12,
+  "actualViewportMatches": true,
+  "minContactTargetWidth": 49,
+  "minContactTargetHeight": 44,
+  "minCardButtonSeparation": 12,
+  "minimumStickyClearance": 8,
+  "a11y": [
+    {
+      "page": "contact",
+      "score": 100,
+      "failures": [],
+      "warnings": [],
+      "fetchTime": "2026-09-06T07:09:07.333Z"
+    },
+    {
+      "page": "north-carolina",
+      "score": 100,
+      "failures": [],
+      "warnings": [],
+      "fetchTime": "2026-09-06T07:10:05.937Z"
+    },
+    {
+      "page": "get-offer",
+      "score": 100,
+      "failures": [],
+      "warnings": [],
+      "fetchTime": "2026-09-06T07:09:34.916Z"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-1440-text200.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "645792be23c40cf2cc94128c439d53186c3bd442a78c44d459865ac203b8e109"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "30818c5c9af6c1a02090e9973fb0c57a9393bd08647e18e1f9b1ce1965ac9c12"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-320-text200.png",
+      "width": 320,
+      "height": 844,
+      "sha256": "a44177a164d3f59a243d81150f2dba92c7867b7ffd623f8c125296aff7b6b3d5"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-320.png",
+      "width": 320,
+      "height": 844,
+      "sha256": "d42076cfef6e8a4bb8621e54b8360bd0f28594dddee5c12a07b684f993a3490f"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-390-text200.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "dab3e7a48251ebf43a30f42275f143cdab561686b5a7228cf7f1aba1230e7cd9"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-contact-390.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "b81d1c59b9155689b8a7893a2f5f052e2a7202851ab2aec8e220d71810dd097a"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-1440-text200.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "17c5dfe75551f4fc556f199c4bcacd49aac6ab3e6480b49b771fc9a51985f61a"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "9e99d39b82a25dd4206a779c5fd638b9ecd5ef213f1dd67777a746ecc215f186"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-320-text200.png",
+      "width": 320,
+      "height": 844,
+      "sha256": "fb3a0459a0aba8239545c4504b6b344f6ec7aeb1d7c22187377ff5d7de41d309"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-320.png",
+      "width": 320,
+      "height": 844,
+      "sha256": "3e77c95e8d206995ad190a0ca087eae9b3a60db6f3abaa332684c36a2c45a7bc"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-390-text200.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "5217129de8afc0242d6241b52fd6758e1c9c10b228fb953920de0d2f200fe421"
+    },
+    {
+      "file": "docs\\contact-update\\screenshots\\final-north-carolina-390.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "fbfdc73fa0b491933b8d9ac1421c5c8cb909ca998ab412db12700a4e283511e0"
+    }
+  ],
+  "sourceFingerprints": {
+    "lib/public-contact.json": "9b7d0afa4cc89a8eae8e2e0bf870ba5f4544eeecc77f47e85b1a545b68474643",
+    "components/ContactCard.tsx": "51bea380f85b2c27ac174a6c7d3608cbcac76da438c5a5ab3368e00a964cc6e0",
+    "components/SiteExperience.tsx": "11e4901213b6df69334f3f15b22d26d5b02b52488b4baced290512be2b6eef5f",
+    "app/seller.css": "584bfe4284c16a61601626c9a3ae001ddca5fdef6716977b94364f9dfbc3c993"
+  },
+  "noCallsTextsEmailsOrLeadSubmissions": true,
+  "method": "Isolated Lighthouse laboratory browser.200% text-only condition doubles computed font size and numeric line height of text-bearing elements and form controls in disposable local test documents; no deployed source changes. Geometry includes overflowing text ranges even when overflow-x hides document scrolling."
+}

@@ -1,5 +1,7 @@
 # Red Clay Capital release — September 5, 2026
 
+Current contact update: see [September 6 contact release](../contact-update/RELEASE.md). The historical evidence below describes the earlier company-design release.
+
 The company-focused website is live at https://redclaycap.com. The founder photograph, public owner callouts and founder structured-data field were removed before deployment, as requested. Company, process and NC/GA/OH market information now lead the presentation. No team size, offices, transaction history or scale claims were invented. Existing contact destinations are preserved.
 
 ## Release identity and authorization
