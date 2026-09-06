@@ -1,45 +1,47 @@
-# Release status — September 5, 2026
+# Red Clay Capital release — September 5, 2026
 
-## Reviewable result
+The company-focused website is live at https://redclaycap.com. The founder photograph, public owner callouts and founder structured-data field were removed before deployment, as requested. Company, process and NC/GA/OH market information now lead the presentation. No team size, offices, transaction history or scale claims were invented. Existing contact destinations are preserved.
 
-The existing Next.js seller website has been upgraded in the canonical RedClayCapital checkout. Local production preview: http://127.0.0.1:3100. The preview uses an isolated synthetic lead fixture; it is not connected to production lead storage. The current public site at https://redclaycap.com has not been replaced by this task.
+## Release identity and authorization
 
-Initial implementation commit: `89aabf3`, branch `codex/astra-website-upgrade`, based on the existing durable-outbox release `d51f155`. Subsequent accessibility and final QA corrections are recorded on the same branch.
+- Application source: `22d9111dd7d99c73d5819a443fc9bb9e83c22636`, released by fast-forwarding the existing GitHub production branch `main`.
+- First verified production deployment: `dpl_8n4PzbhppCvAMYyH6wH3GHyjwStM`, READY with domain assignment confirmed. Immutable URL: https://project-73xr5-ri6huehrn-red-clay-capital.vercel.app.
+- Verified protected preview of the same source: `dpl_D2Nfdgew5nXfGTLJgcUzUmSoHrjU`, https://project-73xr5-khhs2dg74-red-clay-capital.vercel.app.
+- Existing project: `prj_tx6iRynIeADLp2EF4loKPnWCVLMP` / `project-73xr5`; existing repository: `mcobbrcc-ops/RedClayCapital`. DNS and production integration environment were preserved.
+- Prior production rollback target: `dpl_F6p23Dd8zDrmBD3zMgoPjTyEQ7HU`. Check the current project state before any future rollback.
+- Documentation-only evidence commits may trigger another Vercel build of the same application source. The deployment above identifies the tested application release; inspect the project for its latest alias target.
 
-The upgrade includes the redesigned homepage, focused offer page, phone/text actions, owner identity, substantive North Carolina/Georgia/Ohio hubs, revised credibility pages and seller guides, privacy details, safer durable lead intake and retries, consent-aware attribution and conversion hooks. See HANDOFF.md for maintenance details and the evidence directory for individual checks.
+Automatic review initially blocked the GitHub push for lack of explicit payload/destination approval. The user then explicitly approved source/QA-document publication and the existing Vercel release, conditioned on removing the founder focus. That condition was implemented and verified before publishing. This gate is resolved. Protected preview access still requires Vercel authentication; anonymous requests redirect to SSO with noindex. Vercel CLI generated its scoped deployment-protection token for authenticated preview reads without printing the value or disabling protection. Bulk production-secret export was not performed.
 
-## Release gate
+## Implemented and verified
 
-Automatic approval review rejected the attempted GitHub push because it considered the website source and internal QA documents sensitive code/data egress to a destination lacking explicit payload-and-destination approval. The remote is the verified existing `mcobbrcc-ops/RedClayCapital` repository, but the review still requires explicit approval for this push. Nothing was pushed or deployed. The user has been presented with the completed local result and an approval request naming the source, QA documents, existing GitHub destination, existing Vercel project, and public domain.
+The upgrade covers the homepage, focused /get-offer route, company/About/process/contact/FAQ pages, three substantive state hubs, nine seller guides, privacy notice, mobile navigation and offer/call/text actions. Lead capture uses the existing durable outbox, authenticated delivery, stable retry identity, explicit inquiry consent, sanitized attribution and deduplicated optional conversion tracking.
 
-Once that approval is granted:
+- `pnpm run check`: 23 behavioral tests and production build pass. GitHub production CI also passed: https://github.com/mcobbrcc-ops/RedClayCapital/actions/runs/34003965730. The existing nonfatal legacy-admin file-tracing warning is documented in HANDOFF.md.
+- Responsive geometry: 12 of 12 home/offer checks pass at actual widths 320, 375, 390, 430, 768 and 1440px; no horizontal overflow.
+- Automated accessibility: homepage, offer and NC hub each score 100 with no failed scored or unscored checks. This is not full WCAG certification.
+- Production crawl: 49 routes, 43 successful pages, five correct permanent redirects and one intentional 404. All 37 original sitemap URLs are accounted for. Canonicals, indexability, JSON-LD, internal/contact links, sitemap, robots, Google verification and the 1200x630 social image pass. Rendered public pages contain no founder names or photographs. HTTPS/www consistency is verified.
+- Live browser: the company panel renders and its NC link opens the correct state hub. Public recovery endpoint rejects unauthenticated access with 401.
+- Four labeled NC/GA/OH/campaign browser submissions were accepted by the isolated local fixture. Double-click and simulated acceptance-failure/retry behavior passed. No production synthetic lead was submitted.
 
-1. Push the tested upgrade branch to the existing GitHub remote. Preserve unrelated work and inspect any newer remote commits first.
-2. Use the existing linked Vercel project `prj_tx6iRynIeADLp2EF4loKPnWCVLMP` / `project-73xr5` to create or reuse a protected preview. Existing SSO protection is `all_except_custom_domains`; do not disable it. Preview does not have production lead credentials and must not accept real seller test data.
-3. Verify the preview build and release the same source through the established main/CLI production workflow. Preserve the production environment and DNS.
-4. Record deployment ID, immutable URL, commit, production-alias status and checks here. Rollback target is prior deployment `dpl_F6p23Dd8zDrmBD3zMgoPjTyEQ7HU`; inspect whether another release has superseded it before acting.
-5. Repeat the route/indexability/schema/contact checks against the public alias and the three equivalent mobile Lighthouse samples in performance/README.md. No post-release performance result exists yet.
+## Performance
 
-## Evidence and limitations
+Equivalent three-run mobile Lighthouse configurations were used before and after release. Before median: score 97, LCP 1.524s, TBT 185ms, CLS 0. After median: score 94, LCP 1.642s, TBT 242ms, CLS 0. Every after LCP is below 2.5s; every CLS is 0. The workstation benchmark was lower in after runs, and one run had elevated blocking time; these results do not establish a speed improvement or isolate the cause of the score decrease. Full reports and remaining bottlenecks are in performance/README.md. TBT is not INP. Search Console access was denied, so no 90-day traffic baseline or field Core Web Vitals was available. No ranking or conversion improvement is claimed.
 
-- Production build and 23 behavioral tests pass. Tests cover durable acceptance, retry identity, downstream outage/recovery, consent, attribution, blocked tracking and conversion deduplication.
-- All 37 original sitemap URLs are accounted for; the local 49-route crawl passed with 43 successful pages, five intended permanent redirects and one intentional 404. Google verification is preserved.
-- Four labeled local browser journeys cover NC, GA, OH and a campaign landing page. The double-click and simulated acceptance failure/retry checks produced four accepted synthetic records total. These are local fixture results, not live RCI delivery proof.
-- Final local accessibility reports for home, offer and NC hub scored 100 with no failed scored or unscored audits. This does not certify full WCAG conformance.
-- All12 final responsive geometry checks passed for home and offer at320,375,390,430,768 and1440px: actual viewport dimensions were confirmed, document width equals client width, and no visible elements overflow. See responsive-final.json. A late browser resize issue caused one desktop screenshot to be temporarily saved as a duplicate mobile image; it was detected and replaced with a verified capture. The initial review files retain that discovery for traceability.
-- Baseline mobile lab median: score 97, LCP 1.524 seconds, TBT 185 milliseconds, CLS 0. Post-release lab comparison remains pending. Search Console denied the current account access, so no 90-day traffic baseline or field Core Web Vitals was available. No improvement in traffic, ranking or conversions is claimed.
-- The separately maintained RCI production release omitted the receiver and Internet Leads view. With the user's explicit authorization, findings were sent to the active Communications Portal task, which owns restoration. Immutable recipient binding, owner notification/deep-link, owner-only record visibility and tenant denial remain unverified until that restoration supplies actual evidence.
-- No production synthetic lead, seller contact, call, text, campaign or provider-number mutation was performed. Native iOS/Android app dispatch and actual voice/SMS routing remain unverified.
+## Remaining integration dependency
 
-## Before and after
+The separate RCI production release omitted the website receiver and Internet Leads view. Findings and this website release were sent to the active Communications Portal task with explicit user authorization. That task is restoring the receiver/UI/models, owner predicates and historical SQL secret guards while preserving its newer communications work. Its latest checkpoint remains local/in progress, not deployed or E2E proven.
 
-Before screenshots were captured from the existing public release. After screenshots show the upgraded local production build.
+Actual immutable recipient binding, owner-only records, owner notification/deep-link, tenant denial and backlog/dead-letter recovery remain pending. Local contract/mocked-outbox tests are not live RCI delivery proof. No canonical RCI files, production lead records, calls, texts, campaigns or number-provider settings were changed by this website task. Native iOS/Android app dispatch and actual voice/SMS routing also remain unverified. See rci-verification.md.
+
+## Visual evidence and maintenance
+
+Before images show the preceding public release; after images show the verified production-build source released above. A temporary mislabeled desktop screenshot was detected and replaced; final actual dimensions and geometry are documented in responsive-final.md.
 
 | View | Before | After |
 | --- | --- | --- |
 | Desktop | [Before desktop](screenshots/before-desktop.png) | [After desktop](screenshots/after-desktop.png) |
 | Mobile | [Before mobile](screenshots/before-mobile.png) | [After mobile](screenshots/after-mobile.png) |
 
-## RCI coordination boundary
+Maintenance starts at HANDOFF.md. Production route evidence is in seo-production-verification.md; the prioritized measurement/content backlog and two proposed experiments are in seo-90-day-backlog.md. The optional local preview at http://127.0.0.1:3100 uses synthetic-only storage, not production.
 
-The website task does not modify or roll back the dirty canonical RCI checkout. The Communications Portal task is restoring the integration while preserving its newer work, checking strict owner predicates and a potential NULL-secret bypass in the historical acceptance/claim SQL. Its latest checkpoint confirms selected receiver/UI/models and local owner-scoping repairs are in progress; missing-secret SQL regression and migration validation remain unfinished. This historical source finding is not evidence of a production exploit. Its deployed recorder repair dpl_1ciunhyhynpPFUZjdrg2buVNzAfT does not include or prove Internet Leads restoration. See rci-verification.md for the surgical restoration requirements and original evidence.

@@ -1,0 +1,280 @@
+{
+  "rows": [
+    {
+      "stage": "before",
+      "sample": 1,
+      "score": 98,
+      "fcp": 1341.4940000000001,
+      "lcp": 1997.9940000000001,
+      "tbt": 102,
+      "cls": 0,
+      "bytes": 187662,
+      "benchmark": 1587,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "stage": "before",
+      "sample": 2,
+      "score": 94,
+      "fcp": 1444.3319999999999,
+      "lcp": 1524.3319999999999,
+      "tbt": 283,
+      "cls": 0,
+      "bytes": 187620,
+      "benchmark": 942.5,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "stage": "before",
+      "sample": 3,
+      "score": 97,
+      "fcp": 1427.575,
+      "lcp": 1499.575,
+      "tbt": 184.99999999999977,
+      "cls": 0,
+      "bytes": 187664,
+      "benchmark": 973.5,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "stage": "after",
+      "sample": 1,
+      "score": 94,
+      "fcp": 1641.9535,
+      "lcp": 1641.9535,
+      "tbt": 242,
+      "cls": 0,
+      "bytes": 190192,
+      "benchmark": 813,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "stage": "after",
+      "sample": 2,
+      "score": 95,
+      "fcp": 1503.69,
+      "lcp": 1599.69,
+      "tbt": 225.5,
+      "cls": 0,
+      "bytes": 190189,
+      "benchmark": 817,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    },
+    {
+      "stage": "after",
+      "sample": 3,
+      "score": 83,
+      "fcp": 1466.568,
+      "lcp": 2039.568,
+      "tbt": 610.5000000000002,
+      "cls": 0,
+      "bytes": 190210,
+      "benchmark": 908.5,
+      "version": "13.4.1",
+      "settings": {
+        "formFactor": "mobile",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 390,
+          "height": 844,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.56,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        }
+      },
+      "warnings": [],
+      "runtimeError": null
+    }
+  ],
+  "summary": {
+    "before": {
+      "score": {
+        "min": 94,
+        "median": 97,
+        "max": 98
+      },
+      "fcp": {
+        "min": 1341.4940000000001,
+        "median": 1427.575,
+        "max": 1444.3319999999999
+      },
+      "lcp": {
+        "min": 1499.575,
+        "median": 1524.3319999999999,
+        "max": 1997.9940000000001
+      },
+      "tbt": {
+        "min": 102,
+        "median": 184.99999999999977,
+        "max": 283
+      },
+      "cls": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "bytes": {
+        "min": 187620,
+        "median": 187662,
+        "max": 187664
+      },
+      "benchmark": {
+        "min": 942.5,
+        "median": 973.5,
+        "max": 1587
+      }
+    },
+    "after": {
+      "score": {
+        "min": 83,
+        "median": 94,
+        "max": 95
+      },
+      "fcp": {
+        "min": 1466.568,
+        "median": 1503.69,
+        "max": 1641.9535
+      },
+      "lcp": {
+        "min": 1599.69,
+        "median": 1641.9535,
+        "max": 2039.568
+      },
+      "tbt": {
+        "min": 225.5,
+        "median": 242,
+        "max": 610.5000000000002
+      },
+      "cls": {
+        "min": 0,
+        "median": 0,
+        "max": 0
+      },
+      "bytes": {
+        "min": 190189,
+        "median": 190192,
+        "max": 190210
+      },
+      "benchmark": {
+        "min": 813,
+        "median": 817,
+        "max": 908.5
+      }
+    }
+  },
+  "settingsMatch": true,
+  "versionsMatch": true
+}

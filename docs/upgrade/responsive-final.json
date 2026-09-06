@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T23:13:08.004Z",
+  "generatedAt": "2026-09-06T01:27:22.681Z",
   "method": "Lighthouse 13.4.1 custom read-only geometry gatherer in isolated Edge 152; real page and CDP layout dimensions; no form interaction",
   "target": "local production build",
   "results": [
@@ -19,7 +19,7 @@
           "clientWidth": 320,
           "scrollWidth": 320,
           "bodyScrollWidth": 320,
-          "scrollHeight": 11212,
+          "scrollHeight": 11653,
           "visualViewportWidth": 320,
           "visualViewportHeight": 844,
           "visibleOverflowElements": [],
@@ -38,8 +38,8 @@
               "text": "Request an offer",
               "left": 20,
               "right": 207.265625,
-              "top": 522.359375,
-              "bottom": 573.421875,
+              "top": 502.5625,
+              "bottom": 553.625,
               "width": 187.265625,
               "height": 51.0625,
               "display": "inline-flex"
@@ -48,8 +48,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 279,
-              "top": 10132.96875,
-              "bottom": 10184.03125,
+              "top": 10551.046875,
+              "bottom": 10602.109375,
               "width": 238,
               "height": 51.0625,
               "display": "inline-flex"
@@ -87,7 +87,7 @@
             "x": 0,
             "y": 0,
             "width": 320,
-            "height": 11212
+            "height": 11653
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -109,7 +109,7 @@
             "x": 0,
             "y": 0,
             "width": 320,
-            "height": 11212
+            "height": 11653
           }
         }
       },
@@ -142,7 +142,7 @@
           "clientWidth": 375,
           "scrollWidth": 375,
           "bodyScrollWidth": 375,
-          "scrollHeight": 10519,
+          "scrollHeight": 10812,
           "visualViewportWidth": 375,
           "visualViewportHeight": 844,
           "visibleOverflowElements": [],
@@ -171,8 +171,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 334,
-              "top": 9463.59375,
-              "bottom": 9514.65625,
+              "top": 9756.34375,
+              "bottom": 9807.40625,
               "width": 293,
               "height": 51.0625,
               "display": "inline-flex"
@@ -210,7 +210,7 @@
             "x": 0,
             "y": 0,
             "width": 375,
-            "height": 10519
+            "height": 10812
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -232,7 +232,7 @@
             "x": 0,
             "y": 0,
             "width": 375,
-            "height": 10519
+            "height": 10812
           }
         }
       },
@@ -265,7 +265,7 @@
           "clientWidth": 430,
           "scrollWidth": 430,
           "bodyScrollWidth": 430,
-          "scrollHeight": 10205,
+          "scrollHeight": 10452,
           "visualViewportWidth": 430,
           "visualViewportHeight": 844,
           "visibleOverflowElements": [],
@@ -294,8 +294,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 389,
-              "top": 9169.296875,
-              "bottom": 9220.359375,
+              "top": 9416.203125,
+              "bottom": 9467.265625,
               "width": 348,
               "height": 51.0625,
               "display": "inline-flex"
@@ -333,7 +333,7 @@
             "x": 0,
             "y": 0,
             "width": 430,
-            "height": 10205
+            "height": 10452
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -355,7 +355,7 @@
             "x": 0,
             "y": 0,
             "width": 430,
-            "height": 10205
+            "height": 10452
           }
         }
       },
@@ -388,7 +388,7 @@
           "clientWidth": 753,
           "scrollWidth": 753,
           "bodyScrollWidth": 753,
-          "scrollHeight": 7875,
+          "scrollHeight": 8149,
           "visualViewportWidth": 753,
           "visualViewportHeight": 1000,
           "visibleOverflowElements": [],
@@ -407,8 +407,8 @@
               "text": "Request an offer",
               "left": 32,
               "right": 219.265625,
-              "top": 504.609375,
-              "bottom": 555.671875,
+              "top": 630.984375,
+              "bottom": 682.046875,
               "width": 187.265625,
               "height": 51.0625,
               "display": "inline-flex"
@@ -417,8 +417,8 @@
               "text": "Request an offer",
               "left": 421.28125,
               "right": 686,
-              "top": 7209.625,
-              "bottom": 7260.6875,
+              "top": 7484.0625,
+              "bottom": 7535.125,
               "width": 264.71875,
               "height": 51.0625,
               "display": "inline-flex"
@@ -446,7 +446,7 @@
             "x": 0,
             "y": 0,
             "width": 753,
-            "height": 7875
+            "height": 8149
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -468,7 +468,7 @@
             "x": 0,
             "y": 0,
             "width": 753,
-            "height": 7875
+            "height": 8149
           }
         }
       },
@@ -487,6 +487,119 @@
     },
     {
       "page": "get-offer",
+      "requestedWidth": 320,
+      "requestedHeight": 844,
+      "mobile": true,
+      "observed": {
+        "geometry": {
+          "url": "http://127.0.0.1:3100/get-offer",
+          "innerWidth": 320,
+          "innerHeight": 844,
+          "outerWidth": 320,
+          "outerHeight": 844,
+          "devicePixelRatio": 1,
+          "clientWidth": 320,
+          "scrollWidth": 320,
+          "bodyScrollWidth": 320,
+          "scrollHeight": 2698,
+          "visualViewportWidth": 320,
+          "visualViewportHeight": 844,
+          "visibleOverflowElements": [],
+          "buttonRects": [
+            {
+              "text": "Request an offer",
+              "left": 21,
+              "right": 287,
+              "top": 576.515625,
+              "bottom": 627.578125,
+              "width": 266,
+              "height": 51.0625,
+              "display": "flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 41,
+              "right": 279,
+              "top": 1596.46875,
+              "bottom": 1647.53125,
+              "width": 238,
+              "height": 51.0625,
+              "display": "inline-flex"
+            },
+            {
+              "text": "Request an offer",
+              "left": 16,
+              "right": 190,
+              "top": 786,
+              "bottom": 834,
+              "width": 174,
+              "height": 48,
+              "display": "flex"
+            }
+          ]
+        },
+        "layout": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 2698
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 320,
+            "clientHeight": 844,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 2698
+          }
+        }
+      },
+      "pass": true,
+      "audit": {
+        "id": "responsive-geometry",
+        "title": "Requested viewport is applied without document overflow",
+        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Actual viewport 320; document 320; requested 320"
+      },
+      "runtimeError": null,
+      "warnings": [],
+      "screenshotPath": "screenshots/final-get-offer-320.png"
+    },
+    {
+      "page": "get-offer",
       "requestedWidth": 375,
       "requestedHeight": 844,
       "mobile": true,
@@ -501,7 +614,7 @@
           "clientWidth": 375,
           "scrollWidth": 375,
           "bodyScrollWidth": 375,
-          "scrollHeight": 2484,
+          "scrollHeight": 2506,
           "visualViewportWidth": 375,
           "visualViewportHeight": 844,
           "visibleOverflowElements": [],
@@ -520,8 +633,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 334,
-              "top": 1428.625,
-              "bottom": 1479.6875,
+              "top": 1450.3125,
+              "bottom": 1501.375,
               "width": 293,
               "height": 51.0625,
               "display": "inline-flex"
@@ -559,7 +672,7 @@
             "x": 0,
             "y": 0,
             "width": 375,
-            "height": 2484
+            "height": 2506
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -581,7 +694,7 @@
             "x": 0,
             "y": 0,
             "width": 375,
-            "height": 2484
+            "height": 2506
           }
         }
       },
@@ -709,7 +822,7 @@
       },
       "runtimeError": null,
       "warnings": [],
-      "screenshotPath": null
+      "screenshotPath": "screenshots/final-get-offer-390.png"
     },
     {
       "page": "get-offer",
@@ -727,7 +840,7 @@
           "clientWidth": 430,
           "scrollWidth": 430,
           "bodyScrollWidth": 430,
-          "scrollHeight": 2416,
+          "scrollHeight": 2438,
           "visualViewportWidth": 430,
           "visualViewportHeight": 844,
           "visibleOverflowElements": [],
@@ -746,8 +859,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 389,
-              "top": 1380.546875,
-              "bottom": 1431.609375,
+              "top": 1402.234375,
+              "bottom": 1453.296875,
               "width": 348,
               "height": 51.0625,
               "display": "inline-flex"
@@ -785,7 +898,7 @@
             "x": 0,
             "y": 0,
             "width": 430,
-            "height": 2416
+            "height": 2438
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -807,7 +920,7 @@
             "x": 0,
             "y": 0,
             "width": 430,
-            "height": 2416
+            "height": 2438
           }
         }
       },
@@ -840,7 +953,7 @@
           "clientWidth": 753,
           "scrollWidth": 753,
           "bodyScrollWidth": 753,
-          "scrollHeight": 1831,
+          "scrollHeight": 1852,
           "visualViewportWidth": 753,
           "visualViewportHeight": 1000,
           "visibleOverflowElements": [],
@@ -859,8 +972,8 @@
               "text": "Request an offer",
               "left": 421.28125,
               "right": 686,
-              "top": 1165.28125,
-              "bottom": 1216.34375,
+              "top": 1186.96875,
+              "bottom": 1238.03125,
               "width": 264.71875,
               "height": 51.0625,
               "display": "inline-flex"
@@ -888,7 +1001,7 @@
             "x": 0,
             "y": 0,
             "width": 753,
-            "height": 1831
+            "height": 1852
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -910,7 +1023,7 @@
             "x": 0,
             "y": 0,
             "width": 753,
-            "height": 1831
+            "height": 1852
           }
         }
       },
@@ -1046,7 +1159,7 @@
           "clientWidth": 390,
           "scrollWidth": 390,
           "bodyScrollWidth": 390,
-          "scrollHeight": 10458,
+          "scrollHeight": 10717,
           "visualViewportWidth": 390,
           "visualViewportHeight": 812,
           "visibleOverflowElements": [],
@@ -1075,8 +1188,8 @@
               "text": "Request an offer",
               "left": 41,
               "right": 349,
-              "top": 9402.46875,
-              "bottom": 9453.53125,
+              "top": 9661.03125,
+              "bottom": 9712.09375,
               "width": 308,
               "height": 51.0625,
               "display": "inline-flex"
@@ -1114,7 +1227,7 @@
             "x": 0,
             "y": 0,
             "width": 390,
-            "height": 10458
+            "height": 10717
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -1136,7 +1249,7 @@
             "x": 0,
             "y": 0,
             "width": 390,
-            "height": 10458
+            "height": 10717
           }
         }
       },
@@ -1169,7 +1282,7 @@
           "clientWidth": 1425,
           "scrollWidth": 1425,
           "bodyScrollWidth": 1425,
-          "scrollHeight": 7469,
+          "scrollHeight": 7526,
           "visualViewportWidth": 1425,
           "visualViewportHeight": 990,
           "visibleOverflowElements": [],
@@ -1188,8 +1301,8 @@
               "text": "Request an offer",
               "left": 92.5,
               "right": 279.765625,
-              "top": 626.859375,
-              "bottom": 677.921875,
+              "top": 654.984375,
+              "bottom": 706.046875,
               "width": 187.265625,
               "height": 51.0625,
               "display": "inline-flex"
@@ -1198,8 +1311,8 @@
               "text": "Request an offer",
               "left": 770.34375,
               "right": 1297.5,
-              "top": 6845.703125,
-              "bottom": 6896.765625,
+              "top": 6901.953125,
+              "bottom": 6953.015625,
               "width": 527.15625,
               "height": 51.0625,
               "display": "inline-flex"
@@ -1227,7 +1340,7 @@
             "x": 0,
             "y": 0,
             "width": 1425,
-            "height": 7469
+            "height": 7526
           },
           "cssLayoutViewport": {
             "pageX": 0,
@@ -1249,7 +1362,7 @@
             "x": 0,
             "y": 0,
             "width": 1425,
-            "height": 7469
+            "height": 7526
           }
         }
       },
@@ -1265,119 +1378,6 @@
       "runtimeError": null,
       "warnings": [],
       "screenshotPath": "screenshots/final-home-1440.png"
-    },
-    {
-      "page": "get-offer",
-      "requestedWidth": 320,
-      "requestedHeight": 844,
-      "mobile": true,
-      "observed": {
-        "geometry": {
-          "url": "http://127.0.0.1:3100/get-offer",
-          "innerWidth": 320,
-          "innerHeight": 844,
-          "outerWidth": 320,
-          "outerHeight": 844,
-          "devicePixelRatio": 1,
-          "clientWidth": 320,
-          "scrollWidth": 320,
-          "bodyScrollWidth": 320,
-          "scrollHeight": 2676,
-          "visualViewportWidth": 320,
-          "visualViewportHeight": 844,
-          "visibleOverflowElements": [],
-          "buttonRects": [
-            {
-              "text": "Request an offer",
-              "left": 21,
-              "right": 287,
-              "top": 576.515625,
-              "bottom": 627.578125,
-              "width": 266,
-              "height": 51.0625,
-              "display": "flex"
-            },
-            {
-              "text": "Request an offer",
-              "left": 41,
-              "right": 279,
-              "top": 1596.46875,
-              "bottom": 1647.53125,
-              "width": 238,
-              "height": 51.0625,
-              "display": "inline-flex"
-            },
-            {
-              "text": "Request an offer",
-              "left": 16,
-              "right": 190,
-              "top": 786,
-              "bottom": 834,
-              "width": 174,
-              "height": 48,
-              "display": "flex"
-            }
-          ]
-        },
-        "layout": {
-          "layoutViewport": {
-            "pageX": 0,
-            "pageY": 0,
-            "clientWidth": 320,
-            "clientHeight": 844
-          },
-          "visualViewport": {
-            "offsetX": 0,
-            "offsetY": 0,
-            "pageX": 0,
-            "pageY": 0,
-            "clientWidth": 320,
-            "clientHeight": 844,
-            "scale": 1,
-            "zoom": 1
-          },
-          "contentSize": {
-            "x": 0,
-            "y": 0,
-            "width": 320,
-            "height": 2676
-          },
-          "cssLayoutViewport": {
-            "pageX": 0,
-            "pageY": 0,
-            "clientWidth": 320,
-            "clientHeight": 844
-          },
-          "cssVisualViewport": {
-            "offsetX": 0,
-            "offsetY": 0,
-            "pageX": 0,
-            "pageY": 0,
-            "clientWidth": 320,
-            "clientHeight": 844,
-            "scale": 1,
-            "zoom": 1
-          },
-          "cssContentSize": {
-            "x": 0,
-            "y": 0,
-            "width": 320,
-            "height": 2676
-          }
-        }
-      },
-      "pass": true,
-      "audit": {
-        "id": "responsive-geometry",
-        "title": "Requested viewport is applied without document overflow",
-        "description": "Measures actual window, document and protocol layout dimensions in an isolated Lighthouse run.",
-        "score": 1,
-        "scoreDisplayMode": "binary",
-        "displayValue": "Actual viewport 320; document 320; requested 320"
-      },
-      "runtimeError": null,
-      "warnings": [],
-      "screenshotPath": "screenshots/final-get-offer-320.png"
     }
   ]
 }

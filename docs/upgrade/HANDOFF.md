@@ -10,7 +10,7 @@ Updated September 5, 2026. This file is the maintenance entry point.
 - Existing Vercel project project-73xr5 / prj_tx6iRynIeADLp2EF4loKPnWCVLMP, Red Clay Capital team. Git production branch main. CLI releases are also established deployment history. Do not create a replacement Sites project or change DNS.
 - Preview protection verified: Vercel SSO all_except_custom_domains. Keep protection enabled.
 - Prior public deployment / rollback target: dpl_F6p23Dd8zDrmBD3zMgoPjTyEQ7HU.
-- Release status, explicit push/deploy approval gate and production-check steps: see RELEASE.md. Initial implementation commit89aabf3 is local; no upgrade release has occurred yet.
+- Release status, deployment identifiers and production-check steps: see RELEASE.md. The user explicitly approved GitHub push and the existing Vercel release. Company application revision 22d9111 is live; deployment dpl_8n4PzbhppCvAMYyH6wH3GHyjwStM passed public verification. See RELEASE.md for exact evidence and any later documentation-only revisions.
 
 ## Routes and identity
 
@@ -18,7 +18,7 @@ Home /; focused offer /get-offer; legacy /#get-my-cash-offer anchor retained. /p
 
 All 37 pre-upgrade sitemap URLs preserved. Five duplicate city URLs permanently redirect to the existing equivalent root city pages. The Google verification file is unchanged. Reviews/proof URLs remain accessible, with unsupported seeded review content removed from public rendering and empty-proof destinations excluded from search. Do not republish the legacy anonymous seeded testimonials without evidence and permission.
 
-Phone is centralized in content/site.ts: (919) 778-1228, tel:+19197781228, sms:+19197781228. The existing supplied founder image is reused and optimized by Next Image, with dimensions and hero preload. No new offices, reviews, response-time guarantees, closing promises or transaction counts were invented.
+Phone is centralized in content/site.ts: (919) 778-1228, tel:+19197781228, sms:+19197781228. The requested public presentation now uses company and market information instead of a founder image or owner callouts. The hero loads no photograph. Existing image assets are retained for history but are not rendered by the public pages. No new offices, reviews, response-time guarantees, closing promises or transaction counts were invented.
 
 ## Lead integration and remaining dependency
 
@@ -41,13 +41,16 @@ Search Console account is signed in but denied the attempted domain property. 90
 - TypeScript and production build passed; homepage now static. Existing nonfatal Next trace warning is in legacy admin file storage; public lead intake does not use it. Tracing excludes docs/tests/.tmp/.data/.git.
 - 23 behavioral server/tracking tests passed, including acceptance failure, exact retry, rate limits, receiver outage/recovery and redirect handling, consent and preference, attribution, blocked tracking/storage, conversion dedup.
 - Actual adjacent RCI Zod payload compatibility passes for phone/SMS/email-only. Seven existing RCI contract tests pass. These are not live delivery proof.
-- 49-route HTTP crawl: 43 successful pages, five expected 308 redirects, one intentional 404; canonicals/descriptions/H1/JSON-LD/anchors and verification file checked. One transient dev-compile 500 resolved and full recrawl passed; repeat production crawl in RELEASE.md.
+- 49-route HTTP crawl: 43 successful pages, five expected 308 redirects, one intentional 404; canonicals/descriptions/H1/JSON-LD/anchors and verification file checked. One transient dev-compile 500 resolved. The final public production crawl also passed all 49 routes with zero findings; see seo-production-verification.md.
 - Browser home and offer widths 320, 375, 390, 430, 768 and 1440 had no horizontal overflow; menu open/Escape close verified. Screenshot shows entered email retained on failure and retry remains unobscured. Form-field focus hides mobile actions; safe-area padding preserves content.
-- Keyboard FAQ Enter/Space opens/closes correctly. Three final local automated accessibility audits passed with100 scores and no failed scored or unscored checks, after fixing a brand-name override and state sidebar button contrast. Native phone zoom and complete assistive-technology coverage are not verified; this is not a full WCAG conformance claim.
+- Keyboard FAQ Enter/Space opens/closes correctly. Three final local automated accessibility audits passed with 100 scores and no failed scored or unscored checks, after fixing a brand-name override and state sidebar button contrast. Native phone zoom and complete assistive-technology coverage are not verified; this is not a full WCAG conformance claim.
 - Four labeled browser flows (NC, GA, OH, campaign) accepted by an isolated local synthetic RPC fixture using the actual production build. Ohio double click generated one request. Campaign simulated storage failure recovered to one acceptance. Exactly four accepted local records, no production/RCI writes. Raw synthetic evidence is in local-synthetic-submissions.json; do not call this RCI E2E.
 - iOS/Android messaging app dispatch and provider voice/SMS capabilities of the requested phone remain untested; correct call/text URI attributes verified without initiating communications.
-- Before/after images in screenshots/. Mobile lab baseline three-run median score97, LCP1.524s, TBT185ms, CLS0. Matched post-release values recorded in performance/README.md. TBT is not INP; lab is not 75th-percentile field data.
+- Before/after images in screenshots/. Mobile lab baseline three-run median score97, LCP1.524s, TBT185ms, CLS 0. Matched post-release median score 94, LCP 1.642s, TBT 242ms, CLS 0; no speed gain claimed. Full equivalent settings and variability are recorded in performance/README.md. TBT is not INP; lab is not 75th-percentile field data.
 
 ## Routine maintenance
 
 Use pnpm lockfile; run pnpm run check. Keep state hubs substantive, retain useful URLs, verify legal claims with the primary sources in seo-handoff.md, and use the same phone constants. Test lead changes with node --test tests/*.test.cjs and the actual RCI contract. scripts/start-local-qa.cjs is explicitly local, synthetic only, requires a successful build and free ports 3100/3222; it cannot contact production and is excluded from deploy uploads. Do not deploy its environment configuration.
+
+
+

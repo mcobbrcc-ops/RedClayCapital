@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "rawSourceFounderName": false,
+    "rawSourcePortraitReference": false,
+    "rawSourceFounderSchema": false
+  },
+  {
+    "path": "/about-red-clay-capital",
+    "status": 200,
+    "rawSourceFounderName": false,
+    "rawSourcePortraitReference": false,
+    "rawSourceFounderSchema": false
+  },
+  {
+    "path": "/get-offer",
+    "status": 200,
+    "rawSourceFounderName": false,
+    "rawSourcePortraitReference": false,
+    "rawSourceFounderSchema": false
+  },
+  {
+    "path": "/reviews",
+    "status": 200,
+    "rawSourceFounderName": false,
+    "rawSourcePortraitReference": false,
+    "rawSourceFounderSchema": false
+  }
+]

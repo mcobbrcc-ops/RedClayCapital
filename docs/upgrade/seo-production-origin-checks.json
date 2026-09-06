@@ -1,0 +1,203 @@
+[
+  {
+    "path": "/",
+    "status": 308,
+    "location": "https://redclaycap.com/",
+    "contentType": "text/plain",
+    "xRobotsTag": null,
+    "vercelId": null,
+    "cache": null,
+    "seconds": 0.323,
+    "bytes": 14,
+    "sha256": "cd23991b4e02a17e5a224a1f8265c5a187ab366b40b8f8a14608371feb8f6e25",
+    "requestedOrigin": "http://redclaycap.com"
+  },
+  {
+    "path": "/",
+    "status": 308,
+    "location": "https://redclaycap.com/",
+    "contentType": "text/plain",
+    "xRobotsTag": null,
+    "vercelId": "iad1::l2ppd-1788658265078-4392b368eab8",
+    "cache": null,
+    "seconds": 0.638,
+    "bytes": 15,
+    "sha256": "7c040f8633b8823d72ed63da9b3b2dfe9846e912c66a64c9433ec9c4815d76c2",
+    "requestedOrigin": "https://www.redclaycap.com"
+  },
+  {
+    "path": "/",
+    "status": 308,
+    "location": "https://www.redclaycap.com/",
+    "contentType": "text/plain",
+    "xRobotsTag": null,
+    "vercelId": null,
+    "cache": null,
+    "seconds": 0.175,
+    "bytes": 14,
+    "sha256": "cd23991b4e02a17e5a224a1f8265c5a187ab366b40b8f8a14608371feb8f6e25",
+    "requestedOrigin": "http://www.redclaycap.com"
+  },
+  {
+    "path": "/about-red-clay-capital",
+    "status": 200,
+    "location": null,
+    "contentType": "text/html; charset=utf-8",
+    "xRobotsTag": null,
+    "vercelId": "iad1::6ddlq-1788658265626-b2031fb08ff2",
+    "cache": "HIT",
+    "seconds": 0.38,
+    "bytes": 32014,
+    "sha256": "421f258a8788003328fb472443f9a2423b4bb2a77e3310181ec5f72fac25f003",
+    "title": "About Red Clay Capital | Red Clay Capital",
+    "h1Count": 1,
+    "canonical": [
+      "https://redclaycap.com/about-red-clay-capital"
+    ],
+    "description": "Red Clay Capital LLC helps property owners compare potential as-is sales in North Carolina, Georgia, and Ohio through a clear, property-specific review.",
+    "robots": "index, follow",
+    "ogImage": "https://redclaycap.com/social-preview.png",
+    "ogWidth": null,
+    "ogHeight": null,
+    "links": [
+      "#main-content",
+      "/",
+      "/about-red-clay-capital",
+      "/areas-we-serve",
+      "/blog",
+      "/contact",
+      "/faq",
+      "/get-offer",
+      "/how-it-works",
+      "/privacy",
+      "mailto:MCobb@RedClayCap.com",
+      "sms:+19197781228",
+      "tel:+19197781228"
+    ],
+    "ids": [
+      "_R_",
+      "main-content"
+    ],
+    "images": [],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://redclaycap.com/#organization",
+        "name": "Red Clay Capital, LLC",
+        "url": "https://redclaycap.com",
+        "telephone": "+19197781228",
+        "email": "MCobb@RedClayCap.com",
+        "logo": "https://redclaycap.com/icon.svg",
+        "areaServed": [
+          "North Carolina",
+          "Georgia",
+          "Ohio"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://redclaycap.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Red Clay Capital",
+            "item": "https://redclaycap.com/about-red-clay-capital"
+          }
+        ]
+      }
+    ],
+    "schemaErrors": [],
+    "oldPhone": false,
+    "founderReferences": false,
+    "founderImageReferences": [],
+    "callPresent": true,
+    "textPresent": true,
+    "requestedOrigin": "https://redclaycap.com",
+    "hasCompanyAboutSentence": true
+  },
+  {
+    "path": "/get-offer",
+    "status": 200,
+    "location": null,
+    "contentType": "text/html; charset=utf-8",
+    "xRobotsTag": null,
+    "vercelId": "iad1::nrmm7-1788658265985-b04dda4403ae",
+    "cache": "HIT",
+    "seconds": 0.341,
+    "bytes": 26084,
+    "sha256": "24684f85aa2ab3d844d6cba1a47b24d7b20f32fac1c97ce85a45d23118505162",
+    "title": "Request an Offer for Your Property | Red Clay Capital",
+    "h1Count": 1,
+    "canonical": [
+      "https://redclaycap.com/get-offer"
+    ],
+    "description": "Tell Red Clay Capital about your property in North Carolina, Georgia, or Ohio. Request a conversation about a potential as-is offer, with no obligation to sell.",
+    "robots": "index, follow",
+    "ogImage": "https://redclaycap.com/social-preview.png",
+    "ogWidth": "1200",
+    "ogHeight": "630",
+    "links": [
+      "#get-my-cash-offer",
+      "#main-content",
+      "/",
+      "/about-red-clay-capital",
+      "/areas-we-serve",
+      "/blog",
+      "/contact",
+      "/faq",
+      "/get-offer",
+      "/how-it-works",
+      "/privacy",
+      "mailto:MCobb@RedClayCap.com",
+      "sms:+19197781228",
+      "tel:+19197781228"
+    ],
+    "ids": [
+      "_R_",
+      "address",
+      "details",
+      "email",
+      "get-my-cash-offer",
+      "main-content",
+      "name",
+      "phone",
+      "preferredContactMethod",
+      "propertyCondition",
+      "timeline"
+    ],
+    "images": [],
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://redclaycap.com/#organization",
+        "name": "Red Clay Capital, LLC",
+        "url": "https://redclaycap.com",
+        "telephone": "+19197781228",
+        "email": "MCobb@RedClayCap.com",
+        "logo": "https://redclaycap.com/icon.svg",
+        "areaServed": [
+          "North Carolina",
+          "Georgia",
+          "Ohio"
+        ]
+      }
+    ],
+    "schemaErrors": [],
+    "oldPhone": false,
+    "founderReferences": false,
+    "founderImageReferences": [],
+    "callPresent": true,
+    "textPresent": true,
+    "requestedOrigin": "https://redclaycap.com",
+    "hasCompanyText": true
+  }
+]
